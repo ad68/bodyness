@@ -903,4 +903,118 @@ body {
   width: 100%;
   color: white;
 }
+
+.bodyRtl .homeWrapper .section4 {
+  background: -webkit-gradient(linear, left top, right top, from(#e4e9fe), to(#dfc4fb));
+  background: linear-gradient(90deg, #e4e9fe 0%, #dfc4fb 100%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bodyRtl .homeWrapper .section4 .title {
+  font-size: 22px;
+  font-family: IRANSansBlack;
+  margin-bottom: 20px;
+}
+
+.bodyRtl .homeWrapper .section4 .toolsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyRtl .homeWrapper .section4 .toolsWrapper .tools1 {
+  width: 62%;
+  margin-left: -42%;
+}
+
+.bodyRtl .homeWrapper .section4 .toolsWrapper .tools2 {
+  width: 62%;
+  margin-top: -38px;
+  margin-right: -42%;
+}
+
+.bodyRtl .homeWrapper .section4 .toolsWrapper .tools3 {
+  width: 62%;
+  margin-top: -85px;
+  margin-left: -42%;
+  z-index: 10;
+}
+
+.bodyRtl .homeWrapper .section4 .toolsWrapper .tools4 {
+  width: 62%;
+  margin-top: -54px;
+  margin-right: -42%;
+}
+
+.bodyRtl .homeWrapper .section4 .letStartBtnMobile {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: IRANSansBold;
+  background-color: #a347f1;
+  display: block;
+  padding: 10px;
+  width: 80%;
+  color: white;
+}
+
+.bodyRtl .homeWrapper .section5 {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .bodyRtl .homeWrapper .section5 {
+    background-color: rgba(255, 154, 124, 0.23);
+  }
+}
+
+.bodyRtl .homeWrapper .section5 .title {
+  font-size: 22px;
+  font-family: IRANSansBold;
+  margin-bottom: 20px;
+}
+
+.bodyRtl .homeWrapper .section5 .letStartBtnMobile {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: IRANSansBold;
+  background-color: #a347f1;
+  display: block;
+  padding: 10px;
+  width: 80%;
+  color: white;
+}
 /*# sourceMappingURL=mainRTL.css.map */

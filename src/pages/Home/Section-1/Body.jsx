@@ -1,6 +1,6 @@
 import React from "react";
 import BodyBuilding from "../../../assets/images/home/body-building-img.svg";
-import LetsGo from "../../../assets/images/home/letgo.png";
+import LetsGo from "../../../assets/images/home/letsgo.png";
 import ArrowIcon from "../../../assets/images/home/Arrow-Icon.svg";
 import Plate from "../../../assets/images/home/section1Palte.png";
 import PlateFa from "../../../assets/images/home/section1PalteFA.png";

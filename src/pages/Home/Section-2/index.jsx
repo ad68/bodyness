@@ -1,13 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import Lemon from "../../../assets/images/home/lemon.svg";
-
+import Lemon from "../../../assets/images/home/lemon.png";
 import FullPlate from "../../../assets/images/home/fullPlate.png";
 import Mood1 from "../../../assets/images/home/mood1.svg";
 import Mood2 from "../../../assets/images/home/mood2.svg";
 import SmallPlate from "../../../assets/images/home/smallPlate.png";
 import SmallLemon from "../../../assets/images/home/smallLemon.png";
-import EggSalad from "../../../assets/images/home/eggSalad.svg";
+
 
 //
 // ────────────────────────────────────────────────────────── I ──────────

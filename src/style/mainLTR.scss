@@ -14,7 +14,6 @@ $spartanMedium: spartanMedium;
 $spartanBold: spartanBold;
 $spartanVeryBold: spartanVeryBold;
 
-
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +37,7 @@ body {
         padding-top: 8px;
       }
     }
-    @media screen and (max-width:768px){
+    @media screen and (max-width: 768px) {
       position: static;
       display: flex;
       flex-direction: column;
@@ -51,10 +50,10 @@ body {
     margin: auto;
     padding: 20px;
     z-index: 100;
-    &.tiny{
+    &.tiny {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: rgba(255 ,255, 255 , 0.9);
+      background-color: rgba(255, 255, 255, 0.9);
     }
     &.fixMenu {
       position: fixed !important;
@@ -85,16 +84,16 @@ body {
       justify-content: center;
     }
   }
-  .mobileMenu{
+  .mobileMenu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-   
+
     /* background-color: rgba(255, 255, 255, 0.5); */
     justify-content: space-between;
     z-index: 100;
-    .logo{
+    .logo {
       margin-right: -29px;
       width: 165px;
     }
@@ -126,18 +125,15 @@ body {
         @media screen and (max-width: 1920px) {
           font-size: 237px;
           top: -66px;
-          
+
           line-height: 254px;
-          
         }
         @media screen and (max-width: 1366px) {
           font-size: 136px;
           top: -12px;
-          
+
           line-height: 147px;
-          
         }
-       
       }
 
       .body {
@@ -146,7 +142,7 @@ body {
         .rightBox {
           width: 50%;
           .plate {
-            width: 85%;
+            width: 100%;
             @media screen and (min-width: 1920px) {
               width: 100%;
             }
@@ -157,8 +153,8 @@ body {
             width: 100%;
             padding-right: 0;
           }
-          .letsGoImg{
-            @media only screen and (min-width: 375px){
+          .letsGoImg {
+            @media only screen and (min-width: 375px) {
               width: 85%;
             }
           }
@@ -183,7 +179,6 @@ body {
           position: relative;
           @media screen and (max-width: 1366px) {
             font-size: 50px;
-            
           }
           @media screen and (min-width: 1920px) {
             font-size: 85px;
@@ -197,7 +192,7 @@ body {
             font-size: 20px;
             color: #000000b2;
           }
-          @media only screen and (min-width: 375px){
+          @media only screen and (min-width: 375px) {
             font-size: 17px;
           }
         }
@@ -212,7 +207,7 @@ body {
             width: 561px;
             margin-top: 10%;
             min-height: 210px;
-           }
+          }
           max-width: 100%;
           color: white;
           @media screen and (min-height: 900px) {
@@ -224,16 +219,15 @@ body {
             left: -77px;
             width: 410px;
             @media screen and (max-width: 1366px) {
-             width: 310px;
-              
+              width: 310px;
             }
           }
-          .action{
+          .action {
             padding-left: 85px;
             @media screen and (max-width: 1366px) {
               padding-left: 45px;
-             }
-            .title{
+            }
+            .title {
               font-size: 24px;
             }
             .text {
@@ -247,7 +241,7 @@ body {
               @media screen and (max-width: 1366px) {
                 margin-top: 30px;
                 min-height: 67px;
-               }
+              }
               width: 90%;
               color: black;
               overflow: hidden;
@@ -277,7 +271,6 @@ body {
               }
             }
           }
-         
         }
         .letsStartBtnMobile {
           border-radius: 16px;
@@ -291,7 +284,7 @@ body {
       }
       .mobilePlate {
         width: 92%;
-        @media only screen and (min-width: 375px){
+        @media only screen and (min-width: 375px) {
           width: 80%;
         }
       }
@@ -405,7 +398,7 @@ body {
           width: 100%;
         }
       }
-      .leftBox{
+      .leftBox {
         position: relative;
         width: 50%;
         display: flex;
@@ -414,7 +407,7 @@ body {
           position: static;
           width: 100%;
           display: block;
-          justify-content:center;
+          justify-content: center;
         }
       }
       .rightBox {
@@ -659,34 +652,89 @@ body {
         rgba(223, 196, 251, 1) 100%
       );
       height: 100vh;
-      display: flex;
+     
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       .title {
         font-size: 22px;
         font-family: $spartanVeryBold;
+        margin-bottom: 20px;
       }
-      .tools1 {
-        position: absolute;
-        top: 30px;
-        left: -57px;
+      .toolsWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        .tools1 {
+          width: 62%;
+          margin-left: -42%;
+        }
+        .tools2 {
+          width: 62%;
+          margin-top: -38px;
+          margin-right: -42%;
+        }
+        .tools3 {
+          width: 62%;
+          margin-top: -85px;
+          margin-left: -42%;
+          z-index: 10;
+        }
+        .tools4 {
+          width: 62%;
+          margin-top: -54px;
+          margin-right: -42%;
+        }
       }
-      .tools2 {
-        position: absolute;
-        top: 141px;
-        right: -3px;
+      .letStartBtnMobile {
+        border-radius: 16px;
+        font-size: 20px;
+        font-family: $openSansBold;
+        background-color: #a347f1;
+        display: block;
+        padding: 10px;
+        width: 80%;
+        color: white;
       }
-      .tools3 {
-        position: absolute;
-        top: 300px;
-        left: -57px;
+    }
+    .section5 {
+   
+      @media screen and (max-width: 767px) {
+        background-color: rgba(255, 154, 124, 0.23);
       }
-      .tools4 {
-        position: absolute;
-        top: 400px;
-        right: -3px;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .title {
+        font-size: 22px;
+        font-family: $spartanVeryBold;
+        margin-bottom: 20px;
+      }
+      .foodWrapper{
+        width: 100%;
+        display: flex;
+        .foodBox{
+          background-color: white;
+          border-radius: 16px;
+          width: 46%;
+          margin-left: 2%;
+          min-height: 200px;
+        }
+      }
+     
+      .letStartBtnMobile {
+        border-radius: 16px;
+        font-size: 20px;
+        font-family: $openSansBold;
+        background-color: #a347f1;
+        display: block;
+        padding: 10px;
+        width: 80%;
+        color: white;
       }
     }
   }
 }
-

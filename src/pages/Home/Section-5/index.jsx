@@ -1,10 +1,5 @@
-import React, { useEffect, useState } from "react";
-import Section1 from "./Section-1";
-import Section2 from "./Section-2";
-import Section3 from "./Section-3";
-import Section4 from "./Section-4";
-import Section5 from "./Section-5";
-import Loading from "../../components/Loading";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -14,38 +9,25 @@ import Loading from "../../components/Loading";
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+  const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [loading, setLoading] = useState(false);
+
+  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
+
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
-  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-  // This will run one time after the component mounts
-  useEffect(() => {
-    const showLoading = () => {
-      setLoading(true);
-    };
-    if (document.readyState === "complete") {
-      showLoading();
-    } else {
-      window.addEventListener("load", showLoading);
-      return () => window.removeEventListener("load", showLoading);
-    }
-  }, []);
-
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="homeWrapper">
-      {loading ?  "" :<Loading />}
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
+    <section className="section5 flex md:hidden">
+       <h2 className="title">{t("Home.WakeUpEarly")}</h2>
+       <section className="foodWrapper">
+        <section className="foodBox"></section>
+        <section className="foodBox"></section>
+       </section>
     </section>
   );
 }

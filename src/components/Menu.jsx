@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Logo from "../assets/images/logo/logo.svg";
+import Logo from "../assets/images/logo/logoMini.png";
 import { useTranslation } from "react-i18next";
 import LangBox from "./LanguageBox";
 
