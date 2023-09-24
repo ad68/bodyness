@@ -1,0 +1,668 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(fontiran.css);
+$normalFont: IRANSans;
+$boldFont: IRANSansBold;
+$veryBoldFont: IRANSansBlack;
+$lightFont: IRANSansLight;
+$ultraLightFont: IRANSansUltraLight;
+$mediumFont: IRANSansMedium;
+$bodyNessPuprple: #a347f1;
+$bodyNessYellow: #f5e170;
+$bodyNessLemon: rgba(255, 249, 227, 1);
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  padding: 0;
+}
+.bodyRtl {
+  font-family: $normalFont, sans-serif;
+  .langBox {
+    font-family: $normalFont;
+    position: absolute;
+    right: 240px;
+    @media screen and (max-width:768px){
+      position: static;
+      display: flex;
+      flex-direction: column;
+    }
+    button {
+      margin-right: 10px;
+      @media screen and (max-width:768px){
+       margin-right: 0;
+      }
+      font-weight: 600;
+      &.active {
+        background-color: #0c0c0c36;
+        padding: 5px;
+        border-radius: 5px;
+        padding-top: 8px;
+      }
+    }
+  }
+ 
+  .mainMenu {
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    padding: 20px;
+    z-index: 100;
+    &.tiny{
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: rgba(255 ,255, 255 , 0.9);
+    }
+    right: 0;
+    /* @media screen and (max-width: 1350px) {
+      padding: 10px;
+    } */
+    &.fixMenu {
+      position: fixed !important;
+      top: 0 !important;
+    }
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: all 0.2s linear;
+    z-index: 200;
+    top: 0;
+    .logo {
+      width: 223px;
+      height: 57px;
+    }
+    nav {
+      a {
+        font-size: 20px;
+      }
+    }
+    .action {
+      width: 222px;
+      background-color: $bodyNessPuprple;
+      border-radius: 10px;
+      color: white;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .mobileMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+   
+    justify-content: space-between;
+    z-index: 100;
+    .logo{
+      margin-left: -29px;
+      width: 165px;
+    }
+  }
+  .homeWrapper {
+    .section1 {
+      padding-bottom: 20px;
+      @media screen and (min-width: 991px) {
+        padding-top: 97px;
+      }
+      background: rgb(228, 233, 254);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(
+        90deg,
+        rgba(228, 233, 254, 1) 0%,
+        rgba(223, 196, 251, 1) 100%
+      );
+      .mobilePlate {
+        width: 80%;
+        @media only screen and (min-width: 375px){
+          width: 80%;
+        }
+      }
+      .watermark {
+        font-size: 284px;
+        color: #ffffff33;
+        position: absolute;
+        top: 0px;
+        right: 21px;
+        line-height: 295px;
+        z-index: 0;
+        @media screen and (max-width: 1920px) {
+          font-size: 237px;
+          top: -66px;
+
+          line-height: 254px;
+        }
+        @media screen and (max-width: 1366px) {
+          font-size: 136px;
+          top: -12px;
+
+          line-height: 147px;
+        }
+      }
+      .body {
+        position: relative;
+        width: 100%;
+        .plate {
+          width: 500px;
+          @media screen and (min-width: 1920px) {
+            width: 800px;
+          }
+        }
+        .rightBox {
+          width: 50%;
+          .plate {
+            width: 100%;
+            @media screen and (min-width: 1920px) {
+              width: 100%;
+            }
+          }
+        }
+        .leftBox {
+          @media screen and (max-width: 991px) {
+            width: 100%;
+            padding-right: 0;
+          }
+          .letsGoImg{
+            @media only screen and (min-width: 375px){
+              width: 85%;
+            }
+          }
+          width: 50%;
+          display: flex;
+          padding-right: 3%;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .learn {
+          font-size: 25px;
+          @media only screen and (min-width: 375px) {
+            font-size: 20px;
+          }
+          font-weight: 600;
+          text-align: center;
+          strong {
+            color: $bodyNessPuprple;
+            font-weight: 700;
+          }
+        }
+        .welcome {
+          font-size: 48px;
+          z-index: 1;
+          position: relative;
+          @media screen and (max-width: 767px) {
+            font-size: 25px;
+            text-align: center;
+          }
+          @media screen and (min-width: 1920px) {
+            font-size: 100px;
+          }
+        }
+        p {
+          font-size: 29px;
+          @media screen and (max-width: 767px) {
+            font-size: 24px;
+            text-align: center;
+          }
+          @media only screen and (min-width: 375px) {
+            font-size: 17px;
+          }
+        }
+        .coachTeamBox {
+          border-radius: 32px;
+          background-color: #a347f1;
+          min-height: 250px;
+          margin-top: 15%;
+          position: relative;
+          width: 760px;
+          @media screen and (max-width: 1366px) {
+            width: 561px;
+            margin-top: 10%;
+            min-height: 210px;
+          }
+         
+          max-width: 100%;
+          color: white;
+          @media screen and (min-height: 900px) {
+            margin-top: 27%;
+          }
+          .bodyImg {
+            position: absolute;
+            bottom: 0px;
+            right: -77px;
+            width: 410px;
+            @media screen and (max-width: 1366px) {
+              width: 310px;
+            }
+          }
+          .action {
+            padding-right: 85px;
+            @media screen and (max-width: 1366px) {
+              padding-right: 45px;
+            }
+            .title {
+              font-size: 24px;
+            }
+            .text {
+              font-size: 18px;
+            }
+            .letStartBtn {
+              border-radius: 16px;
+              background-color: white;
+              min-height: 75px;
+              margin-top: 50px;
+              @media screen and (max-width: 1366px) {
+                margin-top: 30px;
+                min-height: 67px;
+              }
+              width: 90%;
+              color: black;
+              overflow: hidden;
+              position: relative;
+              span {
+                font-size: 24px;
+              }
+              .circle {
+                width: 122px;
+                height: 122px;
+                background-color: #a347f114;
+                position: absolute;
+                right: 0;
+                border-radius: 64px;
+                transition: all 0.2s linear;
+                top: 2px;
+                img {
+                  margin: auto;
+                  display: block;
+                  margin-top: -7px;
+                }
+              }
+              &:hover {
+                .circle {
+                  background-color: #a347f15c;
+                }
+              }
+            }
+          }
+        }
+        .letsStartBtnMobile {
+          border-radius: 16px;
+          font-size: 20px;
+          font-family: $boldFont;
+          background-color: #a347f1;
+          padding: 10px;
+          width: 100%;
+          color: white;
+        }
+      }
+    }
+    .section2 {
+      background-color: $bodyNessYellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      @media screen and (max-width: 767px) {
+        background-color: $bodyNessLemon;
+      }
+
+      .tooltip1 {
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        padding: 5px;
+        border-radius: 13px;
+        top: 7%;
+        left: 10%;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 1366px) {
+          top: 2%;
+        }
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        justify-content: space-around;
+        .info {
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+        }
+        strong {
+          font-size: 16px;
+        }
+      }
+      .tooltip2 {
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        /*  padding: 5px; */
+        border-radius: 13px;
+        bottom: 14%;
+        right: 22%;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 1366px) {
+          right: 18%;
+        }
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        justify-content: space-around;
+        .info {
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+        }
+        strong {
+          font-size: 16px;
+        }
+      }
+      
+      .tooltip3 {
+        background-color: white;
+
+        width: 100%;
+        padding: 5px;
+        border-radius: 13px;
+
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+        justify-content: space-around;
+        .info {
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+        }
+        strong {
+          font-size: 16px;
+        }
+      }
+      .plateBox {
+        /* height: 100%; */
+        display: flex;
+        width: 615px;
+        background-color: rgba(255, 255, 255, 0.356);
+        border-radius: 100%;
+        padding: 20px;
+        padding-top: 34px;
+        padding-left: 30px;
+        background-color: rgba(255, 255, 255, 0.356);
+        position: relative;
+        .plate {
+          z-index: 1;
+        }
+        .lemon {
+          position: absolute;
+          right: 26px;
+          top: -60px;
+          z-index: 0;
+        }
+        .tomato {
+          position: absolute;
+          left: -40px;
+          bottom: 4px;
+          z-index: 0;
+        }
+      }
+      .fullPlate {
+        width: 80%;
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+      }
+      .leftBox{
+        position: relative;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        @media screen and (max-width: 991px) {
+          position: static;
+          width: 100%;
+          display: block;
+          justify-content:center;
+        }
+      }
+      .rightBox {
+       
+        width: 50%;
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+        .title {
+          font-size: 96px;
+          direction: ltr;
+          height: 91px;
+          color: white;
+          align-items: baseline;
+        }
+        .title2 {
+          font-size: 96px;
+          direction: ltr;
+          height: 91px;
+          color: black;
+          align-items: baseline;
+          padding-left: 214px;
+        }
+        p {
+          font-size: 33px;
+          @media screen and (max-width: 767px) {
+            font-size: 24px;
+            text-align: center;
+          }
+        }
+        .letStartBtn {
+          border-radius: 16px;
+          background-color: black;
+          min-height: 64px;
+          width: 90%;
+          color: white;
+          overflow: hidden;
+          width: 362px;
+          position: relative;
+          padding: 19px;
+          span {
+            font-size: 24px;
+          }
+          .circle {
+            width: 122px;
+            height: 122px;
+            background-color: #3d3d3df5;
+            position: absolute;
+            right: 0;
+            border-radius: 64px;
+            transition: all 0.2s linear;
+            top: 2px;
+            img {
+              margin: auto;
+              display: block;
+              width: 80px;
+            }
+          }
+          &:hover {
+            .circle {
+              background-color: #323232f5;
+            }
+          }
+        }
+      }
+      .letsStartBtnMobile {
+        border-radius: 16px;
+        font-size: 20px;
+        font-family: $boldFont;
+        background-color: #ff9170;
+
+        padding: 10px;
+        width: 100%;
+        color: white;
+      }
+    }
+    .section3 {
+      background-color: #eef9ff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .lineTab {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 1366px) {
+          margin-top: 42px;
+        }
+        .tab {
+          background-color: #c9dbe5;
+          height: 4px;
+          border-radius: 9px;
+          width: 48px;
+          margin-left: 10px;
+          &.active {
+            width: 89px;
+            height: 6px;
+            background-color: #a347f1;
+          }
+        }
+      }
+      .tabTitle {
+        font-family: $boldFont;
+        font-size: 17px;
+        @media screen and (min-width: 1350px) {
+          font-size: 31px;
+        }
+      }
+      .title {
+        font-size: 23px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 20px;
+
+        font-family: $boldFont;
+        color: #000000b3;
+      }
+      .stepNumberBox {
+        background-color: $bodyNessPuprple;
+        color: white;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $boldFont;
+      }
+      .mobileGenderBox {
+        background-color: white;
+        border-radius: 24px;
+        width: 46%;
+        text-align: center;
+        .genderTitle {
+          background-color: #e7f6ff;
+          padding: 10px;
+          display: flex;
+          font-size: 16px;
+          justify-content: space-around;
+          align-items: center;
+          width: 70%;
+          margin: auto;
+          margin-top: 10px;
+          border-radius: 16px;
+        }
+      }
+      .genderBox {
+        background-color: white;
+        border-radius: 24px;
+        width: 48%;
+        text-align: center;
+        .genderTitle {
+          background-color: #e7f6ff;
+          padding: 10px;
+          display: flex;
+          font-size: 20px;
+          justify-content: space-around;
+          align-items: center;
+          width: 90%;
+          margin: auto;
+          margin-top: 10px;
+          border-radius: 16px;
+          img {
+            width: 35px;
+          }
+        }
+        .genderBody {
+          height: 500px;
+          @media screen and (max-width: 1350px) {
+            height: 300px;
+          }
+        }
+      }
+      .stepInfo {
+        img {
+          width: 140px;
+        }
+        h2 {
+          font-family: $boldFont;
+          font-size: 80px;
+          @media screen and (max-width: 1366px) {
+            font-size: 50px;
+          }
+        }
+        h3 {
+          font-family: $boldFont;
+          font-size: 40px;
+          
+        }
+        p {
+          font-size: 24px;
+        }
+        .letStartBtn {
+          border-radius: 16px;
+          background-color: black;
+          min-height: 64px;
+          width: 90%;
+          color: white;
+          overflow: hidden;
+          width: 362px;
+          position: relative;
+          padding: 19px;
+          span {
+            font-size: 24px;
+          }
+          .circle {
+            width: 122px;
+            height: 122px;
+            background-color: #3d3d3df5;
+            position: absolute;
+            right: 0;
+            border-radius: 64px;
+            transition: all 0.2s linear;
+            top: 2px;
+            img {
+              margin: auto;
+              display: block;
+              width: 80px;
+              margin-top: 20px;
+            }
+          }
+          &:hover {
+            .circle {
+              background-color: #323232f5;
+            }
+          }
+        }
+      }
+      .letStartBtnMobile {
+        border-radius: 16px;
+        font-size: 20px;
+        font-family: $boldFont;
+        background-color: #a347f1;
+        display: block;
+        padding: 10px;
+        width: 100%;
+        color: white;
+      }
+    }
+  }
+}

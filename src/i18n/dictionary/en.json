@@ -1,0 +1,42 @@
+{
+  "HomeMenu": {
+    "Home": "Home",
+    "Sport": "Sport",
+    "Diet": "Diet",
+    "ContactUs": "Contact Us",
+    "AboutUs": "About Us",
+    "Login": "Login"
+  },
+  "Home": {
+    "LetsStart": "Lets Start",
+    "CoachTeam": "Coach Team",
+    "BuildBody": "Build your Body with Bodyness",
+    "BecomeTheBetter": "Become The Better",
+    "VersionOfYourself": "Version Of Yourself",
+    "SteakSalad": "Steak salad",
+    "EggSalad": "Egg salad",
+    "1plate": "1 plate",
+    "250cal": "250 cal",
+    "3slice": "3 slice",
+    "25cal": "25 cal",
+    "Lemon": "Lemon",
+    "Learn1": "Learn how to portion your",
+    "Daily": "Daily",
+    "Learn2": "food plate",
+    "FoodMoodTime":"Food Mood Time",
+    "Male": "Male",
+    "Female": "Female",
+    "ChooseGender": "Choose your gender?",
+    "ImproveYourMuscles": "Improve your muscles",
+    "Improve": "Improve",
+    "YourMuscles": "your muscles",
+    "ExperienceBest": "Experience Your Best Sports Version with Our Support",
+    "HealthWell":"Health and well-being Through Smart and Healthy Eating",
+    "TransformLife":"Transform Your Life Through Fitness and Nutrition",
+    "Body":"BODY",
+    "Ness":"NESS",
+    "ToolsNeed":"The tools you need"
+  },
+
+  "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo iusmod tempo"
+}

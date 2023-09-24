@@ -1,0 +1,57 @@
+
+@font-face {
+	font-family: openSansLight;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/openSans/OpenSans-Light.ttf');
+
+}
+@font-face {
+	font-family: openSansMedium;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../assets/fonts/openSans/OpenSans-Medium.ttf');
+
+}
+@font-face {
+	font-family: openSansBold;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../assets/fonts/openSans/OpenSans-Bold.ttf');
+
+}
+@font-face {
+	font-family: openSansVeryBold;
+	font-style: normal;
+	font-weight: 700;
+	src: url('../assets/fonts/openSans/OpenSans-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: spartanLight;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/spartan/Spartan-Light.ttf');
+
+}
+@font-face {
+	font-family: spartanMedium;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../assets/fonts/spartan/Spartan-Medium.ttf');
+
+}
+@font-face {
+	font-family: spartanBold;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../assets/fonts/spartan/Spartan-Bold.ttf');
+
+}
+@font-face {
+	font-family: spartanVeryBold;
+	font-style: normal;
+	font-weight: 700;
+	src: url('../assets/fonts/spartan/Spartan-ExtraBold.ttf');
+}
+
