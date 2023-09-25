@@ -985,19 +985,93 @@ body {
 .bodyLtr .homeWrapper .section5 .foodWrapper .foodBox {
   background-color: white;
   border-radius: 16px;
-  width: 46%;
-  margin-left: 2%;
-  min-height: 200px;
+  width: 42%;
+  margin-left: 5%;
+  padding-bottom: 10px;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .saladPlate {
+  width: 70%;
+  margin: auto;
+  margin-top: -59px;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .title {
+  font-family: spartanMedium;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .calTimeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .calTimeBox img {
+  width: 30px;
+  height: 30px;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .calTimeBox span {
+  font-size: 12px;
+  font-family: openSansBold;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .fatBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F7F7F7;
+  border-radius: 12px;
+  width: 95%;
+  height: 40px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .fatBox .grayTitle {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  display: block;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .fatBox .value {
+  font-family: spartanBold;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+
+.bodyLtr .homeWrapper .section5 .foodWrapper .foodBox .fatBox .pipe {
+  width: 1px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0.14);
+  margin: 5px;
 }
 
 .bodyLtr .homeWrapper .section5 .letStartBtnMobile {
   border-radius: 16px;
   font-size: 20px;
   font-family: openSansBold;
-  background-color: #a347f1;
+  background-color: #FF9170;
   display: block;
   padding: 10px;
-  width: 80%;
+  width: 90%;
   color: white;
 }
 /*# sourceMappingURL=mainLTR.css.map */

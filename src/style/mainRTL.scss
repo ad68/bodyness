@@ -733,16 +733,83 @@ body {
           font-family: $boldFont;
           margin-bottom: 20px;
         }
+        .foodWrapper {
+          width: 100%;
+          display: flex;
+          .foodBox {
+            background-color: white;
+            border-radius: 16px;
+            width: 42%;
+            margin-right: 5%;
+            padding-bottom: 10px;
+            .saladPlate {
+              width: 70%;
+              margin: auto;
+              margin-top: -59px;
+            }
+            .title {
+              font-family: $normalFont;
+              font-size: 16px;
+              text-align: center;
+              display: block;
+              margin-bottom: 5px;
+            }
+            .calTimeBox {
+              display: flex;
+              justify-content: center;
+  
+              align-items: center;
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              span {
+                font-size: 11px;
+                font-family: $boldFont;
+              }
+            }
+            .fatBox{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #F7F7F7;
+              border-radius: 12px;
+              width: 95%;
+              height: 40px;
+              margin: auto;
+              margin-top: 10px;
+              .grayTitle{
+                color: rgba(0, 0, 0, 0.4);
+                font-size: 12px;
+                display: block;
+              }
+              .value{
+                font-family: $boldFont;
+                font-size: 12px;
+                display: block;
+                text-align: center;
+              }
+              .pipe{
+                width: 1px;
+                height: 18px;
+                background-color: rgba(0, 0, 0, 0.14);
+                margin: 5px;
+              }
+            }
+          }
+        }
+  
         .letStartBtnMobile {
           border-radius: 16px;
           font-size: 20px;
           font-family: $boldFont;
-          background-color: #a347f1;
+          background-color: #FF9170;
           display: block;
           padding: 10px;
-          width: 80%;
+          width: 90%;
           color: white;
         }
+       
       }
   }
 }

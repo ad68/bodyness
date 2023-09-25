@@ -36,7 +36,18 @@
     "Body":"BODY",
     "Ness":"NESS",
     "ToolsNeed":"The tools you need",
-    "WakeUpEarly":"Wake up Early , Eat Fresh "
+    "WakeUpEarly":"Wake up Early , Eat Fresh ",
+    "EggSalad":"Egg Salad",
+    "GreenSalad":"Green Salad",
+    "AvocadoSalad":"Avocado Salad",
+    "FishSalad":"Fish Salad",
+    "Min":"Min",
+    "Cal":"Cal",
+    "Protein":"protein",
+    "Carb":"carb",
+    "Fats":"Fats",
+    "Gr":"gr"
+
   },
 
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo iusmod tempo"
