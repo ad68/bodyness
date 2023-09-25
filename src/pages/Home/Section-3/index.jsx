@@ -1,9 +1,9 @@
-import React, { useState, useContext, useEffect } from "react";
+import React from "react";
 import LineTab from "./components/LineTab";
 import MobileStep1 from "./components/mobileSteps/Step1";
 import Step1 from "./components/steps/Step1";
 import StepText from "./components/steps/StepText";
-import { useTranslation } from "react-i18next";
+
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const { t } = useTranslation();
+
   // ─── States ─────────────────────────────────────────────────────────────────────
 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────

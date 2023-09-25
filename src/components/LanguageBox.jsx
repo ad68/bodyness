@@ -37,6 +37,7 @@ export default function Index() {
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
   useEffect(() => {
     initLang();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 
