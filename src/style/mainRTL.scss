@@ -512,13 +512,15 @@ body {
         }
         .tab {
           background-color: #c9dbe5;
-          height: 4px;
+          height: 6px;
           border-radius: 9px;
           width: 48px;
           margin-left: 10px;
+          transition: all .2s linear;
+          cursor: pointer;
           &.active {
             width: 89px;
-            height: 6px;
+            /* height: 6px; */
             background-color: #a347f1;
           }
         }
@@ -526,8 +528,14 @@ body {
       .tabTitle {
         font-family: $boldFont;
         font-size: 17px;
+        .arm {
+          width: 46px;
+          @media screen and (max-width: 1366px) {
+            display: none;
+          }
+        }
         @media screen and (min-width: 1350px) {
-          font-size: 31px;
+          font-size: 29px;
         }
       }
       .title {
@@ -595,6 +603,33 @@ body {
           height: 500px;
           @media screen and (max-width: 1350px) {
             height: 300px;
+          }
+        }
+      }
+      .muscleBox {
+        height: 598px;
+        position: relative;
+        .watermark {
+          font-size: 233px;
+          font-weight: 600;
+          width: 100%;
+          position: absolute;
+          z-index: 0;
+          color: #E0F4FEBA;
+          text-align: center;
+          top: 0;
+          left: 0;
+          line-height: 222px
+
+        }
+        @media screen and (max-width: 1366px) {
+          height: auto;
+        }
+        .genderMuscle {
+          height: 500px;
+          z-index: 10;
+          @media screen and (max-width: 1350px) {
+            height: 400px;
           }
         }
       }
@@ -671,7 +706,6 @@ body {
         rgba(223, 196, 251, 1) 100%
       );
       height: 100vh;
-     
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -723,7 +757,6 @@ body {
           background-color: rgba(255, 154, 124, 0.23);
         }
         height: 100vh;
-       
         justify-content: center;
         align-items: center;
         flex-direction: column;

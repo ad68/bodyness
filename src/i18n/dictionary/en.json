@@ -46,7 +46,9 @@
     "Protein":"protein",
     "Carb":"carb",
     "Fats":"Fats",
-    "Gr":"gr"
+    "Gr":"gr",
+    "ChooseMuscle":"Choose Muscle in this body?",
+    "ChooseEquipment":"Choose your sports equipment?"
 
   },
 

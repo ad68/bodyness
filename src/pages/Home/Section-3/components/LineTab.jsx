@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -6,13 +6,13 @@ import React from 'react'
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({ activeTab, setActiveTab }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
- 
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
- 
+
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -21,13 +21,13 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-     <>
-     <section className='lineTab'>
-        <section className='tab active'></section>
-        <section className='tab'></section>
-        <section className='tab'></section>
-        <section className='tab'></section>
-     </section>
-     </>
-  )
+    <>
+      <section className="lineTab">
+        <section className={`tab ${activeTab === 1 ? "active" : ""}`} onClick={()=>setActiveTab(1)}></section>
+        <section className={`tab ${activeTab === 2 ? "active" : ""}`} onClick={()=>setActiveTab(2)}></section>
+        <section className={`tab ${activeTab === 3 ? "active" : ""}`} onClick={()=>setActiveTab(3)}></section>
+        <section className={`tab ${activeTab === 4 ? "active" : ""}`} onClick={()=>setActiveTab(4)}></section>
+      </section>
+    </>
+  );
 }

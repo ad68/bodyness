@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import LineTab from "./components/LineTab";
-import MobileStep1 from "./components/mobileSteps/Step1";
-import Step1 from "./components/steps/Step1";
-import Step2 from "./components/steps/Step2";
-import Step3 from "./components/steps/Step3";
-import StepText from "./components/steps/StepText";
+import React from "react";
+import Muscle from "../../../../../assets/images/home/selectedMuscle.png";
+
+import Beceps from "../../../../../assets/images/home/biceps.png"
+import { useTranslation } from "react-i18next";
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -14,9 +12,9 @@ import StepText from "./components/steps/StepText";
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+  const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [activeTab, setActiveTab] = useState(1);
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
@@ -27,26 +25,20 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="section3  px-1 py-10" id="sec3">
-      {/* Mobile */}
-      <section className="md:hidden">
-        <LineTab activeTab={activeTab} setActiveTab={setActiveTab} />
-        <MobileStep1 />
+    <>
+      <section className="flex justify-center items-center mt-5">
+        <span className="stepNumberBox">2</span>
+        <span className="ltr:ml-3 rtl:mr-3 tabTitle flex">
+          {t("Home.ChooseMuscle")}
+          <img src={Beceps} className="arm" alt=""/>
+       
+        </span>
       </section>
-      <section
-        className="hidden md:grid grid grid-cols-2 gap-10"
-        style={{ width: "80%" }}
-      >
-        <section>
-          <LineTab activeTab={activeTab} setActiveTab={setActiveTab} />
-          {activeTab === 1 ? <Step1 /> : ""}
-          {activeTab === 2 ? <Step2 /> : ""}
-          {activeTab === 3 ? <Step3 /> : ""}
-        </section>
-        <section>
-          <StepText />
-        </section>
+      <section className="flex justify-around mt-8 muscleBox">
+      <img src={Muscle} className="genderMuscle" alt=""/>
+      <section className="watermark">Body Ness</section>
       </section>
-    </section>
+    
+    </>
   );
 }
