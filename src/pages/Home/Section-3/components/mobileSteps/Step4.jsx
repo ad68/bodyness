@@ -1,13 +1,18 @@
-import React, { useState } from "react";
-import LineTab from "./components/LineTab";
-import MobileStep1 from "./components/mobileSteps/Step1";
-import MobileStep2 from "./components/mobileSteps/Step2";
-import MobileStep3 from "./components/mobileSteps/Step3";
-import MobileStep4 from "./components/mobileSteps/Step4";
-import Step1 from "./components/steps/Step1";
-import Step2 from "./components/steps/Step2";
-import Step3 from "./components/steps/Step3";
-import StepText from "./components/steps/StepText";
+import React from "react";
+
+import { useTranslation } from "react-i18next";
+import Damble from "../../../../../assets/images/icon/damble.png";
+import Damble2 from "../../../../../assets/images/icon/damble2.png";
+import yoga from "../../../../../assets/images/icon/yoga.png";
+import halter from "../../../../../assets/images/icon/halter.png";
+import ball from "../../../../../assets/images/icon/ball.png";
+import damble3 from "../../../../../assets/images/icon/damble3.png";
+import kettleBell from "../../../../../assets/images/icon/damble4.png";
+import kettleBall from "../../../../../assets/images/icon/damble5.png";
+import tredmill from "../../../../../assets/images/icon/tredmil.png";
+import bicycle from "../../../../../assets/images/icon/bycycle.png";
+import trx from "../../../../../assets/images/icon/trx.png";
+import rubber from "../../../../../assets/images/icon/rubber.png";
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -17,9 +22,9 @@ import StepText from "./components/steps/StepText";
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+  const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [activeTab, setActiveTab] = useState(1);
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
@@ -30,29 +35,23 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="section3  px-1 py-10" id="sec3">
-      {/* Mobile */}
-      <section className="md:hidden">
-        <LineTab activeTab={activeTab} setActiveTab={setActiveTab} />
-        {activeTab === 1 ? <MobileStep1 /> : ""}
-        {activeTab === 2 ? <MobileStep2 /> : ""}
-        {activeTab === 3 ? <MobileStep3 /> : ""}
-        {activeTab === 4 ? <MobileStep4 /> : ""}
+    <>
+      <section className="flex justify-center items-center mt-5">
+        <span className="stepNumberBox">4</span>
+        <span className="ltr:ml-3 rtl:mr-3 tabTitle">
+          {t("Home.SeeCoachVideos")}
+        </span>
       </section>
-      <section
-        className="hidden md:grid grid grid-cols-2 gap-10"
-        style={{ width: "80%" }}
-      >
-        <section>
-          <LineTab activeTab={activeTab} setActiveTab={setActiveTab} />
-          {activeTab === 1 ? <Step1 /> : ""}
-          {activeTab === 2 ? <Step2 /> : ""}
-          {activeTab === 3 ? <Step3 /> : ""}
-        </section>
-        <section>
-          <StepText />
-        </section>
+    
+      <span className="block text-center mt-5 title">
+        {t("Home.ImproveYourMuscles")}
+      </span>
+      <p className="px-2 mt-2 text-center">{t("Home.ExperienceBest")}</p>
+      <section className="px-10">
+        <button className="letStartBtnMobile mt-10">
+          {t("Home.LetsStart")}
+        </button>
       </section>
-    </section>
+    </>
   );
 }
