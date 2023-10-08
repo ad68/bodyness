@@ -1,5 +1,5 @@
 import React from "react";
-
+import lift from "../../../../../assets/images/home/man-lifting.png";
 import { useTranslation } from "react-i18next";
 import Yoga from "../../../../../assets/images/home/yoga-img1.png";
 import Banner from "../../../../../assets/images/home/banner-img.png";
@@ -29,37 +29,30 @@ export default function Index() {
     <>
       <section className="flex justify-center items-center mt-5">
         <span className="stepNumberBox">4</span>
-        <span className="ltr:ml-3 rtl:mr-3 tabTitle">
-          {t("Home.SeeCoachVideos")}
+        <span className="ltr:ml-3 rtl:mr-3 tabTitle flex">
+        {t("Home.SeeCoachVideos")}
+   
         </span>
       </section>
-      <section className="mobileCoachSportBox">
-        <section className="flex justify-between">
-          <section className="box">
-            <img src={Yoga} alt="" />
-          </section>
-          <section className="box">
-            <img src={Banner} alt="" className="mt-12" />
-          </section>
-        </section>
-        <section className="flex justify-center mt-3">
-          <section className="box">
-            <img src={Boxing}  alt="" />
-          </section>
-          <section className="box">
-            <img src={Lifting}  alt="" />
-          </section>
-        </section>
+      <section className="coachSportBox">
+      <section className="flex justify-between">
+      <section className="box">
+      <img src={Yoga} alt="" />
       </section>
-
-      <span className="block text-center mt-10 title">
-        {t("Home.ImproveYourMuscles")}
-      </span>
-      <p className="px-2 mt-2 text-center">{t("Home.ExperienceBest")}</p>
-      <section className="px-10">
-        <button className="letStartBtnMobile mt-5">
-          {t("Home.LetsStart")}
-        </button>
+        <section className="box">
+        <img src={Banner} alt="" className="mt-12" />
+        </section>
+       
+      </section>
+      <section className="flex justify-between mt-2">
+      <section className="box">
+      <img src={Boxing}  alt="" />
+      </section>
+        <section className="box">
+        <img src={Lifting}  alt="" />
+        </section>
+       
+      </section>
       </section>
     </>
   );

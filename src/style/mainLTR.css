@@ -842,7 +842,7 @@ body {
   width: 100%;
   position: absolute;
   z-index: 0;
-  color: #E0F4FEBA;
+  color: #e0f4feba;
   text-align: center;
   top: 0;
   left: 0;
@@ -872,6 +872,12 @@ body {
   max-width: 100%;
   margin: auto;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1366px) {
+  .bodyLtr .homeWrapper .section3 .equipmentBox {
+    height: auto;
+  }
 }
 
 .bodyLtr .homeWrapper .section3 .equipmentBox .box {
@@ -966,6 +972,73 @@ body {
   font-size: 17px;
 }
 
+.bodyLtr .homeWrapper .section3 .coachSportBox {
+  height: 598px;
+  width: 585px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1366px) {
+  .bodyLtr .homeWrapper .section3 .coachSportBox {
+    height: auto;
+  }
+}
+
+.bodyLtr .homeWrapper .section3 .coachSportBox .box {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  width: 48%;
+  margin-right: 2%;
+  height: 174px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.bodyLtr .homeWrapper .section3 .coachSportBox .box img {
+  width: 71%;
+}
+
+.bodyLtr .homeWrapper .section3 .mobileCoachSportBox {
+  height: 313px;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.bodyLtr .homeWrapper .section3 .mobileCoachSportBox .box {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  width: 48%;
+  margin-right: 2%;
+  height: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  justify-content: center;
+  align-items: end;
+}
+
 .bodyLtr .homeWrapper .section3 .stepInfo img {
   width: 140px;
 }
@@ -1026,7 +1099,7 @@ body {
 .bodyLtr .homeWrapper .section3 .letStartBtnMobile {
   border-radius: 16px;
   font-size: 20px;
-  font-family: openSansBold;
+  font-family: spartanBold;
   background-color: #a347f1;
   display: block;
   padding: 10px;

@@ -7,6 +7,7 @@ import MobileStep4 from "./components/mobileSteps/Step4";
 import Step1 from "./components/steps/Step1";
 import Step2 from "./components/steps/Step2";
 import Step3 from "./components/steps/Step3";
+import Step4 from "./components/steps/Step4";
 import StepText from "./components/steps/StepText";
 
 //
@@ -48,6 +49,7 @@ export default function Index() {
           {activeTab === 1 ? <Step1 /> : ""}
           {activeTab === 2 ? <Step2 /> : ""}
           {activeTab === 3 ? <Step3 /> : ""}
+          {activeTab === 4 ? <Step4 /> : ""}
         </section>
         <section>
           <StepText />

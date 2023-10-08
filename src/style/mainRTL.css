@@ -897,6 +897,12 @@ body {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 1366px) {
+  .bodyRtl .homeWrapper .section3 .equipmentBox {
+    height: auto;
+  }
+}
+
 .bodyRtl .homeWrapper .section3 .equipmentBox .box {
   background-color: white;
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
@@ -988,6 +994,141 @@ body {
   margin-top: 10px;
   font-weight: 400;
   font-size: 17px;
+}
+
+.bodyRtl .homeWrapper .section3 .coachSportBox {
+  height: 598px;
+  width: 585px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1366px) {
+  .bodyRtl .homeWrapper .section3 .coachSportBox {
+    height: auto;
+  }
+}
+
+.bodyRtl .homeWrapper .section3 .coachSportBox .box {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  width: 48%;
+  margin-right: 2%;
+  height: 174px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.bodyRtl .homeWrapper .section3 .coachSportBox .box img {
+  width: 71%;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox {
+  height: 313px;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .box {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  width: 48%;
+  margin-right: 2%;
+  height: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  justify-content: center;
+  align-items: end;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo img {
+  width: 140px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo h2 {
+  font-family: IRANSans;
+  font-size: 80px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo h3 {
+  font-family: IRANSans;
+  font-size: 50px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo p {
+  font-size: 24px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo .letStartBtn {
+  border-radius: 16px;
+  background-color: black;
+  min-height: 64px;
+  width: 90%;
+  color: white;
+  overflow: hidden;
+  width: 362px;
+  position: relative;
+  padding: 19px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo .letStartBtn span {
+  font-size: 24px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo .letStartBtn .circle {
+  width: 122px;
+  height: 122px;
+  background-color: #3d3d3df5;
+  position: absolute;
+  right: 0;
+  border-radius: 64px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  top: 2px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo .letStartBtn .circle img {
+  margin: auto;
+  display: block;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .stepInfo .letStartBtn:hover .circle {
+  background-color: #323232f5;
+}
+
+.bodyRtl .homeWrapper .section3 .mobileCoachSportBox .letStartBtnMobile {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: IRANSansBold;
+  background-color: #a347f1;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  color: white;
 }
 
 .bodyRtl .homeWrapper .section3 .stepInfo img {

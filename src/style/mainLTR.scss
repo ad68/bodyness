@@ -88,7 +88,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-  
 
     /* background-color: rgba(255, 255, 255, 0.5); */
     justify-content: space-between;
@@ -565,17 +564,14 @@ body {
         }
       }
       .mobileMuscleBox {
-       
         border-radius: 24px;
         width: 100%;
         height: 297px;
         text-align: center;
-        .muscle{
+        .muscle {
           height: 270px;
           display: block;
-         
         }
-      
       }
       .genderBox {
         background-color: white;
@@ -613,12 +609,11 @@ body {
           width: 100%;
           position: absolute;
           z-index: 0;
-          color: #E0F4FEBA;
+          color: #e0f4feba;
           text-align: center;
           top: 0;
           left: 0;
-          line-height: 222px
-
+          line-height: 222px;
         }
         @media screen and (max-width: 1366px) {
           height: auto;
@@ -637,8 +632,10 @@ body {
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
-        
-        .box{
+        @media screen and (max-width: 1366px) {
+          height: auto;
+        }
+        .box {
           background-color: white;
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
           border-radius: 14px;
@@ -658,7 +655,7 @@ body {
             width:44%
          } */
         }
-        .label{
+        .label {
           display: block;
           margin-top: 10px;
           font-weight: 400;
@@ -671,17 +668,17 @@ body {
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
-        .mainWrraper{
+        .mainWrraper {
           width: 300px;
           margin: auto;
           max-width: 100%;
           overflow: scroll;
-          .scrollWrapper{
+          .scrollWrapper {
             width: 800px;
             display: flex;
             justify-content: space-between;
           }
-          .box{
+          .box {
             background-color: white;
             box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
             border-radius: 14px;
@@ -691,15 +688,64 @@ body {
             justify-content: center;
             flex-direction: column;
             align-items: center;
-          
-          .label{
-            display: block;
-            margin-top: 10px;
-            font-weight: 400;
-            font-size: 17px;
+
+            .label {
+              display: block;
+              margin-top: 10px;
+              font-weight: 400;
+              font-size: 17px;
+            }
           }
         }
       }
+      .coachSportBox {
+        height: 598px;
+        width: 585px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        @media screen and (max-width: 1366px) {
+          height: auto;
+        }
+        .box {
+          background-color: white;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          border-radius: 14px;
+          width: 48%;
+          margin-right: 2%;
+          height: 174px;
+          display: flex;
+
+          justify-content: center;
+          align-items: end;
+          img{
+          width: 71%;
+          }
+        }
+      }
+      .mobileCoachSportBox {
+        height: 313px;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+      
+        .box {
+          background-color: white;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          border-radius: 14px;
+          width: 48%;
+          margin-right: 2%;
+          height: 154px;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          justify-content: center;
+      
+          align-items: end;
+        }
+       
        
       }
       .stepInfo {
@@ -756,7 +802,7 @@ body {
       .letStartBtnMobile {
         border-radius: 16px;
         font-size: 20px;
-        font-family: $openSansBold;
+        font-family: $spartanBold;
         background-color: #a347f1;
         display: block;
         padding: 10px;

@@ -653,7 +653,9 @@ body {
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
-        
+        @media screen and (max-width: 1366px) {
+          height: auto;
+        }
         .box{
           background-color: white;
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
@@ -718,6 +720,114 @@ body {
           }
         }
        
+      }
+      .coachSportBox {
+        height: 598px;
+        width: 585px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        @media screen and (max-width: 1366px) {
+          height: auto;
+        }
+        .box {
+          background-color: white;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          border-radius: 14px;
+          width: 48%;
+          margin-right: 2%;
+          height: 174px;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          img{
+          width: 71%;
+          }
+        }
+      }
+      .mobileCoachSportBox {
+        height: 313px;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+      
+        .box {
+          background-color: white;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+          border-radius: 14px;
+          width: 48%;
+          margin-right: 2%;
+          height: 154px;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          justify-content: center;
+      
+          align-items: end;
+        }
+        .stepInfo {
+          img {
+            width: 140px;
+          }
+          h2 {
+            font-family: $normalFont;
+            font-size: 80px;
+          }
+          h3 {
+            font-family: $normalFont;
+            font-size: 50px;
+          }
+          p {
+            font-size: 24px;
+          }
+          .letStartBtn {
+            border-radius: 16px;
+            background-color: black;
+            min-height: 64px;
+            width: 90%;
+            color: white;
+            overflow: hidden;
+            width: 362px;
+            position: relative;
+            padding: 19px;
+            span {
+              font-size: 24px;
+            }
+            .circle {
+              width: 122px;
+              height: 122px;
+              background-color: #3d3d3df5;
+              position: absolute;
+              right: 0;
+              border-radius: 64px;
+              transition: all 0.2s linear;
+              top: 2px;
+              img {
+                margin: auto;
+                display: block;
+                width: 80px;
+                margin-top: 20px;
+              }
+            }
+            &:hover {
+              .circle {
+                background-color: #323232f5;
+              }
+            }
+          }
+        }
+        .letStartBtnMobile {
+          border-radius: 16px;
+          font-size: 20px;
+          font-family: $boldFont;
+          background-color: #a347f1;
+          display: block;
+          padding: 10px;
+          width: 100%;
+          color: white;
+        }
       }
       .stepInfo {
         img {
