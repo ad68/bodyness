@@ -66,6 +66,16 @@
 
 
   },
-
+  "Basic": {
+    "WhatsGender": "what’s your gender?",
+    "WhatsAge": "what’s your Age?",
+    "Male":"Male",
+    "Female":"Female",
+    "ChooseBodyFat":"Choose your level of body fat ?",
+    "BodyFat":"Body fat",
+    "Next":"Next",
+    "WhatsHeight":"what’s your height ?",
+    "WhatsWeight":"what’s your Weight ?"
+  },
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo iusmod tempo"
 }

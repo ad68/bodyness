@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Section1 from "./Section-1";
-import Section2 from "./Section-2";
-import Section3 from "./Section-3";
-import Section4 from "./Section-4";
-import Section5 from "./Section-5";
-import Loading from "../../components/Loading";
+import React, { useState, useContext, useEffect } from "react";
+import Step2 from "../../../assets/images/basicInfo/step2.png";
+import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import { useTranslation } from "react-i18next";
+import Light from "../../../assets/images/basicInfo/light.png";
+
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -12,40 +11,37 @@ import Loading from "../../components/Loading";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({setStep}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+  const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [loading, setLoading] = useState(false);
+
+  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
+
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
-  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-  // This will run one time after the component mounts
-  useEffect(() => {
-    const showLoading = () => {
-      setLoading(true);
-    };
-    if (document.readyState === "complete") {
-      showLoading();
-    } else {
-      window.addEventListener("load", showLoading);
-      return () => window.removeEventListener("load", showLoading);
-    }
-  }, []);
-
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="homeWrapper">
-      {loading ? "" : <Loading />}
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-    </section>
+    <>
+      <section className="progressBox" >
+        <img src={Step2} alt="" />
+        <img src={ArrowLeft} alt="" className="arrow" onClick={()=>setStep(1)} />
+      </section>
+      <span className="block text-center title mt-7">
+        {t("Basic.WhatsAge")}
+      </span>
+      <section className="help flex justify-center items-center p-3 mt-7" onTouchStart={()=>alert("ok")}>
+        <img src={Light} alt="" />
+        <p>
+        This will help us make adjusment adjustment to your personal
+        </p>
+      </section>
+      <button className="letStartBtnMobile" onClick={()=>setStep(3)}>{t("Basic.Next")}</button>
+   
+    </>
   );
 }

@@ -6,25 +6,25 @@ import { useTranslation } from "react-i18next";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({ mode }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { i18n } = useTranslation();
   const lng = i18n.language;
- 
+
   // ─── States ─────────────────────────────────────────────────────────────────────
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  
+
   const changeLanguage = (lang) => {
     localStorage.lang = lang;
     if (lang === "FA") {
       i18n.changeLanguage("FA");
       document.body.dir = "rtl";
-      document.body.className="bodyRtl"
+      document.body.className = "bodyRtl";
     }
     if (lang === "EN") {
       i18n.changeLanguage("EN");
       document.body.dir = "ltr";
-      document.body.className="bodyLtr"
+      document.body.className = "bodyLtr";
     }
   };
   const initLang = () => {
@@ -37,19 +37,43 @@ export default function Index() {
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
   useEffect(() => {
     initLang();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
 
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return (
+  return mode === "other" ? (
+    <section className="otherLangBox">
+      <button
+        onClick={() => changeLanguage("EN")}
+        className={lng === "EN" ? "active" : ""}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => changeLanguage("FA")}
+        className={lng === "FA" ? "active" : ""}
+      >
+        FA
+      </button>
+    </section>
+  ) : (
     <section className="langBox">
-      <button onClick={() => changeLanguage("EN")} className={lng==="EN" ? "active" : ""}>EN</button>
-      <button onClick={() => changeLanguage("FA")} className={lng==="FA" ? "active" : ""}>FA</button>
+      <button
+        onClick={() => changeLanguage("EN")}
+        className={lng === "EN" ? "active" : ""}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => changeLanguage("FA")}
+        className={lng === "FA" ? "active" : ""}
+      >
+        FA
+      </button>
     </section>
   );
 }

@@ -43,7 +43,12 @@ body {
       }
     }
   }
- 
+  .otherLangBox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
   .mainMenu {
     width: 100%;
     position: fixed;
@@ -946,6 +951,9 @@ body {
         padding: 10px;
         width: 80%;
         color: white;
+        a{
+          display: block;
+        }
       }
     }
     .section5 {
@@ -1039,5 +1047,154 @@ body {
         }
        
       }
+  }
+  .basicInfoWrapper{
+    position: relative;
+    height: 100vh;
+    .progressBox{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     position: relative;
+     .arrow{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: 18px;
+      top: -8px;
+    }
+    }
+    .bodyFatSelectorBox {
+      border-radius: 6px;
+      background-color: rgba(244, 244, 244, 1);
+      position: relative;
+      width: 100%;
+      height: 17px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      *{
+        transition: all .1s linear;
+      }
+      .labelMin{
+        position:absolute;
+        right: 0;
+        font-size: 14px;
+        font-family: $lightFont;
+        top:27px
+      }
+      .labelMax{
+        position:absolute;
+        left: 0;
+        font-size: 14px;
+        font-family: $lightFont;
+        top:27px
+      }
+      .item {
+        width: 6px;
+        height: 6px;
+        background-color: rgba(181, 181, 181, 1);
+        display: block;
+        border-radius: 50px;
+        position: relative;
+        .tooltip{
+          font-family: $boldFont;
+          font-size: 16px;
+          position: absolute;
+          top: -25px;
+          display: none;
+          width: 70px;
+          margin-right: 23px;
+        }
+        &.active {
+          background-color: white;
+          border: 3px solid rgba(146, 108, 255, 1);
+          height: 25px;
+          width: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+          .tooltip{
+           display: block;
+          }
+          .core {
+            display: block;
+            background-color: rgba(146, 108, 255, 1);
+            width: 11px;
+            height: 11px;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+    .bodyImage{
+      display: block;
+      margin: auto;
+      width: 37%;
+      @media screen and (min-height:741px) {
+        width: 45%;
+      }
+    }
+    .title{
+      font-weight: 700;
+      font-size: 24px;
+      font-family: $boldFont
+    }
+    .help{
+      border:1px solid #efefef;
+      border-radius: 16px;
+      min-height: 100px;
+      font-family: $lightFont;
+      color:rgba(0, 0, 0, 0.4)
+      img{
+        width:30px !important;
+        height: 30px !important;
+        margin-right: auto;
+      }
+       p{
+        width: 85%;
+       }
+
+    }
+    .genderBox{
+      position: absolute;
+      width: 90%;
+      bottom: 30px;
+      .item{
+        width: 46%;
+        height: 251px;
+        border-radius: 12px;
+        height: 152px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+        .title{
+          font-family: $boldFont;
+          font-size: 16px;
+          margin-top: 20px;
+        }
+        .genderImage{
+          margin-top: -100px;
+        }
+      }
+     }
+     .letStartBtnMobile {
+      border-radius: 16px;
+      font-size: 20px;
+      font-family: $boldFont;
+      background-color: #a347f1;
+      display: block;
+      padding: 10px;
+      width: 90%;
+      margin: auto;
+      color: white;
+      margin-top: 60px;
+      @media screen and (min-height:741px) {
+        margin-top: 130px;;
+      }
+    }
   }
 }

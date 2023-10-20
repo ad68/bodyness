@@ -7,6 +7,7 @@ import PlateFa from "../../../assets/images/home/section1PlateFr.png";
 import Watermark from "./Watermark";
 import { useTranslation } from "react-i18next";
 import Menu from "../../../components/Menu";
+import { Link } from "react-router-dom";
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -81,9 +82,14 @@ export default function Index() {
           <img className="plate hidden rtl:block" src={PlateFa} alt="" />
         </section>
         {/* mobile */}
+       
         <button className="letsStartBtnMobile mt-5 md:hidden">
+        <Link to="/BasicInfo">
           {t("Home.LetsStart")}
+          </Link>
         </button>
+        
+       
         {/* ---------------------------- */}
       </section>
     </section>

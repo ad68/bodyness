@@ -51,6 +51,13 @@ body {
   padding-top: 8px;
 }
 
+.bodyRtl .otherLangBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .bodyRtl .mainMenu {
   width: 100%;
   position: fixed;
@@ -1279,6 +1286,10 @@ body {
   color: white;
 }
 
+.bodyRtl .homeWrapper .section4 .letStartBtnMobile a {
+  display: block;
+}
+
 .bodyRtl .homeWrapper .section5 {
   height: 100vh;
   -webkit-box-pack: center;
@@ -1403,5 +1414,200 @@ body {
   padding: 10px;
   width: 90%;
   color: white;
+}
+
+.bodyRtl .basicInfoWrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.bodyRtl .basicInfoWrapper .progressBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.bodyRtl .basicInfoWrapper .progressBox .arrow {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 18px;
+  top: -8px;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox {
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  position: relative;
+  width: 100%;
+  height: 17px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox * {
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox .labelMin {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  font-family: IRANSansLight;
+  top: 27px;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox .labelMax {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  font-family: IRANSansLight;
+  top: 27px;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox .item {
+  width: 6px;
+  height: 6px;
+  background-color: #b5b5b5;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox .item .tooltip {
+  font-family: IRANSansBold;
+  font-size: 16px;
+  position: absolute;
+  top: -25px;
+  display: none;
+  width: 70px;
+  margin-right: 23px;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox .item.active {
+  background-color: white;
+  border: 3px solid #926cff;
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox .item.active .tooltip {
+  display: block;
+}
+
+.bodyRtl .basicInfoWrapper .bodyFatSelectorBox .item.active .core {
+  display: block;
+  background-color: #926cff;
+  width: 11px;
+  height: 11px;
+  border-radius: 30px;
+}
+
+.bodyRtl .basicInfoWrapper .bodyImage {
+  display: block;
+  margin: auto;
+  width: 37%;
+}
+
+@media screen and (min-height: 741px) {
+  .bodyRtl .basicInfoWrapper .bodyImage {
+    width: 45%;
+  }
+}
+
+.bodyRtl .basicInfoWrapper .title {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: IRANSansBold;
+}
+
+.bodyRtl .basicInfoWrapper .help {
+  border: 1px solid #efefef;
+  border-radius: 16px;
+  min-height: 100px;
+  font-family: IRANSansLight;
+}
+
+.bodyRtl .basicInfoWrapper .help color:rgba(0, 0, 0, 0.4)
+img {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: auto;
+}
+
+.bodyRtl .basicInfoWrapper .help p {
+  width: 85%;
+}
+
+.bodyRtl .basicInfoWrapper .genderBox {
+  position: absolute;
+  width: 90%;
+  bottom: 30px;
+}
+
+.bodyRtl .basicInfoWrapper .genderBox .item {
+  width: 46%;
+  height: 251px;
+  border-radius: 12px;
+  height: 152px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.bodyRtl .basicInfoWrapper .genderBox .item .title {
+  font-family: IRANSansBold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.bodyRtl .basicInfoWrapper .genderBox .item .genderImage {
+  margin-top: -100px;
+}
+
+.bodyRtl .basicInfoWrapper .letStartBtnMobile {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: IRANSansBold;
+  background-color: #a347f1;
+  display: block;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  color: white;
+  margin-top: 60px;
+}
+
+@media screen and (min-height: 741px) {
+  .bodyRtl .basicInfoWrapper .letStartBtnMobile {
+    margin-top: 130px;
+  }
 }
 /*# sourceMappingURL=mainRTL.css.map */

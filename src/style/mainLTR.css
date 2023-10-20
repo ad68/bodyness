@@ -45,6 +45,13 @@ body {
   }
 }
 
+.bodyLtr .otherLangBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .bodyLtr .mainMenu {
   width: 100%;
   position: fixed;
@@ -365,6 +372,10 @@ body {
   padding: 10px;
   width: 100%;
   color: white;
+}
+
+.bodyLtr .homeWrapper .section1 .body .letsStartBtnMobile a {
+  display: block;
 }
 
 .bodyLtr .homeWrapper .section1 .mobilePlate {
@@ -1305,5 +1316,199 @@ body {
   padding: 10px;
   width: 90%;
   color: white;
+}
+
+.bodyLtr .basicInfoWrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.bodyLtr .basicInfoWrapper .progressBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.bodyLtr .basicInfoWrapper .progressBox .arrow {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 18px;
+  top: -8px;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox {
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  width: 100%;
+  position: relative;
+  height: 17px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .labelMin {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  font-family: spartanLight;
+  top: 27px;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .labelMax {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  font-family: spartanLight;
+  top: 27px;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox * {
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .item {
+  width: 6px;
+  height: 6px;
+  background-color: #b5b5b5;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .item .tooltip {
+  font-family: spartanBold;
+  font-size: 16px;
+  position: absolute;
+  top: -25px;
+  display: none;
+  width: 70px;
+  margin-left: 23px;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .item.active {
+  background-color: white;
+  border: 3px solid #926cff;
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .item.active .tooltip {
+  display: block;
+}
+
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .item.active .core {
+  display: block;
+  background-color: #926cff;
+  width: 11px;
+  height: 11px;
+  border-radius: 30px;
+}
+
+.bodyLtr .basicInfoWrapper .bodyImage {
+  display: block;
+  margin: auto;
+  width: 37%;
+}
+
+@media screen and (min-height: 741px) {
+  .bodyLtr .basicInfoWrapper .bodyImage {
+    width: 45%;
+  }
+}
+
+.bodyLtr .basicInfoWrapper .title {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: spartanBold;
+}
+
+.bodyLtr .basicInfoWrapper .help {
+  border: 1px solid #efefef;
+  border-radius: 16px;
+  min-height: 100px;
+  font-family: spartanLight;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.bodyLtr .basicInfoWrapper .help img {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: auto;
+}
+
+.bodyLtr .basicInfoWrapper .help p {
+  width: 85%;
+}
+
+.bodyLtr .basicInfoWrapper .genderBox {
+  position: absolute;
+  width: 90%;
+  bottom: 30px;
+}
+
+.bodyLtr .basicInfoWrapper .genderBox .item {
+  width: 46%;
+  height: 152px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.bodyLtr .basicInfoWrapper .genderBox .item .title {
+  font-family: spartanBold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.bodyLtr .basicInfoWrapper .genderBox .item .genderImage {
+  margin-top: -100px;
+}
+
+.bodyLtr .basicInfoWrapper .letStartBtnMobile {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: openSansBold;
+  background-color: #a347f1;
+  display: block;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  color: white;
+  margin-top: 60px;
+}
+
+@media screen and (min-height: 741px) {
+  .bodyLtr .basicInfoWrapper .letStartBtnMobile {
+    margin-top: 130px;
+  }
 }
 /*# sourceMappingURL=mainLTR.css.map */
