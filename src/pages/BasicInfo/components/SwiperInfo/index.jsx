@@ -1,14 +1,5 @@
-import React, { useState } from "react";
-import Step5 from "../../../assets/images/basicInfo/step5.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import React, { useState, useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import BodyFatSelector from "../components/BodyFatSelector";
-import Body1 from "../../../assets/images/basicInfo/body(1).png";
-import Body2 from "../../../assets/images/basicInfo/body(2).png";
-import Body3 from "../../../assets/images/basicInfo/body(2).png";
-import Body4 from "../../../assets/images/basicInfo/body(3).png";
-import Body5 from "../../../assets/images/basicInfo/body(4).png";
-import Body6 from "../../../assets/images/basicInfo/body(5).png";
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -16,11 +7,11 @@ import Body6 from "../../../assets/images/basicInfo/body(5).png";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({setStep}) {
+export default function Index({ activeSlide }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [bodyFat, setBodyFat] = useState(1);
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
@@ -31,35 +22,34 @@ export default function Index({setStep}) {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <>
-      <section className="progressBox">
-      <img src={ArrowLeft} alt="" className="arrow" onClick={()=>setStep(4)} />
-        <img src={Step5} alt="" />
-      </section>
-      <span className="block text-center title mt-7">
-        {t("Basic.ChooseBodyFat")}
+    <section className="swiperInfo mt-3">
+      <span className="title">
+        {activeSlide === 1
+          ? t("Basic.NotActive")
+          : activeSlide === 2
+          ? t("Basic.LightlyActive")
+          : activeSlide === 3
+          ? t("Basic.ModeratelyActive")
+          : activeSlide === 4
+          ? t("Basic.VeryActive")
+          : activeSlide === 5
+          ? t("Basic.VeryActive2")
+          : ""}
       </span>
-      <img
-        src={
-          bodyFat === 1
-            ? Body1
-            : bodyFat === 2
-            ? Body2
-            : bodyFat === 3
-            ? Body3
-            : bodyFat === 4
-            ? Body4
-            : bodyFat === 5
-            ? Body5
-            : bodyFat === 6
-            ? Body6
-            : ""
-        }
-        className="bodyImage"
-        alt=""
-      />
-      <BodyFatSelector setBodyFat={setBodyFat} />
-      <button onClick={()=>setStep(6)} className="letStartBtnMobile">{t("Basic.Next")}</button>
-    </>
+      <span className="text">
+        {" "}
+        {activeSlide === 1
+          ? t("Basic.NotActiveDtl")
+          : activeSlide === 2
+          ? t("Basic.LightlyActiveDtl")
+          : activeSlide === 3
+          ? t("Basic.ModeratelyActiveDtl")
+          : activeSlide === 4
+          ? t("Basic.VeryActiveDtl")
+          : activeSlide === 5
+          ? t("Basic.VeryActive2Dtl")
+          : ""}
+      </span>
+    </section>
   );
 }

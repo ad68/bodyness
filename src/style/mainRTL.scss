@@ -1196,5 +1196,126 @@ body {
         margin-top: 130px;;
       }
     }
+    .goalBox{
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      min-height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img{
+        width: 140px;
+      }
+      .text{
+        color: rgba(0, 0, 0, 0.7);
+        font-family: $boldFont;
+        font-size: 18px;
+
+      }
+    }
+    .swiper-slide {
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      .myRing {
+        border: 14px solid rgba(163, 71, 241, 0.09);
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .swiperInfo {
+      .title {
+        font-family: $boldFont;
+        font-size: 20px;
+        text-align: center;
+        display: block;
+      }
+      .text {
+        font-family: $normalFont;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        min-height: 54px;
+      }
+      
+    }
+    .swiperStatus {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      &.active1{
+        .bar:nth-child(1){
+          background-color: rgba(0, 213, 183, 1);
+        }
+      }
+      &.active2{
+        .bar:nth-child(1){
+          background-color: rgba(253, 131, 188, 1);
+        }
+        .bar:nth-child(2){
+          background-color: rgba(253, 131, 188, 1);
+        }
+      }
+      &.active3{
+        .bar:nth-child(1){
+          background-color: rgba(255, 154, 124, 1);
+        }
+        .bar:nth-child(2){
+          background-color: rgba(255, 154, 124, 1);
+        }
+        .bar:nth-child(3){
+          background-color: rgba(255, 154, 124, 1);
+        }
+      }
+      &.active4{
+        .bar:nth-child(1){
+          background-color: rgba(108, 149, 255, 1);
+        }
+        .bar:nth-child(2){
+          background-color: rgba(108, 149, 255, 1);
+        }
+        .bar:nth-child(3){
+          background-color: rgba(108, 149, 255, 1);
+        }
+        .bar:nth-child(4){
+          background-color: rgba(108, 149, 255, 1);
+        }
+      }
+      &.active5{
+        .bar{
+          background-color: rgba(146, 108, 255, 1);
+        }
+       
+      }
+      .bar {
+        display: block;
+        width: 38px;
+        border-radius: 33px;
+        background-color: rgba(244, 244, 244, 1);
+        
+       
+      }
+      .bar1 {
+        height: 60px;
+      }
+      .bar2 {
+        height: 84px;
+      }
+      .bar3 {
+        height: 118px;
+      }
+      .bar4 {
+        height: 147px;
+      }
+      .bar5 {
+        height: 173px;
+      }
+     
+    }
   }
 }

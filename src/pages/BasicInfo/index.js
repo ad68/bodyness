@@ -4,6 +4,8 @@ import Step2 from "./steps/Step2";
 import Step3 from "./steps/Step3";
 import Step4 from "./steps/Step4";
 import Step5 from "./steps/Step5";
+import Step6 from "./steps/Step6";
+import Step7 from "./steps/Step7";
 import LanguageBox from "../../components/LanguageBox";
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -39,6 +41,10 @@ export default function Index() {
           <Step4 setStep={setActiveStep} />
         ) : activeStep === 5 ? (
           <Step5 setStep={setActiveStep} />
+        ) : activeStep === 6 ? (
+          <Step6 setStep={setActiveStep} />
+        ) : activeStep === 7 ? (
+          <Step7 setStep={setActiveStep} />
         ) : (
           ""
         )}

@@ -75,7 +75,25 @@
     "BodyFat":"Body fat",
     "Next":"Next",
     "WhatsHeight":"what’s your height ?",
-    "WhatsWeight":"what’s your Weight ?"
+    "WhatsWeight":"what’s your Weight ?",
+    "WhatsGoal":"what’s your Goal ?",
+    "LoseWeight":"Lose weight",
+    "GainWeight":"Gain weight",
+    "BuildMuscle":"Build muscle",
+    "Maintain":"Maintain",
+    "YourRegular":"your regular physical activity level ?",
+    "NotActive":"Not Active",
+    "NotActiveDtl":"I spend most of my day  day sitting",
+    "LightlyActive":"Lightly Active",
+    "LightlyActiveDtl":"I work on my feet and move around throughout the day",
+    "ModeratelyActive":"Moderately Active",
+    "ModeratelyActiveDtl":"I have made exercise a lasting habit",
+    "VeryActive":"Very Active",
+    "VeryActiveDtl":"I Always seat on my chair ",
+    "VeryActive2":"Very Active",
+    "VeryActive2Dtl":"I Always seat on my chair "
+
+
   },
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo iusmod tempo"
 }

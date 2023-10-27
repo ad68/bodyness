@@ -1382,8 +1382,8 @@ body {
 }
 
 .bodyLtr .basicInfoWrapper .bodyFatSelectorBox * {
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .bodyLtr .basicInfoWrapper .bodyFatSelectorBox .item {
@@ -1510,5 +1510,153 @@ body {
   .bodyLtr .basicInfoWrapper .letStartBtnMobile {
     margin-top: 130px;
   }
+}
+
+.bodyLtr .basicInfoWrapper .goalBox {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyLtr .basicInfoWrapper .goalBox img {
+  width: 140px;
+}
+
+.bodyLtr .basicInfoWrapper .goalBox .text {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: spartanBold;
+  font-size: 18px;
+}
+
+.bodyLtr .basicInfoWrapper .swiper-slide {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.bodyLtr .basicInfoWrapper .swiper-slide .myRing {
+  border: 14px solid rgba(163, 71, 241, 0.09);
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyLtr .basicInfoWrapper .swiperInfo .title {
+  font-family: spartanBold;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+.bodyLtr .basicInfoWrapper .swiperInfo .text {
+  font-family: spartanMedium;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  min-height: 54px;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active1 .bar:nth-child(1) {
+  background-color: #00d5b7;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active2 .bar:nth-child(1) {
+  background-color: #fd83bc;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active2 .bar:nth-child(2) {
+  background-color: #fd83bc;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active3 .bar:nth-child(1) {
+  background-color: #ff9a7c;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active3 .bar:nth-child(2) {
+  background-color: #ff9a7c;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active3 .bar:nth-child(3) {
+  background-color: #ff9a7c;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active4 .bar:nth-child(1) {
+  background-color: #6c95ff;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active4 .bar:nth-child(2) {
+  background-color: #6c95ff;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active4 .bar:nth-child(3) {
+  background-color: #6c95ff;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active4 .bar:nth-child(4) {
+  background-color: #6c95ff;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus.active5 .bar {
+  background-color: #926cff;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus .bar {
+  display: block;
+  width: 38px;
+  border-radius: 33px;
+  background-color: #f4f4f4;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus .bar1 {
+  height: 60px;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus .bar2 {
+  height: 84px;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus .bar3 {
+  height: 118px;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus .bar4 {
+  height: 147px;
+}
+
+.bodyLtr .basicInfoWrapper .swiperStatus .bar5 {
+  height: 173px;
 }
 /*# sourceMappingURL=mainLTR.css.map */

@@ -285,7 +285,7 @@ body {
           padding: 10px;
           width: 100%;
           color: white;
-          a{
+          a {
             display: block;
           }
         }
@@ -971,7 +971,7 @@ body {
       align-items: center;
       margin-top: 20px;
       position: relative;
-      .arrow{
+      .arrow {
         width: 25px;
         height: 25px;
         position: absolute;
@@ -984,19 +984,19 @@ body {
       background-color: rgba(244, 244, 244, 1);
       width: 100%;
       position: relative;
-      .labelMin{
-        position:absolute;
+      .labelMin {
+        position: absolute;
         left: 0;
         font-size: 14px;
         font-family: $spartanLight;
-        top:27px
+        top: 27px;
       }
-      .labelMax{
-        position:absolute;
+      .labelMax {
+        position: absolute;
         right: 0;
         font-size: 14px;
         font-family: $spartanLight;
-        top:27px
+        top: 27px;
       }
       height: 17px;
       margin-top: 60px;
@@ -1005,8 +1005,8 @@ body {
       align-items: center;
       padding-left: 10px;
       padding-right: 10px;
-      *{
-        transition: all .1s linear;
+      * {
+        transition: all 0.1s linear;
       }
       .item {
         width: 6px;
@@ -1015,7 +1015,7 @@ body {
         display: block;
         border-radius: 50px;
         position: relative;
-        .tooltip{
+        .tooltip {
           font-family: $spartanBold;
           font-size: 16px;
           position: absolute;
@@ -1032,9 +1032,9 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-         
-          .tooltip{
-           display: block;
+
+          .tooltip {
+            display: block;
           }
           .core {
             display: block;
@@ -1046,11 +1046,11 @@ body {
         }
       }
     }
-    .bodyImage{
+    .bodyImage {
       display: block;
       margin: auto;
       width: 37%;
-      @media screen and (min-height:741px) {
+      @media screen and (min-height: 741px) {
         width: 45%;
       }
     }
@@ -1104,9 +1104,132 @@ body {
       margin: auto;
       color: white;
       margin-top: 60px;
-      @media screen and (min-height:741px) {
-        margin-top: 130px;;
+      @media screen and (min-height: 741px) {
+        margin-top: 130px;
       }
+    }
+    .goalBox {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      min-height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 140px;
+      }
+      .text {
+        color: rgba(0, 0, 0, 0.7);
+        font-family: $spartanBold;
+        font-size: 18px;
+      }
+    }
+    .swiper-slide {
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      .myRing {
+        border: 14px solid rgba(163, 71, 241, 0.09);
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .swiperInfo {
+      .title {
+        font-family: $spartanBold;
+        font-size: 20px;
+        text-align: center;
+        display: block;
+      }
+      .text {
+        font-family: $spartanMedium;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        min-height: 54px;
+      }
+      
+    }
+    .swiperStatus {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      &.active1{
+        .bar:nth-child(1){
+          background-color: rgba(0, 213, 183, 1);
+        }
+      }
+      &.active2{
+        .bar:nth-child(1){
+          background-color: rgba(253, 131, 188, 1);
+        }
+        .bar:nth-child(2){
+          background-color: rgba(253, 131, 188, 1);
+        }
+      }
+      &.active3{
+        .bar:nth-child(1){
+          background-color: rgba(255, 154, 124, 1);
+        }
+        .bar:nth-child(2){
+          background-color: rgba(255, 154, 124, 1);
+        }
+        .bar:nth-child(3){
+          background-color: rgba(255, 154, 124, 1);
+        }
+      }
+     
+      &.active4{
+        .bar:nth-child(1){
+          background-color: rgba(108, 149, 255, 1);
+        }
+        .bar:nth-child(2){
+          background-color: rgba(108, 149, 255, 1);
+        }
+        .bar:nth-child(3){
+          background-color: rgba(108, 149, 255, 1);
+        }
+        .bar:nth-child(4){
+          background-color: rgba(108, 149, 255, 1);
+        }
+        
+       
+      }
+      &.active5{
+        .bar{
+          background-color: rgba(146, 108, 255, 1);
+        }
+       
+      }
+      .bar {
+        display: block;
+        width: 38px;
+        border-radius: 33px;
+        background-color: rgba(244, 244, 244, 1);
+        
+       
+      }
+      .bar1 {
+        height: 60px;
+      }
+      .bar2 {
+        height: 84px;
+      }
+      .bar3 {
+        height: 118px;
+      }
+      .bar4 {
+        height: 147px;
+      }
+      .bar5 {
+        height: 173px;
+      }
+     
     }
   }
 }
