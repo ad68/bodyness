@@ -33,7 +33,7 @@ export default function Index() {
   return (
     <>
       <LanguageBox mode="other" />
-      <section className="basicInfoWrapper p-5">
+      <section className="basicInfoWrapper p-5 md:hidden">
         {activeStep === 1 ? (
           <MobileStep1 setStep={setActiveStep} />
         ) : activeStep === 2 ? (
