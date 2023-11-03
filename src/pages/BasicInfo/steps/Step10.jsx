@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Step7 from "../../../assets/images/basicInfo/step7.png";
-
+import Step10 from "../../../assets/images/basicInfo/step10.png";
 import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
 import { useTranslation } from "react-i18next";
-import ActivitySwiper from "../components/ActivitySwiper";
-import SwiperInfo from "../components/SwiperInfo";
-import SwiperStatus from '../components/SwiperStatus'
-import "swiper/css";
+import Yes from "../../../assets/images/basicInfo/yes.png";
+import No from "../../../assets/images/basicInfo/no.png";
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -36,16 +33,22 @@ export default function Index({ setStep }) {
           src={ArrowLeft}
           alt=""
           className="arrow"
-          onClick={() => setStep(6)}
+          onClick={() => setStep(9)}
         />
-        <img src={Step7} alt="" />
+        <img src={Step10} alt="" />
       </section>
       <span className="block text-center title mt-7">
-        {t("Basic.YourRegular")}
+        {t("Basic.ExerciseDiet")}
       </span>
-      <ActivitySwiper setActiveSlide={setActiveSlide} setStep={setStep} />
-      <SwiperInfo activeSlide={activeSlide} />
-      <SwiperStatus activeSlide={activeSlide}/>
+      <section className="yesNoBox">
+        <button>
+          <img src={Yes} alt="" />
+          {t("Basic.Yes")}
+        </button>
+        <button>
+          <img src={No} alt="" />{t("Basic.No")}
+        </button>
+      </section>
     </>
   );
 }

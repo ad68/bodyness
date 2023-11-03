@@ -89,9 +89,20 @@
     "ModeratelyActive":"Moderately Active",
     "ModeratelyActiveDtl":"I have made exercise a lasting habit",
     "VeryActive":"Very Active",
-    "VeryActiveDtl":"I Always seat on my chair ",
+    "VeryActiveDtl":"I Always seat on my chair",
     "VeryActive2":"Very Active",
-    "VeryActive2Dtl":"I Always seat on my chair "
+    "VeryActive2Dtl":"I Always seat on my chair",
+    "HowDiet":"How many times have you been on diet ?",
+    "Time":"Time",
+    "Times":"Times",
+    "More3Times":"more than 3 times",
+    "RegimDate":"What was the date of last regime?",
+    "SeveralMonths":"Several months ago",
+    "2Years":"1-2  years ago",
+    "More3Years":"more than 3 years",
+    "ExerciseDiet":"Did you exercise along with the diet?",
+    "Yes":"Yes",
+    "No":"No"
 
 
   },

@@ -1317,5 +1317,37 @@ body {
       }
      
     }
+    .replyBox{
+      background-color: rgba(244, 244, 244, 1);
+      border-radius: 16px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-family: $boldFont;
+      margin-top: 20px;
+    }
+    .yesNoBox {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40%;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        font-size: 18px;
+        height: 70px;
+        width: 153px;
+        font-family: $boldFont;
+        background-color: rgba(244, 244, 244, 1);
+        outline: none;
+        img{
+          margin-left: 20px;
+        }
+      }
+    }
   }
 }

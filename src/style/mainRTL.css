@@ -1758,4 +1758,57 @@ img {
 .bodyRtl .basicInfoWrapper .swiperStatus .bar5 {
   height: 173px;
 }
+
+.bodyRtl .basicInfoWrapper .replyBox {
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-family: IRANSansBold;
+  margin-top: 20px;
+}
+
+.bodyRtl .basicInfoWrapper .yesNoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40%;
+}
+
+.bodyRtl .basicInfoWrapper .yesNoBox button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+  font-size: 18px;
+  height: 70px;
+  width: 153px;
+  font-family: IRANSansBold;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+.bodyRtl .basicInfoWrapper .yesNoBox button img {
+  margin-left: 20px;
+}
 /*# sourceMappingURL=mainRTL.css.map */

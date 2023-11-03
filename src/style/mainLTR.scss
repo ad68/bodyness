@@ -1153,66 +1153,60 @@ body {
         display: block;
         min-height: 54px;
       }
-      
     }
     .swiperStatus {
       display: flex;
       justify-content: space-around;
       align-items: baseline;
-      &.active1{
-        .bar:nth-child(1){
+      &.active1 {
+        .bar:nth-child(1) {
           background-color: rgba(0, 213, 183, 1);
         }
       }
-      &.active2{
-        .bar:nth-child(1){
+      &.active2 {
+        .bar:nth-child(1) {
           background-color: rgba(253, 131, 188, 1);
         }
-        .bar:nth-child(2){
+        .bar:nth-child(2) {
           background-color: rgba(253, 131, 188, 1);
         }
       }
-      &.active3{
-        .bar:nth-child(1){
+      &.active3 {
+        .bar:nth-child(1) {
           background-color: rgba(255, 154, 124, 1);
         }
-        .bar:nth-child(2){
+        .bar:nth-child(2) {
           background-color: rgba(255, 154, 124, 1);
         }
-        .bar:nth-child(3){
+        .bar:nth-child(3) {
           background-color: rgba(255, 154, 124, 1);
         }
       }
-     
-      &.active4{
-        .bar:nth-child(1){
+
+      &.active4 {
+        .bar:nth-child(1) {
           background-color: rgba(108, 149, 255, 1);
         }
-        .bar:nth-child(2){
+        .bar:nth-child(2) {
           background-color: rgba(108, 149, 255, 1);
         }
-        .bar:nth-child(3){
+        .bar:nth-child(3) {
           background-color: rgba(108, 149, 255, 1);
         }
-        .bar:nth-child(4){
+        .bar:nth-child(4) {
           background-color: rgba(108, 149, 255, 1);
         }
-        
-       
       }
-      &.active5{
-        .bar{
+      &.active5 {
+        .bar {
           background-color: rgba(146, 108, 255, 1);
         }
-       
       }
       .bar {
         display: block;
         width: 38px;
         border-radius: 33px;
         background-color: rgba(244, 244, 244, 1);
-        
-       
       }
       .bar1 {
         height: 60px;
@@ -1229,7 +1223,38 @@ body {
       .bar5 {
         height: 173px;
       }
-     
+    }
+    .replyBox {
+      background-color: rgba(244, 244, 244, 1);
+      border-radius: 16px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-family: $spartanBold;
+      margin-top: 20px;
+    }
+    .yesNoBox {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40%;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        font-size: 18px;
+        height: 70px;
+        width: 153px;
+        font-family: $spartanBold;
+        background-color: rgba(244, 244, 244, 1);
+        outline: none;
+        img{
+          margin-right: 20px;
+        }
+      }
     }
   }
 }

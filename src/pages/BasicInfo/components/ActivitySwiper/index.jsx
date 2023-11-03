@@ -15,7 +15,7 @@ import VeryActive2 from "../../../../assets/images/basicInfo/veryActive11.png";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setActiveSlide }) {
+export default function Index({ setActiveSlide ,setStep}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -67,20 +67,19 @@ export default function Index({ setActiveSlide }) {
       onSlideChange={(e) => setActiveSlide(e.activeIndex + 1)}
     >
       <SwiperSlide>
-      <img src={NotActive} alt="" />
-
+      <img src={NotActive} alt="" onClick={()=>setStep(8)} />
       </SwiperSlide>
       <SwiperSlide>
-      <img src={LightlyActive} alt="" />
+      <img src={LightlyActive} alt="" onClick={()=>setStep(8)}/>
       </SwiperSlide>
       <SwiperSlide>
-      <img src={ModeActive} alt="" />
+      <img src={ModeActive} alt="" onClick={()=>setStep(8)}/>
       </SwiperSlide>
       <SwiperSlide>
-      <img src={VeryActive} alt="" />
+      <img src={VeryActive} alt="" onClick={()=>setStep(8)}/>
       </SwiperSlide>
       <SwiperSlide>
-      <img src={VeryActive2} alt="" />
+      <img src={VeryActive2} alt="" onClick={()=>setStep(8)}/>
       </SwiperSlide>
     </Swiper>
   );

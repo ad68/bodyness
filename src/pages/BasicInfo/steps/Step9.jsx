@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Step7 from "../../../assets/images/basicInfo/step7.png";
-
+import Step9 from "../../../assets/images/basicInfo/step9.png";
 import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
 import { useTranslation } from "react-i18next";
-import ActivitySwiper from "../components/ActivitySwiper";
-import SwiperInfo from "../components/SwiperInfo";
-import SwiperStatus from '../components/SwiperStatus'
-import "swiper/css";
+
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -36,16 +32,18 @@ export default function Index({ setStep }) {
           src={ArrowLeft}
           alt=""
           className="arrow"
-          onClick={() => setStep(6)}
+          onClick={() => setStep(8)}
         />
-        <img src={Step7} alt="" />
+        <img src={Step9} alt="" />
       </section>
       <span className="block text-center title mt-7">
-        {t("Basic.YourRegular")}
+        {t("Basic.RegimDate")}
       </span>
-      <ActivitySwiper setActiveSlide={setActiveSlide} setStep={setStep} />
-      <SwiperInfo activeSlide={activeSlide} />
-      <SwiperStatus activeSlide={activeSlide}/>
+      <section className="mt-10">
+        <section className="replyBox" onClick={()=>setStep(10)}>{t("Basic.SeveralMonths")}</section>
+        <section className="replyBox"  onClick={()=>setStep(10)}>{t("Basic.2Years")}</section>
+        <section className="replyBox" onClick={()=>setStep(10)}>{t("Basic.More3Years")}</section>
+      </section>
     </>
   );
 }

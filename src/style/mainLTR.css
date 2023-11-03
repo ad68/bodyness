@@ -1659,4 +1659,57 @@ body {
 .bodyLtr .basicInfoWrapper .swiperStatus .bar5 {
   height: 173px;
 }
+
+.bodyLtr .basicInfoWrapper .replyBox {
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-family: spartanBold;
+  margin-top: 20px;
+}
+
+.bodyLtr .basicInfoWrapper .yesNoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40%;
+}
+
+.bodyLtr .basicInfoWrapper .yesNoBox button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+  font-size: 18px;
+  height: 70px;
+  width: 153px;
+  font-family: spartanBold;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+.bodyLtr .basicInfoWrapper .yesNoBox button img {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=mainLTR.css.map */
