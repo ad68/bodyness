@@ -2,9 +2,9 @@ import React from "react";
 import BodyBuilding from "../../../assets/images/home/body-building-img.svg";
 import LetsGo from "../../../assets/images/home/letsgo.png";
 import ArrowIcon from "../../../assets/images/home/Arrow-Icon.svg";
-import Plate from "../../../assets/images/home/section1PlateEn.png";
-import PlateFa from "../../../assets/images/home/section1PlateFr.png";
-import Watermark from "./Watermark";
+import Plate from "../../../assets/images/home/section1PlateEn1.png";
+import PlateFa from "../../../assets/images/home/section1PlateFr1.png";
+/* import Watermark from "./Watermark"; */
 import { useTranslation } from "react-i18next";
 import Menu from "../../../components/Menu";
 import { Link } from "react-router-dom";
@@ -33,7 +33,7 @@ export default function Index() {
       <section className="py-10 px-10 flex flex-wrap md:flex-nowrap">
         <Menu />
         <section className="relative leftBox">
-          <Watermark />
+         {/*  <Watermark /> */}
           {/* mobile */}
           <h1 className="learn md:hidden mt-5">
             {t("Home.Learn1")}
