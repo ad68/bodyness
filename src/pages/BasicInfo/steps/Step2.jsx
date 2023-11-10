@@ -1,17 +1,17 @@
 import React, { useState, useContext, useEffect } from "react";
-import Step2 from "../../../assets/images/basicInfo/step2.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+
+
 import { useTranslation } from "react-i18next";
 import Light from "../../../assets/images/basicInfo/light.png";
-
-
+import Step from "../../../assets/images/basicInfo/step1L.png";
+import Progress from "../components/Progress";
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({setStep}) {
+export default function Index({setStep, activeStep}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -27,10 +27,8 @@ export default function Index({setStep}) {
   //
   return (
     <>
-      <section className="progressBox" >
-        <img src={Step2} alt="" />
-        <img src={ArrowLeft} alt="" className="arrow" onClick={()=>setStep(1)} />
-      </section>
+    <Progress stepPic={Step} activeStep={activeStep} setStep={setStep}/>
+     
       <span className="block text-center title mt-7">
         {t("Basic.WhatsAge")}
       </span>
@@ -40,7 +38,7 @@ export default function Index({setStep}) {
         This will help us make adjusment adjustment to your personal
         </p>
       </section>
-      <button className="letStartBtnMobile" onClick={()=>setStep(3)}>{t("Basic.Next")}</button>
+      <button className="letStartBtn" onClick={()=>setStep(3)}>{t("Basic.Next")}</button>
    
     </>
   );

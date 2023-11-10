@@ -1,17 +1,18 @@
 import React, { useState, useContext, useEffect } from "react";
-import Step1 from "../../../assets/images/basicInfo/step1.png";
+
 import { useTranslation } from "react-i18next";
 import Light from "../../../assets/images/basicInfo/light.png";
 import Male from "../../../assets/images/basicInfo/male.png";
 import Female from "../../../assets/images/basicInfo/female.png";
-
+import Progress from "../components/Progress";
+import Step from "../../../assets/images/basicInfo/step1L.png";
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({setStep}) {
+export default function Index({ setStep, activeStep }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -27,9 +28,7 @@ export default function Index({setStep}) {
   //
   return (
     <>
-      <section className="progressBox">
-        <img src={Step1} alt="" />
-      </section>
+     <Progress stepPic={Step} activeStep={activeStep} setStep={setStep}/>
       <span className="block text-center title mt-7">
         {t("Basic.WhatsGender")}
       </span>
@@ -41,12 +40,17 @@ export default function Index({setStep}) {
         </p>
       </section>
       <section className="flex justify-between genderBox">
-        <section className="item" onClick={()=>setStep(2)}>
+        <section className="item" onClick={() => setStep(2)}>
           <img src={Male} className="genderImage" alt="" />
           <span className="title block text-center"> {t("Basic.Male")}</span>
         </section>
         <section className="item">
-          <img src={Female} alt="" className="genderImage" onClick={()=>setStep(2)}/>
+          <img
+            src={Female}
+            alt=""
+            className="genderImage"
+            onClick={() => setStep(2)}
+          />
           <span className="title block text-center"> {t("Basic.Female")}</span>
         </section>
       </section>

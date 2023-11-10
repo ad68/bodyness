@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Step9 from "../../../assets/images/basicInfo/step9.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import Step from "../../../assets/images/basicInfo/step78910L.png";
+import Progress from "../components/Progress";
 import { useTranslation } from "react-i18next";
 
 //
@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setStep }) {
+export default function Index({ setStep, activeStep }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -27,15 +27,7 @@ export default function Index({ setStep }) {
   //
   return (
     <>
-      <section className="progressBox">
-        <img
-          src={ArrowLeft}
-          alt=""
-          className="arrow"
-          onClick={() => setStep(8)}
-        />
-        <img src={Step9} alt="" />
-      </section>
+    <Progress stepPic={Step} activeStep={activeStep} setStep={setStep} />
       <span className="block text-center title mt-7">
         {t("Basic.RegimDate")}
       </span>

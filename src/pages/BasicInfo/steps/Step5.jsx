@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Step5 from "../../../assets/images/basicInfo/step5.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import Step from "../../../assets/images/basicInfo/step456L.png";
+
 import { useTranslation } from "react-i18next";
 import BodyFatSelector from "../components/BodyFatSelector";
+import Progress from "../components/Progress";
 import Body1 from "../../../assets/images/basicInfo/body(1).png";
 import Body2 from "../../../assets/images/basicInfo/body(2).png";
 import Body3 from "../../../assets/images/basicInfo/body(2).png";
@@ -16,7 +17,7 @@ import Body6 from "../../../assets/images/basicInfo/body(5).png";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({setStep}) {
+export default function Index({setStep,activeStep}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -32,10 +33,7 @@ export default function Index({setStep}) {
   //
   return (
     <>
-      <section className="progressBox">
-      <img src={ArrowLeft} alt="" className="arrow" onClick={()=>setStep(4)} />
-        <img src={Step5} alt="" />
-      </section>
+      <Progress stepPic={Step} activeStep={activeStep} setStep={setStep}/>
       <span className="block text-center title mt-7">
         {t("Basic.ChooseBodyFat")}
       </span>
@@ -59,7 +57,7 @@ export default function Index({setStep}) {
         alt=""
       />
       <BodyFatSelector setBodyFat={setBodyFat} />
-      <button onClick={()=>setStep(6)} className="letStartBtnMobile">{t("Basic.Next")}</button>
+      <button onClick={()=>setStep(6)} className="letStartBtn">{t("Basic.Next")}</button>
     </>
   );
 }

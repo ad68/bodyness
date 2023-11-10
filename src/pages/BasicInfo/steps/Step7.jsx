@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Step7 from "../../../assets/images/basicInfo/step7.png";
-
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import Step from "../../../assets/images/basicInfo/step78910L.png";
+import Progress from "../components/Progress";
 import { useTranslation } from "react-i18next";
 import ActivitySwiper from "../components/ActivitySwiper";
 import SwiperInfo from "../components/SwiperInfo";
-import SwiperStatus from '../components/SwiperStatus'
+import SwiperStatus from "../components/SwiperStatus";
 import "swiper/css";
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -13,7 +12,7 @@ import "swiper/css";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setStep }) {
+export default function Index({ setStep, activeStep }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -31,21 +30,16 @@ export default function Index({ setStep }) {
   //
   return (
     <>
-      <section className="progressBox">
-        <img
-          src={ArrowLeft}
-          alt=""
-          className="arrow"
-          onClick={() => setStep(6)}
-        />
-        <img src={Step7} alt="" />
-      </section>
+      <Progress stepPic={Step} activeStep={activeStep} setStep={setStep} />
       <span className="block text-center title mt-7">
         {t("Basic.YourRegular")}
       </span>
+      <section className="swiperWrapper">
       <ActivitySwiper setActiveSlide={setActiveSlide} setStep={setStep} />
       <SwiperInfo activeSlide={activeSlide} />
-      <SwiperStatus activeSlide={activeSlide}/>
+      <SwiperStatus activeSlide={activeSlide} />
+      </section>
+      
     </>
   );
 }

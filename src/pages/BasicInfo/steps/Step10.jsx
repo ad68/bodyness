@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Step10 from "../../../assets/images/basicInfo/step10.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import Step from "../../../assets/images/basicInfo/step78910L.png";
+import Progress from "../components/Progress";
 import { useTranslation } from "react-i18next";
 import Yes from "../../../assets/images/basicInfo/yes.png";
 import No from "../../../assets/images/basicInfo/no.png";
@@ -10,7 +10,7 @@ import No from "../../../assets/images/basicInfo/no.png";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setStep }) {
+export default function Index({ setStep, activeStep }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -28,15 +28,7 @@ export default function Index({ setStep }) {
   //
   return (
     <>
-      <section className="progressBox">
-        <img
-          src={ArrowLeft}
-          alt=""
-          className="arrow"
-          onClick={() => setStep(9)}
-        />
-        <img src={Step10} alt="" />
-      </section>
+     <Progress stepPic={Step} activeStep={activeStep} setStep={setStep} />
       <span className="block text-center title mt-7">
         {t("Basic.ExerciseDiet")}
       </span>

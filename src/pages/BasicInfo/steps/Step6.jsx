@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Step6 from "../../../assets/images/basicInfo/step6.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import Step from "../../../assets/images/basicInfo/step456L.png";
+import Progress from "../components/Progress";
+
 import { useTranslation } from "react-i18next";
 import Goal1 from "../../../assets/images/basicInfo/goal1.png";
 import Goal2 from "../../../assets/images/basicInfo/goal2.png";
@@ -12,7 +13,7 @@ import Goal4 from "../../../assets/images/basicInfo/goal4.png";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setStep }) {
+export default function Index({setStep,activeStep}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -28,31 +29,23 @@ export default function Index({ setStep }) {
   //
   return (
     <>
-      <section className="progressBox">
-        <img
-          src={ArrowLeft}
-          alt=""
-          className="arrow"
-          onClick={() => setStep(5)}
-        />
-        <img src={Step6} alt="" />
-      </section>
+    <Progress stepPic={Step} activeStep={activeStep} setStep={setStep}/>
       <span className="block text-center title mt-7">
         {t("Basic.WhatsGoal")}
       </span>
-      <section className="goalBox mt-10" onClick={() => setStep(7)}>
+      <section className="goalBox mt-12 m-auto" onClick={() => setStep(7)}>
         <span className="text">{t("Basic.LoseWeight")}</span>
         <img src={Goal1} alt="" />
       </section>
-      <section className="goalBox mt-2" onClick={() => setStep(7)}>
+      <section className="goalBox mt-2 m-auto" onClick={() => setStep(7)}>
         <span className="text">{t("Basic.GainWeight")}</span>
         <img src={Goal2} alt="" />
       </section>
-      <section className="goalBox mt-2" onClick={() => setStep(7)}>
+      <section className="goalBox mt-2 m-auto" onClick={() => setStep(7)}>
         <span className="text">{t("Basic.BuildMuscle")}</span>
         <img src={Goal3} alt="" />
       </section>
-      <section className="goalBox mt-2" onClick={() => setStep(7)}>
+      <section className="goalBox mt-2 m-auto" onClick={() => setStep(7)}>
         <span className="text">{t("Basic.Maintain")}</span>
         <img src={Goal4} alt="" />
       </section>

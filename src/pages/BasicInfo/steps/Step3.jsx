@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
-import Step3 from "../../../assets/images/basicInfo/step3.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import Step from "../../../assets/images/basicInfo/step1L.png";
+import Progress from "../components/Progress";
 import {useTranslation} from 'react-i18next'
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -8,7 +8,7 @@ import {useTranslation} from 'react-i18next'
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({setStep}) {
+export default function Index({setStep,activeStep}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
 const {t} = useTranslation();
@@ -25,14 +25,11 @@ const {t} = useTranslation();
   //
   return (
      <>
-       <section className="progressBox" >
-        <img src={Step3} alt="" />
-        <img src={ArrowLeft} alt="" className="arrow" onClick={()=>setStep(2)} />
-      </section>
+          <Progress stepPic={Step} activeStep={activeStep} setStep={setStep}/>
       <span className="block text-center title mt-7">
         {t("Basic.WhatsHeight")}
       </span>
-      <button className="letStartBtnMobile" onClick={()=>setStep(4)}>{t("Basic.Next")}</button>
+      <button className="letStartBtn" onClick={()=>setStep(4)}>{t("Basic.Next")}</button>
      </>
   )
 }

@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from "react";
-import Step from "../../../assets/images/basicInfo/step78910L.png";
-import Progress from "../components/Progress";
-import { useTranslation } from "react-i18next";
-
-
+import React, { useState, useContext, useEffect } from 'react'
+import Logo from '../../assets/images/logo/logoMini.png'
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setStep, activeStep }) {
+export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const { t } = useTranslation();
+
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [activeSlide, setActiveSlide] = useState(1);
+ 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-  useEffect(() => {
-    console.log(activeSlide);
-  }, [activeSlide]);
+ 
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -27,26 +21,11 @@ export default function Index({ setStep, activeStep }) {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <>
-     <Progress stepPic={Step} activeStep={activeStep} setStep={setStep} />
-      <span className="block text-center title mt-7">
-        {t("Basic.HowDiet")}
-      </span>
-      <section className="mt-10">
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         1 {t("Basic.Time")}
-         </section>
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         2 {t("Basic.Times")}
-         </section>
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         3 {t("Basic.Times")}
-         </section>
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         {t("Basic.More3Times")}
-         </section>
-      </section>
-     
-    </>
-  );
+     <>
+     <section className='comingSoon'>
+      <img src={Logo} alt=""/>
+      <h3>Coming Soon...</h3>
+     </section>
+     </>
+  )
 }

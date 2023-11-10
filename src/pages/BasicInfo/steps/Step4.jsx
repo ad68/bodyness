@@ -1,21 +1,22 @@
-import React, { useState, useContext, useEffect } from 'react'
-import Step4 from "../../../assets/images/basicInfo/step4.png";
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
-import {useTranslation} from 'react-i18next'
+import React, { useState, useContext, useEffect } from "react";
+import Step from "../../../assets/images/basicInfo/step456L.png";
+
+import { useTranslation } from "react-i18next";
+import Progress from "../components/Progress";
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({setStep}) {
+export default function Index({ setStep, activeStep }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
-const {t} = useTranslation();
+  const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
- 
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
- 
+
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -24,15 +25,14 @@ const {t} = useTranslation();
   // ──────────────────────────────────────────────────────────────
   //
   return (
-     <>
-       <section className="progressBox" >
-        <img src={Step4} alt="" />
-        <img src={ArrowLeft} alt="" className="arrow" onClick={()=>setStep(3)} />
-      </section>
+    <>
+      <Progress stepPic={Step} activeStep={activeStep} setStep={setStep} />
       <span className="block text-center title mt-7">
         {t("Basic.WhatsWeight")}
       </span>
-      <button className="letStartBtnMobile" onClick={()=>setStep(5)}>{t("Basic.Next")}</button>
-     </>
-  )
+      <button className="letStartBtn" onClick={() => setStep(5)}>
+        {t("Basic.Next")}
+      </button>
+    </>
+  );
 }

@@ -179,7 +179,7 @@ body {
           }
         }
         .welcome {
-          font-size: 70px;
+          font-size: 62px;
           z-index: 1;
           position: relative;
           @media screen and (max-width: 1366px) {
@@ -962,7 +962,7 @@ body {
       }
     }
   }
-  .basicInfoWrapper {
+  .basicInfoWrapperMobile {
     position: relative;
     height: 100vh;
     .progressBox {
@@ -1129,6 +1129,7 @@ body {
       display: flex;
       justify-content: center;
       margin-top: 30px;
+      cursor: pointer;
       .myRing {
         border: 14px solid rgba(163, 71, 241, 0.09);
         width: 170px;
@@ -1253,8 +1254,358 @@ body {
         outline: none;
         img{
           margin-right: 20px;
+          width: 24px;
+
         }
       }
     }
+  }
+  .basicInfoWrapper{
+    position: relative;
+    height: 100vh;
+    .title {
+      font-weight: 700;
+      font-size: 48px;
+      font-family: $spartanBold;
+    }
+    .help {
+      border: 1px solid #efefef;
+      border-radius: 16px;
+      min-height: 100px;
+      font-family: $spartanLight;
+      color: rgba(0, 0, 0, 0.4);
+      width: 565px;
+      max-width: 100%;
+      margin: auto;
+      img {
+        width: 30px !important;
+        height: 30px !important;
+        margin-right: auto;
+      }
+      p {
+        width: 85%;
+      }
+    }
+    .progressBox {
+      display: flex;
+      width: 1360px;
+      height: 125px;
+      max-width: 100%;
+      justify-content: center;
+      background-color: rgba(252, 250, 254, 1);
+      border-radius: 24px;
+      align-items: center;
+      margin-top: 20px;
+      margin: auto;
+      position: relative;
+      .arrow {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 30px;
+        cursor: pointer;
+      }
+      .close{
+       /*  margin-left: auto; */
+       position: absolute;
+       top: 42px;
+       right: 30px;
+       cursor: pointer;
+      }
+    }
+    .genderBox {
+      
+      width: 574px;
+      max-width: 100%;
+      margin: auto;
+      margin-top: 197px;
+      .item {
+        width: 46%;
+        height: 269px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        .title {
+          font-family: $spartanBold;
+          font-size: 16px;
+          margin-top: 20px;
+        }
+        .genderImage {
+          margin-top: -120px;
+        }
+      }
+    }
+    .bodyImage {
+      display: block;
+      margin: auto;
+      height: 400px;
+     
+    }
+    .bodyFatSelectorBox {
+      border-radius: 6px;
+      background-color: rgba(244, 244, 244, 1);
+      width: 386px;
+      max-width: 100%;
+      margin: auto;
+      position: relative;
+      .labelMin {
+        position: absolute;
+        left: 0;
+        font-size: 14px;
+        font-family: $spartanLight;
+        top: 27px;
+      }
+      .labelMax {
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+        font-family: $spartanLight;
+        top: 27px;
+      }
+      height: 17px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      * {
+        transition: all 0.1s linear;
+      }
+      .item {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(181, 181, 181, 1);
+        display: block;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        .tooltip {
+          font-family: $spartanBold;
+          font-size: 16px;
+          position: absolute;
+          top: -25px;
+          display: none;
+          width: 70px;
+          margin-left: 23px;
+        }
+        &.active {
+          background-color: white;
+          border: 3px solid rgba(146, 108, 255, 1);
+          height: 25px;
+          width: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .tooltip {
+            display: block;
+          }
+          .core {
+            display: block;
+            background-color: rgba(146, 108, 255, 1);
+            width: 11px;
+            height: 11px;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+    .letStartBtn {
+      border-radius: 16px;
+      font-size: 20px;
+      font-family: $openSansBold;
+      background-color: #a347f1;
+      display: block;
+      padding: 10px;
+      width: 430px;
+      max-width: 100%;
+      margin: auto;
+      color: white;
+      margin-top: 60px;
+      @media screen and (min-height: 741px) {
+        margin-top: 130px;
+      }
+    }
+    .goalBox {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      width: 670px;
+      max-width: 100%;
+      cursor: pointer;
+      min-height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 140px;
+      }
+      .text {
+        color: rgba(0, 0, 0, 0.7);
+        font-family: $spartanBold;
+        font-size: 18px;
+      }
+    }
+    .swiperWrapper{
+      width: 550px;
+      max-width: 100%;
+      margin: auto;
+      .swiper-slide {
+        height: 180px;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        margin-top: 30px;
+        .myRing {
+          border: 14px solid rgba(163, 71, 241, 0.09);
+          width: 170px;
+          height: 170px;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .swiperInfo {
+        .title {
+          font-family: $spartanBold;
+          font-size: 20px;
+          text-align: center;
+          display: block;
+        }
+        .text {
+          font-family: $spartanMedium;
+          font-size: 18px;
+          text-align: center;
+          display: block;
+          min-height: 54px;
+        }
+      }
+      .swiperStatus {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        &.active1 {
+          .bar:nth-child(1) {
+            background-color: rgba(0, 213, 183, 1);
+          }
+        }
+        &.active2 {
+          .bar:nth-child(1) {
+            background-color: rgba(253, 131, 188, 1);
+          }
+          .bar:nth-child(2) {
+            background-color: rgba(253, 131, 188, 1);
+          }
+        }
+        &.active3 {
+          .bar:nth-child(1) {
+            background-color: rgba(255, 154, 124, 1);
+          }
+          .bar:nth-child(2) {
+            background-color: rgba(255, 154, 124, 1);
+          }
+          .bar:nth-child(3) {
+            background-color: rgba(255, 154, 124, 1);
+          }
+        }
+  
+        &.active4 {
+          .bar:nth-child(1) {
+            background-color: rgba(108, 149, 255, 1);
+          }
+          .bar:nth-child(2) {
+            background-color: rgba(108, 149, 255, 1);
+          }
+          .bar:nth-child(3) {
+            background-color: rgba(108, 149, 255, 1);
+          }
+          .bar:nth-child(4) {
+            background-color: rgba(108, 149, 255, 1);
+          }
+        }
+        &.active5 {
+          .bar {
+            background-color: rgba(146, 108, 255, 1);
+          }
+        }
+        .bar {
+          display: block;
+          width: 38px;
+          border-radius: 33px;
+          background-color: rgba(244, 244, 244, 1);
+        }
+        .bar1 {
+          height: 60px;
+        }
+        .bar2 {
+          height: 84px;
+        }
+        .bar3 {
+          height: 118px;
+        }
+        .bar4 {
+          height: 147px;
+        }
+        .bar5 {
+          height: 173px;
+        }
+      }
+    }
+    .replyBox {
+      background-color: rgba(244, 244, 244, 1);
+      border-radius: 16px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-family: $spartanBold;
+      margin: auto;
+      margin-top: 20px;
+      width: 670px;
+      cursor: pointer;
+    }
+    .yesNoBox {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 700px;
+      max-width: 100%;
+     
+      margin: auto;
+      margin-top: 10%;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        font-size: 18px;
+        height: 70px;
+        width: 325px;
+        font-family: $spartanBold;
+        background-color: rgba(244, 244, 244, 1);
+        outline: none;
+        img{
+          margin-right: 20px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+.comingSoon{
+  width: 100%;
+  height: 100vh;
+  background-color: #ebd3ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3{
+    font-size: 43px;
+    color: #393939;
   }
 }
