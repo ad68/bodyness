@@ -1810,6 +1810,7 @@ img {
 
 .bodyRtl .basicInfoWrapperMobile .yesNoBox button img {
   margin-left: 20px;
+  width: 24px;
 }
 
 .bodyRtl .basicInfoWrapper {
@@ -1849,7 +1850,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 1360px;
-  height: 125px;
+  height: 69px;
   max-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1875,7 +1876,7 @@ img {
 .bodyRtl .basicInfoWrapper .progressBox .close {
   /*  margin-left: auto; */
   position: absolute;
-  top: 42px;
+  top: 13px;
   right: 30px;
   cursor: pointer;
 }
@@ -2238,6 +2239,132 @@ img {
 
 .bodyRtl .basicInfoWrapper .yesNoBox button img {
   margin-left: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.bodyRtl .rangeWrapper {
+  height: 500px;
+  text-align: center;
+  height: 320px;
+  width: 700px;
+  text-align: right;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+}
+
+.bodyRtl .rangeWrapper .ruler {
+  height: 304px;
+  width: 38px;
+  position: absolute;
+  right: 132px;
+  top: 7px;
+  /* z-index: 1; */
+  direction: rtl;
+}
+
+.bodyRtl .rangeWrapper .ruler .item {
+  display: block;
+  width: 22px;
+  height: 4px;
+  background-color: silver;
+  margin-top: 6px;
+}
+
+.bodyRtl .rangeWrapper .ruler .item-big {
+  display: block;
+  width: 38px;
+  height: 4px;
+  background-color: silver;
+  margin-top: 6px;
+}
+
+.bodyRtl .valueChangerBox {
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 56px;
+  width: 300px;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.bodyRtl .valueChangerBox .operator {
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+.bodyRtl .valueChangerBox .operator img {
+  width: 23px;
+}
+
+.bodyRtl .valueChangerBox .text .value {
+  font-size: 24px;
+  font-family: IRANSansBold;
+}
+
+.bodyRtl .valueChangerBox .text .unit {
+  font-size: 20px;
+  font-family: IRANSansLight;
+  margin-left: 5px;
+}
+
+.bodyRtl .unitBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 56px;
+  width: 300px;
+  margin: auto;
+}
+
+.bodyRtl .unitBox .item {
+  border-radius: 18px;
+  background-color: #f4f4f4;
+  color: rgba(0, 0, 0, 0.4);
+  width: 128px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 18px;
+  font-family: IRANSansBold;
+}
+
+.bodyRtl .unitBox .item.active {
+  background-color: #a347f1;
+  color: white;
 }
 
 .comingSoon {
