@@ -36,6 +36,7 @@ export default function Index({setStep}) {
       <img src={ArrowLeft} alt="" className="arrow" onClick={()=>setStep(4)} />
         <img src={Step5} alt="" />
       </section>
+      <section className="contentWrapper">
       <span className="block text-center title mt-7">
         {t("Basic.ChooseBodyFat")}
       </span>
@@ -60,6 +61,8 @@ export default function Index({setStep}) {
       />
       <BodyFatSelector setBodyFat={setBodyFat} />
       <button onClick={()=>setStep(6)} className="letStartBtnMobile">{t("Basic.Next")}</button>
+      </section>
+      
     </>
   );
 }

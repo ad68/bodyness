@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import "./style.css";
 import Plus from '../../../../assets/images/basicInfo/plus.png'
 import Minus from '../../../../assets/images/basicInfo/minus.png'
+import Human from '../../../../assets/images/basicInfo/FROM_5_TO_9 4.png'
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -10,10 +11,10 @@ import Minus from '../../../../assets/images/basicInfo/minus.png'
 
 export default function Index({ value }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const min = 150;
-  const max = 230;
+  const min = 120;
+  const max = 220;
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [height, setHeight] = useState(150); /* cm */
+  const [height, setHeight] = useState(220); /* cm */
   const [ft, setFt] = useState();
   const [unit, setUnit] = useState("cm");
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
@@ -58,7 +59,6 @@ export default function Index({ value }) {
         <button className="operator" onClick={() => decreaseHeight()}>
           <img src={Minus} alt="" />
         </button>
-
         <section className="text">
           <span className="value">{unit ==="cm" ? height : ft}</span>
           <span className="unit">{unit}</span>
@@ -68,6 +68,7 @@ export default function Index({ value }) {
         </button>
       </section>
       <section className="rangeWrapper">
+      <img src={Human} alt="" className="human" style={{bottom:(height-220)*3}}/>
         <section className="ruler">
           <span className="item" style={{ marginTop: 0 }}></span>
           <span className="item"></span>

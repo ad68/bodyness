@@ -48,10 +48,10 @@ export default function Index({ setStep }) {
         <span className="text">{t("Basic.GainWeight")}</span>
         <img src={Goal2} alt="" />
       </section>
-      <section className="goalBox mt-2" onClick={() => setStep(7)}>
+     {/*  <section className="goalBox mt-2" onClick={() => setStep(7)}>
         <span className="text">{t("Basic.BuildMuscle")}</span>
         <img src={Goal3} alt="" />
-      </section>
+      </section> */}
       <section className="goalBox mt-2" onClick={() => setStep(7)}>
         <span className="text">{t("Basic.Maintain")}</span>
         <img src={Goal4} alt="" />
