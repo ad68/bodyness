@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import Step from "../../../assets/images/basicInfo/step456L.png";
-
+import WeightPicker from "../components/WeightPicker"
 import { useTranslation } from "react-i18next";
 import Progress from "../components/Progress";
 //
@@ -30,6 +30,7 @@ export default function Index({ setStep, activeStep }) {
       <span className="block text-center title mt-7">
         {t("Basic.WhatsWeight")}
       </span>
+      <WeightPicker value={60}/>
       <button className="letStartBtn" onClick={() => setStep(5)}>
         {t("Basic.Next")}
       </button>

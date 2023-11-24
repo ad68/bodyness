@@ -1709,8 +1709,16 @@ body {
       margin: auto;
       margin-top: 30px;
       position: relative;
-      
       overflow: hidden;
+      .wightInfo{
+        display: block;
+        margin: auto;
+        font-size: 40px;
+        text-align: center;
+        font-family: $spartanBold;
+        direction: ltr;
+        
+      }
       .ruler {
         height: 304px;
         width: 38px;
@@ -1732,6 +1740,31 @@ body {
           height: 4px;
           background-color: silver;
           margin-top: 6px;
+        }
+      }
+      .weightRuler {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        right: 10px;
+        top: 7px;
+        /* z-index: 1; */
+        direction: rtl;
+        .item {
+          
+          width: 4px;
+          height: 22px;
+          background-color: silver;
+          
+        }
+        .item-big {
+          
+          width: 4px;
+          height: 38px;
+          background-color: silver;
+         
         }
       }
       .human{

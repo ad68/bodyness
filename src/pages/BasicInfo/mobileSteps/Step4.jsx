@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react'
 import Step4 from "../../../assets/images/basicInfo/step4.png";
 import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
+import WeightPicker from "../components/WeightPicker"
 import {useTranslation} from 'react-i18next'
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -32,6 +33,7 @@ const {t} = useTranslation();
       <span className="block text-center title mt-7">
         {t("Basic.WhatsWeight")}
       </span>
+      <WeightPicker value={60}/>
       <button className="letStartBtnMobile" onClick={()=>setStep(5)}>{t("Basic.Next")}</button>
      </>
   )

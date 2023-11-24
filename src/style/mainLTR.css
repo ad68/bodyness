@@ -1704,6 +1704,14 @@ body {
   position: relative;
   overflow: hidden;
 }
+.bodyLtr .basicInfoWrapper .rangeWrapper .wightInfo {
+  display: block;
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+  font-family: spartanBold;
+  direction: ltr;
+}
 .bodyLtr .basicInfoWrapper .rangeWrapper .ruler {
   height: 304px;
   width: 38px;
@@ -1726,6 +1734,27 @@ body {
   height: 4px;
   background-color: silver;
   margin-top: 6px;
+}
+.bodyLtr .basicInfoWrapper .rangeWrapper .weightRuler {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  right: 10px;
+  top: 7px;
+  /* z-index: 1; */
+  direction: rtl;
+}
+.bodyLtr .basicInfoWrapper .rangeWrapper .weightRuler .item {
+  width: 4px;
+  height: 22px;
+  background-color: silver;
+}
+.bodyLtr .basicInfoWrapper .rangeWrapper .weightRuler .item-big {
+  width: 4px;
+  height: 38px;
+  background-color: silver;
 }
 .bodyLtr .basicInfoWrapper .rangeWrapper .human {
   position: absolute;

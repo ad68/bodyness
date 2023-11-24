@@ -102,8 +102,9 @@
     "More3Years":"more than 3 years",
     "ExerciseDiet":"Did you exercise along with the diet?",
     "Yes":"Yes",
-    "No":"No"
-
+    "No":"No",
+    "Kg":"Kg",
+    "Lb":"lb"
 
   },
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo iusmod tempo"

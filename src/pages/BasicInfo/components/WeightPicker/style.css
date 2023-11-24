@@ -1,0 +1,77 @@
+.weightPicker {
+  /*Range Reset*/
+  /* Removes default focus */
+  /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+  /* slider track */
+  /* slider thumb */
+  /*  input[type="range"]:focus::-webkit-slider-thumb {   
+    border: 1px solid #053a5f;
+    outline: 3px solid #053a5f;
+    outline-offset: 0.125rem; 
+   } */
+  /******** Firefox styles ********/
+  /* slider track */
+  /*  input[type="range"]::-moz-range-track {
+     background-color: #053a5f;
+     border-radius: 0.5rem;
+     height: 0.5rem;
+   } */
+  /* slider thumb */
+}
+.weightPicker input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  transform: rotate(0deg);
+  margin-top: 110px;
+}
+.weightPicker input[type=range]:focus {
+  outline: none;
+}
+.weightPicker input[type=range]::-webkit-slider-runnable-track {
+  /*   background-color: red; */
+  /*  border-radius: 0.5rem;
+   height: 1rem;  
+   border:1px solid silver; */
+}
+.weightPicker input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  /*  margin-top: -259px;  */ /* Centers thumb on the track */
+  margin-top: -80px;
+  /*custom styles*/
+  background-color: #a347f1;
+  height: 150px;
+  width: 7px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  border-radius: 5px;
+}
+.weightPicker input[type=range]::-webkit-slider-thumb:hover {
+  width: 15px;
+}
+.weightPicker .basicInfoWrapperMobile input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: 0; /* Centers thumb on the track */
+  /*custom styles*/
+  background-color: #a347f1;
+  height: 10rem;
+  width: 2px;
+}
+.weightPicker input[type=range]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+  /*custom styles*/
+  /* background-color: #5cd5eb;
+  height: 2rem;
+  width: 400px; */
+}
+.weightPicker input[type=range]:focus::-moz-range-thumb {
+  /*  border: 1px solid #053a5f;
+   outline: 3px solid #053a5f;
+   outline-offset: 0.125rem; */
+}/*# sourceMappingURL=style.css.map */
