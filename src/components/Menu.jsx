@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "../assets/images/logo/logoMini.png";
 import { useTranslation } from "react-i18next";
 import LangBox from "./LanguageBox";
+import { Link } from "react-router-dom";
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -36,17 +37,17 @@ export default function Index() {
       setBackColor("");
     } */
   };
-  const setMenuWidth = () => {
+ /*  const setMenuWidth = () => {
     console.log(document.getElementById("section1Body").style.width);
-    /* setWidth(document.getElementById("section1Body").style.width) */
-  };
+    
+  }; */
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
   }, []);
-  useEffect(() => {
+ /*  useEffect(() => {
     window.addEventListener("resize", setMenuWidth);
     console.log(document.getElementById("section1Body").style.width);
-  }, []);
+  }, []); */
 
   //
   // ──────────────────────────────────────────────────── I ──────────
@@ -61,9 +62,9 @@ export default function Index() {
         <img alt="logo" className="logo" src={Logo} />
         <LangBox />
         <nav className="flex items-center grow justify-center font-bold">
-          <a href="http://www.google.com" className="font-semibold">
+          <Link to="/home" className="font-semibold">
             {t("HomeMenu.Home")}
-          </a>
+          </Link>
           <a
             href="http://www.google.com"
             className="rtl:mr-7 ltr:ml-7 font-semibold"

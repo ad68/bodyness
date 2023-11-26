@@ -1,16 +1,16 @@
-import React from 'react';
-import Target from '../../../../../assets/images/home/target.svg';
-import Dambel from '../../../../../assets/images/home/dambel.svg';
+import React, { useState, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-
+import Female from '../../../assets/images/home/female.svg';
+import FemaleBody from '../../../assets/images/home/femaleBody.svg';
+import Male from '../../../assets/images/home/male.svg';
+import MaleBody from '../../../assets/images/home/maleBody.svg';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({ setTab }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -25,22 +25,24 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="ltr:ml-12 rtl:mr-12 mt-12 stepInfo">
-      <img src={Target} alt="" />
-      <h2>{t('Home.Improve')}</h2>
-      <h3>{t('Home.YourMuscles')}</h3>
-      <p>{t('Home.ExperienceBest')}</p>
-      <Link to="/roadmap">
-      <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
-        
-          <span className="font-bold">{t('Home.LetsStart')}</span>
-       
-
-        <section className="circle">
-          <img src={Dambel} alt="" />
+    <>
+      <span className="tabTitle mt-7 m-auto">{t('Home.ChooseGender')}</span>
+      <section className="flex justify-around m-auto mt-7 genderWrapper">
+        <section className="genderBox pb-4" onClick={() => setTab(2)}>
+          <span className="genderTitle">
+            <img src={Female} alt="" />
+            <span>{t('Home.Female')}</span>
+          </span>
+          <img src={FemaleBody} alt="" className="genderBody m-auto mt-4" />
         </section>
-      </button>
-      </Link>
-    </section>
+        <section className="genderBox pb-4" onClick={() => setTab(2)}>
+          <span className="genderTitle">
+            <img src={Male} alt="" />
+            <span>{t('Home.Male')}</span>
+          </span>
+          <img src={MaleBody} alt="" className="genderBody m-auto mt-4" />
+        </section>
+      </section>
+    </>
   );
 }

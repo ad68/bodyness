@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import BasicInfo from "../pages/BasicInfo";
 import CommingSoon from "../pages/ComingSoon";
+import RoadMap from "../pages/RoadMap";
 
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -19,6 +20,7 @@ export default function Index() {
       <Route index element={<CommingSoon />} />
       <Route path="/Home" element={<Home />} />
       <Route path="/BasicInfo" element={<BasicInfo />} />
+      <Route path="/RoadMap" element={<RoadMap />} />
     </Routes>
   );
 }

@@ -1,9 +1,10 @@
-import React from 'react';
-import Target from '../../../../../assets/images/home/target.svg';
-import Dambel from '../../../../../assets/images/home/dambel.svg';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-
+import React, { useState, useContext, useEffect } from 'react';
+import Menu from '../../components/Menu';
+import Steps from './components/Steps';
+import Tab1 from './Tabs/Tab1';
+import Tab2 from './Tabs/Tab2';
+import Tab3 from './Tabs/Tab3';
+import Tab4 from './Tabs/Tab4';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -12,9 +13,9 @@ import { Link } from 'react-router-dom';
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const { t } = useTranslation();
-  // ─── States ─────────────────────────────────────────────────────────────────────
 
+  // ─── States ─────────────────────────────────────────────────────────────────────
+  const [tab, setTab] = useState(1);
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
@@ -25,22 +26,29 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="ltr:ml-12 rtl:mr-12 mt-12 stepInfo">
-      <img src={Target} alt="" />
-      <h2>{t('Home.Improve')}</h2>
-      <h3>{t('Home.YourMuscles')}</h3>
-      <p>{t('Home.ExperienceBest')}</p>
-      <Link to="/roadmap">
-      <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
-        
-          <span className="font-bold">{t('Home.LetsStart')}</span>
-       
-
-        <section className="circle">
-          <img src={Dambel} alt="" />
+    <>
+      <Menu />
+      <section className="roadMapWrapper">
+        <section className="header">
+          <span className="levelNumber">4</span>
+          <span className="text mr-10">
+            شاخص توده بدنی خود را با محاسبه گر <br></br>BMI بررسی کنید
+          </span>
+          <span className="circle1"></span>
+          <span className="circle2"></span>
+          <span className="circle3"></span>
+          <span className="circle4"></span>
+          <span className="circle5"></span>
+          <span className="circleGr1"></span>
+          <span className="circleGr2"></span>
         </section>
-      </button>
-      </Link>
-    </section>
+        <Steps tab={tab} />
+
+        {tab === 1 && <Tab1 setTab={setTab}/>}
+        {tab === 2 && <Tab2 setTab={setTab}/>}
+        {tab === 3 && <Tab3 setTab={setTab}/>}
+        {tab === 4 && <Tab4 setTab={setTab}/>}
+      </section>
+    </>
   );
 }

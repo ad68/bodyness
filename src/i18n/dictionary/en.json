@@ -104,7 +104,11 @@
     "Yes":"Yes",
     "No":"No",
     "Kg":"Kg",
-    "Lb":"lb"
+    "Lb":"lb",
+    "Beginner":"Beginner",
+    "Intermediate":"Intermediate",
+    "Advanced":"Advanced"
+ 
 
   },
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo iusmod tempo"

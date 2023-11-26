@@ -1,8 +1,5 @@
-import React from 'react';
-import Target from '../../../../../assets/images/home/target.svg';
-import Dambel from '../../../../../assets/images/home/dambel.svg';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+
+import React, { useState, useContext, useEffect } from 'react'
 
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -10,13 +7,13 @@ import { Link } from 'react-router-dom';
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({tab}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const { t } = useTranslation();
+
   // ─── States ─────────────────────────────────────────────────────────────────────
-
+ 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+ 
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -25,22 +22,17 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="ltr:ml-12 rtl:mr-12 mt-12 stepInfo">
-      <img src={Target} alt="" />
-      <h2>{t('Home.Improve')}</h2>
-      <h3>{t('Home.YourMuscles')}</h3>
-      <p>{t('Home.ExperienceBest')}</p>
-      <Link to="/roadmap">
-      <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
-        
-          <span className="font-bold">{t('Home.LetsStart')}</span>
-       
-
-        <section className="circle">
-          <img src={Dambel} alt="" />
+     <>
+      <section className="stepWrapper">
+          <section className="firstStep active">جنسیت</section>
+          <section className={`middleStep ${tab>1 && "active"}`} style={{ zIndex: -2 }}>
+            عضله
+          </section>
+          <section className={`middleStep ${tab>2 && "active"}`} style={{ zIndex: -3 }}>
+            لوازم ورزشی
+          </section>
+          <section  className={`lastStep ${tab>3 && "active"}`}>سطح</section>
         </section>
-      </button>
-      </Link>
-    </section>
-  );
+     </>
+  )
 }

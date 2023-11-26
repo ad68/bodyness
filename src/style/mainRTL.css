@@ -52,6 +52,7 @@ body {
   margin: auto;
   padding: 20px;
   z-index: 100;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
   right: 0;
   /* @media screen and (max-width: 1350px) {
     padding: 10px;
@@ -1924,6 +1925,394 @@ body {
 .bodyRtl .basicInfoWrapper .unitBox .item.active {
   background-color: #a347f1;
   color: white;
+}
+.bodyRtl .roadMapWrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.bodyRtl .roadMapWrapper .header {
+  width: 1360px;
+  max-width: 95%;
+  min-height: 280px;
+  background-color: rgba(152, 182, 241, 0.18);
+  border-radius: 24px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  padding-right: 100px;
+  align-items: center;
+  position: relative;
+}
+.bodyRtl .roadMapWrapper .header .levelNumber {
+  font-size: 200px;
+  color: rgb(26, 115, 197);
+  font-family: IRANSansBold;
+}
+.bodyRtl .roadMapWrapper .header .text {
+  font-size: 36px;
+  color: rgb(62, 65, 81);
+  font-family: IRANSansBold;
+}
+.bodyRtl .roadMapWrapper .header .circle1 {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.29);
+  bottom: 10px;
+  left: 10px;
+  border-radius: 100%;
+  position: absolute;
+}
+.bodyRtl .roadMapWrapper .header .circle2 {
+  display: block;
+  width: 133px;
+  height: 133px;
+  background-color: rgba(255, 255, 255, 0.39);
+  bottom: -20px;
+  left: 100px;
+  border-radius: 100%;
+  position: absolute;
+}
+.bodyRtl .roadMapWrapper .header .circle3 {
+  display: block;
+  width: 183px;
+  height: 183px;
+  background-color: rgba(255, 255, 255, 0.29);
+  bottom: 20px;
+  left: 172px;
+  border-radius: 100%;
+  position: absolute;
+}
+.bodyRtl .roadMapWrapper .header .circle4 {
+  display: block;
+  width: 216px;
+  height: 216px;
+  background-color: rgba(255, 255, 255, 0.36);
+  bottom: -48px;
+  left: 322px;
+  border-radius: 100%;
+  position: absolute;
+}
+.bodyRtl .roadMapWrapper .header .circle5 {
+  display: block;
+  width: 84px;
+  height: 84px;
+  background-color: rgba(255, 255, 255, 0.24);
+  bottom: 131px;
+  left: 468px;
+  border-radius: 100%;
+  position: absolute;
+}
+.bodyRtl .roadMapWrapper .header .circleGr1 {
+  display: block;
+  width: 174px;
+  height: 174px;
+  background-color: rgba(255, 255, 255, 0.29);
+  bottom: 54px;
+  left: 53px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(36.84% 36.84% at 49.62% 49.62%, rgba(25, 109, 207, 0.176) 0%, rgba(255, 255, 255, 0.096) 100%);
+}
+.bodyRtl .roadMapWrapper .header .circleGr2 {
+  display: block;
+  width: 279px;
+  height: 279px;
+  background-color: rgba(255, 255, 255, 0.29);
+  bottom: -13px;
+  left: 263px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(36.84% 36.84% at 49.62% 49.62%, rgba(25, 109, 207, 0.176) 0%, rgba(255, 255, 255, 0.096) 100%);
+}
+.bodyRtl .roadMapWrapper .stepWrapper {
+  width: 1144px;
+  margin: auto;
+  direction: rtl;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .firstStep {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(239, 247, 255);
+  text-align: center;
+  font-family: IRANSansBold;
+  cursor: pointer;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .firstStep.active {
+  background-color: rgb(26, 115, 197);
+  color: white;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .firstStep.active::before {
+  background-color: rgb(26, 115, 197);
+}
+.bodyRtl .roadMapWrapper .stepWrapper .firstStep.active::after {
+  border-right: 20px solid rgb(26, 115, 197);
+}
+.bodyRtl .roadMapWrapper .stepWrapper .firstStep::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(239, 247, 255);
+}
+.bodyRtl .roadMapWrapper .stepWrapper .firstStep::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 20px solid rgb(239, 247, 255);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .middleStep {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: rgb(239, 247, 255);
+  margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: IRANSansBold;
+  cursor: pointer;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .middleStep.active {
+  background-color: rgb(26, 115, 197);
+  color: white;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .middleStep.active::before {
+  background-color: rgb(26, 115, 197);
+}
+.bodyRtl .roadMapWrapper .stepWrapper .middleStep.active::after {
+  border-right: 20px solid rgb(26, 115, 197);
+}
+.bodyRtl .roadMapWrapper .stepWrapper .middleStep::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .middleStep::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 20px solid rgb(239, 247, 255);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .lastStep {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: rgb(239, 247, 255);
+  margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -4;
+  font-family: IRANSansBold;
+  cursor: pointer;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .lastStep.active {
+  background-color: rgb(26, 115, 197);
+  color: white;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .lastStep.active::before {
+  background-color: rgb(26, 115, 197);
+}
+.bodyRtl .roadMapWrapper .stepWrapper .lastStep.active::after {
+  background: rgb(26, 115, 197);
+}
+.bodyRtl .roadMapWrapper .stepWrapper .lastStep::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.bodyRtl .roadMapWrapper .stepWrapper .lastStep::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: rgb(239, 247, 255);
+}
+.bodyRtl .roadMapWrapper .tabTitle {
+  display: block;
+  font-family: IRANSansBold;
+  font-size: 17px;
+  position: relative;
+  text-align: center;
+  width: 600px;
+}
+@media screen and (min-width: 1350px) {
+  .bodyRtl .roadMapWrapper .tabTitle {
+    font-size: 29px;
+  }
+}
+.bodyRtl .roadMapWrapper .tabTitle .backBtn {
+  background-color: whitesmoke;
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  font-size: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.bodyRtl .roadMapWrapper .tabTitle .backBtn:hover {
+  background-color: rgb(140, 140, 140);
+}
+.bodyRtl .roadMapWrapper .genderWrapper {
+  width: 600px;
+}
+.bodyRtl .roadMapWrapper .genderWrapper .genderBox {
+  background-color: white;
+  border-radius: 24px;
+  width: 48%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.bodyRtl .roadMapWrapper .genderWrapper .genderBox:hover {
+  background-color: #3373c4;
+}
+.bodyRtl .roadMapWrapper .genderWrapper .genderBox .genderTitle {
+  background-color: #e7f6ff;
+  padding: 10px;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 16px;
+}
+.bodyRtl .roadMapWrapper .genderWrapper .genderBox .genderTitle img {
+  width: 35px;
+}
+.bodyRtl .roadMapWrapper .genderWrapper .genderBox .genderBody {
+  height: 352px;
+}
+@media screen and (max-width: 1350px) {
+  .bodyRtl .roadMapWrapper .genderWrapper .genderBox .genderBody {
+    height: 300px;
+  }
+}
+.bodyRtl .roadMapWrapper .muscleBox {
+  height: 354px;
+  position: relative;
+}
+@media screen and (max-width: 1366px) {
+  .bodyRtl .roadMapWrapper .muscleBox {
+    height: auto;
+  }
+}
+.bodyRtl .roadMapWrapper .muscleBox .genderMuscle {
+  height: 354px;
+  cursor: pointer;
+  z-index: 10;
+}
+@media screen and (max-width: 1350px) {
+  .bodyRtl .roadMapWrapper .muscleBox .genderMuscle {
+    height: 400px;
+  }
+}
+.bodyRtl .roadMapWrapper .equipmentBox {
+  height: 598px;
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1366px) {
+  .bodyRtl .roadMapWrapper .equipmentBox {
+    height: auto;
+  }
+}
+.bodyRtl .roadMapWrapper .equipmentBox .box {
+  background-color: white;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  width: 116px;
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.bodyRtl .roadMapWrapper .equipmentBox .box:hover {
+  background-color: whitesmoke;
+}
+.bodyRtl .roadMapWrapper .equipmentBox .label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  font-family: IRANSans;
+}
+.bodyRtl .roadMapWrapper .levelBox {
+  width: 630px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 197px;
+}
+.bodyRtl .roadMapWrapper .levelBox .item {
+  width: 201px;
+  height: 145px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  text-align: center;
+}
+.bodyRtl .roadMapWrapper .levelBox .item .title {
+  font-family: IRANSansBold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.bodyRtl .roadMapWrapper .levelBox .item .genderImage {
+  margin-top: -120px;
 }
 
 .comingSoon {
