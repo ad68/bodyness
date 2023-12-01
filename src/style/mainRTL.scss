@@ -124,9 +124,10 @@ body {
         rgba(223, 196, 251, 1) 100%
       );
       .mobilePlate {
-        width: 80%;
+        width: 100%;
         @media only screen and (min-width: 375px) {
-          width: 80%;
+          width: 100%;
+         
         }
       }
       .watermark {
@@ -162,7 +163,7 @@ body {
         .rightBox {
           width: 50%;
           .plate {
-            width: 100%;
+            width:90%;
             @media screen and (min-width: 1920px) {
               width: 100%;
             }
@@ -239,8 +240,8 @@ body {
           .bodyImg {
             position: absolute;
             bottom: 0px;
-            right: -77px;
-            width: 410px;
+            right: 3px;
+            width: 308px;
             @media screen and (max-width: 1366px) {
               width: 310px;
             }
@@ -680,7 +681,7 @@ body {
           display: block;
           margin-top: 10px;
           font-weight: 400;
-          font-size: 17px;
+          font-size: 16px;
           font-family: $normalFont;
         }
       }
@@ -2084,7 +2085,7 @@ body {
         &::after {
           content: '';
           position: absolute;
-          left: -20px;
+          left: -19px;
           bottom: 0;
           width: 0;
           height: 0;
@@ -2128,7 +2129,7 @@ body {
         &::after {
           content: '';
           position: absolute;
-          left: -20px;
+          left: -19px;
           bottom: 0;
           width: 0;
           height: 0;
@@ -2196,7 +2197,7 @@ body {
         font-size: 29px;
       }
       .backBtn{
-        background-color: whitesmoke;
+        background-color: $bodyNessPuprple;
         padding: 10px;
         display: block;
         border-radius: 10px;
@@ -2283,7 +2284,7 @@ body {
         width: 116px;
         height: 116px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
         align-items: center;
         cursor: pointer;
@@ -2296,7 +2297,7 @@ body {
         display: block;
         margin-top: 10px;
         font-weight: 400;
-        font-size: 17px;
+        font-size: 16px;
         font-family: $normalFont;
       }
     }

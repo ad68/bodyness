@@ -1,10 +1,12 @@
 import React from "react";
-import BodyBuilding from "../../../assets/images/home/body-building-img.svg";
+/* import BodyBuilding from "../../../assets/images/home/body-building-img.svg"; */
+import BodyBuilding from "../../../assets/images/basicInfo/male.png";
 import LetsGo from "../../../assets/images/home/letsgo.png";
 import ArrowIcon from "../../../assets/images/home/Arrow-Icon.svg";
-import Plate from "../../../assets/images/home/section1PlateEn1.png";
-import PlateFa from "../../../assets/images/home/section1PlateFr1.png";
+/* import Plate from "../../../assets/images/home/section1PlateEn1.png";
+import PlateFa from "../../../assets/images/home/section1PlateFr1.png"; */
 /* import Watermark from "./Watermark"; */
+import Plate from "../../../assets/images/home/homePlate.png";
 import { useTranslation } from "react-i18next";
 import Menu from "../../../components/Menu";
 import { Link } from "react-router-dom";
@@ -36,24 +38,26 @@ export default function Index() {
          {/*  <Watermark /> */}
           {/* mobile */}
           <h1 className="learn md:hidden mt-5">
-            {t("Home.Learn1")}
+          {t("Home.BecomeTheBetter")} {t("Home.VersionOfYourself")}
+           {/*  {t("Home.Learn1")}
             <strong className="ltr:ml-1 rtl:mr-1">
               {t("Home.Daily")}
             </strong>{" "}
-            {t("Home.Learn2")}
+            {t("Home.Learn2")} */}
           </h1>
-          <section className="md:hidden my-5">
+          <h2 className="text-center md:hidden mt-3"> {t("Home.TransformLife")}</h2>
+          <section className="md:hidden  my-5">
             <img src={Plate} alt="" className="mobilePlate m-auto hidden ltr:block" />
-            <img src={PlateFa} alt="" className="mobilePlate m-auto hidden rtl:block" />
+            <img src={Plate} alt="" className="mobilePlate m-auto hidden rtl:block" />
           </section>
           {/* ---------------------------- */}
           <h1 className="hidden md:block md:ml-6 welcome font-semibold">
-            {t("Home.BecomeTheBetter")}
+            {t("Home.BecomeTheBetter")} {t("Home.VersionOfYourself")}
           </h1>
-          <h1 className="hidden md:block md:ml-6 welcome font-semibold">
+         {/*  <h1 className="hidden md:block md:ml-6 welcome font-semibold">
             {t("Home.VersionOfYourself")}
-          </h1>
-          <p className="md:ml-6 font-normal">{t("Home.TransformLife")}</p>
+          </h1> */}
+          {/* <p className="md:ml-6 font-normal">{t("Home.TransformLife")}</p> */}
           {/* mobile */}
           <section className="md:hidden" >
             <img src={LetsGo} className="m-auto letsGoImg" alt="" />
@@ -64,9 +68,9 @@ export default function Index() {
               <img className="bodyImg" src={BodyBuilding} alt="" />
             </section>
             <section className="col-span-2 action">
-              <span className="block mt-7 title">{t("Home.CoachTeam")}</span>
+              <span className="block mt-7 title">{/* {t("Home.CoachTeam")} */}</span>
               <span className="block font-semibold text">
-                {t("Home.BuildBody")}
+                {t("Home.TransformLife")}
               </span>
               <button className="letStartBtn px-6 text-left">
                 <span className="font-bold">{t("Home.LetsStart")}</span>
@@ -78,12 +82,12 @@ export default function Index() {
           </section>
         </section>
         <section className="hidden md:flex justify-center items-center rightBox">
-          <img className="plate hidden ltr:block" src={Plate} alt="" />
-          <img className="plate hidden rtl:block" src={PlateFa} alt="" />
+          <img className="plate" src={Plate} alt="" />
+          {/* <img className="plate hidden rtl:block" src={PlateFa} alt="" /> */}
         </section>
         {/* mobile */}
        
-        <button className="letsStartBtnMobile mt-5 md:hidden">
+        <button className="letsStartBtnMobile  md:hidden">
         <Link to="/BasicInfo">
           {t("Home.LetsStart")}
           </Link>

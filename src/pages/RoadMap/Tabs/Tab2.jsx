@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Muscle from "../../../assets/images/home/selectedMuscle.png";
-import ArrowLeft from '../../../assets/images/basicInfo/arrowLeft.png';
+import ArrowLeft from '../../../assets/images/basicInfo/arrowLeftWhite.png';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :

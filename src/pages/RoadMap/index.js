@@ -32,7 +32,7 @@ export default function Index() {
         <section className="header">
           <span className="levelNumber">4</span>
           <span className="text mr-10">
-            شاخص توده بدنی خود را با محاسبه گر <br></br>BMI بررسی کنید
+            انتخاب بهترین تمرین برای عضله هدف
           </span>
           <span className="circle1"></span>
           <span className="circle2"></span>

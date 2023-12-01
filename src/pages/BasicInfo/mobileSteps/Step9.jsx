@@ -40,9 +40,9 @@ export default function Index({ setStep }) {
         {t("Basic.RegimDate")}
       </span>
       <section className="mt-10">
-        <section className="replyBox" onClick={()=>setStep(10)}>{t("Basic.SeveralMonths")}</section>
-        <section className="replyBox"  onClick={()=>setStep(10)}>{t("Basic.2Years")}</section>
-        <section className="replyBox" onClick={()=>setStep(10)}>{t("Basic.More3Years")}</section>
+        <section className="replyBox" onClick={()=>setStep(10)}>{t("Basic.CurrentMonth")}</section>
+        <section className="replyBox"  onClick={()=>setStep(10)}>{t("Basic.CurrentYear")}</section>
+        <section className="replyBox" onClick={()=>setStep(10)}>{t("Basic.More1Years")}</section>
       </section>
     </>
   );

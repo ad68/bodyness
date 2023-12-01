@@ -42,17 +42,16 @@ export default function Index({ setStep }) {
         {t("Basic.HowDiet")}
       </span>
       <section className="mt-10">
+      <section className="replyBox" onClick={()=>setStep(9)}>
+          {t("Basic.NoDiet")}
+         </section>
          <section className="replyBox" onClick={()=>setStep(9)}>
          1 {t("Basic.Time")}
          </section>
+        
+        
          <section className="replyBox" onClick={()=>setStep(9)}>
-         2 {t("Basic.Times")}
-         </section>
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         3 {t("Basic.Times")}
-         </section>
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         {t("Basic.More3Times")}
+         {t("Basic.More1Times")}
          </section>
       </section>
      

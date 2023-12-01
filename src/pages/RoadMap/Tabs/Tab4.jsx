@@ -1,8 +1,7 @@
 import React, { useState, useContext, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-
 import Human from '../../../assets/images/roadMap/FROM_5_TO_9 3.png';
-import ArrowLeft from '../../../assets/images/basicInfo/arrowLeft.png';
+import ArrowLeft from '../../../assets/images/basicInfo/arrowLeftWhite.png';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :

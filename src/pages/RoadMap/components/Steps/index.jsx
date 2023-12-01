@@ -24,14 +24,14 @@ export default function Index({tab}) {
   return (
      <>
       <section className="stepWrapper">
-          <section className="firstStep active">جنسیت</section>
+          <section className="firstStep active">انتخاب جنسیت</section>
           <section className={`middleStep ${tab>1 && "active"}`} style={{ zIndex: -2 }}>
-            عضله
+            عضله هدف
           </section>
           <section className={`middleStep ${tab>2 && "active"}`} style={{ zIndex: -3 }}>
-            لوازم ورزشی
+            انتخاب تجهیزات
           </section>
-          <section  className={`lastStep ${tab>3 && "active"}`}>سطح</section>
+          <section  className={`lastStep ${tab>3 && "active"}`}>سطح شما</section>
         </section>
      </>
   )

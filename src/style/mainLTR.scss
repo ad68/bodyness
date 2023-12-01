@@ -149,7 +149,7 @@ body {
         .rightBox {
           width: 50%;
           .plate {
-            width: 100%;
+            width: 90%;
             @media screen and (min-width: 1920px) {
               width: 100%;
             }
@@ -223,8 +223,8 @@ body {
           .bodyImg {
             position: absolute;
             bottom: 0px;
-            left: -77px;
-            width: 410px;
+            left: -3px;
+            width: 308px;
             @media screen and (max-width: 1366px) {
               width: 310px;
             }
@@ -295,7 +295,7 @@ body {
       .mobilePlate {
         width: 92%;
         @media only screen and (min-width: 375px) {
-          width: 80%;
+          width: 100%;
         }
       }
     }
