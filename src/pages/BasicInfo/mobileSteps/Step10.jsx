@@ -4,6 +4,8 @@ import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
 import { useTranslation } from "react-i18next";
 import Yes from "../../../assets/images/basicInfo/yes.png";
 import No from "../../../assets/images/basicInfo/no.png";
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -13,12 +15,22 @@ import No from "../../../assets/images/basicInfo/no.png";
 export default function Index({ setStep }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
+  const navigation = useNavigate();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [activeSlide, setActiveSlide] = useState(1);
+  
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-  useEffect(() => {
-    console.log(activeSlide);
-  }, [activeSlide]);
+  const saveInfo = () => {
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: t('Notification.InfoSaved'),
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    setTimeout(() => {
+      navigation('/home');
+    }, 2000);
+  };
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -41,11 +53,11 @@ export default function Index({ setStep }) {
         {t("Basic.ExerciseDiet")}
       </span>
       <section className="yesNoBox">
-        <button>
+      <button onClick={saveInfo}>
           <img src={Yes} alt="" />
           {t("Basic.Yes")}
         </button>
-        <button>
+        <button onClick={saveInfo}>
           <img src={No} alt="" />{t("Basic.No")}
         </button>
       </section>

@@ -116,5 +116,8 @@
  
 
   },
+  "Notification":{
+    "InfoSaved": "Your work has been saved"
+  },
   "LoremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo iusmod tempo"
 }

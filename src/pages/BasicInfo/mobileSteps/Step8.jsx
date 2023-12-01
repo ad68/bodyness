@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import Step8 from "../../../assets/images/basicInfo/step8.png";
+import React, { useEffect, useState } from 'react';
+import Step8 from '../../../assets/images/basicInfo/step8.png';
 
-import ArrowLeft from "../../../assets/images/basicInfo/arrowLeft.png";
-import { useTranslation } from "react-i18next";
-
-
+import ArrowLeft from '../../../assets/images/basicInfo/arrowLeft.png';
+import { useTranslation } from 'react-i18next';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -14,14 +14,28 @@ import { useTranslation } from "react-i18next";
 export default function Index({ setStep }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
+  const navigation = useNavigate();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [activeSlide, setActiveSlide] = useState(1);
+  const [reply, setReply] = useState();
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
   useEffect(() => {
-    console.log(activeSlide);
-  }, [activeSlide]);
+    if (reply === 1) {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: t("Notification.InfoSaved"),
+        showConfirmButton: false,
+        timer: 1500
+      });
+      setTimeout(() => {
+        navigation("/home")
+      }, 2000);
+    } else if(reply>1) {
+      setStep(9);
+    }
+  }, [reply]);
   // ─── Functions ──────────────────────────────────────────────────────────────────
-
+ 
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
@@ -38,23 +52,19 @@ export default function Index({ setStep }) {
         />
         <img src={Step8} alt="" />
       </section>
-      <span className="block text-center title mt-7">
-        {t("Basic.HowDiet")}
-      </span>
+      <span className="block text-center title mt-7">{t('Basic.HowDiet')}</span>
       <section className="mt-10">
-      <section className="replyBox" onClick={()=>setStep(9)}>
-          {t("Basic.NoDiet")}
-         </section>
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         1 {t("Basic.Time")}
-         </section>
-        
-        
-         <section className="replyBox" onClick={()=>setStep(9)}>
-         {t("Basic.More1Times")}
-         </section>
+        <button className="replyBox" onClick={() => setReply(1)}>
+          {t('Basic.NoDiet')}
+        </button>
+        <button className="replyBox" onClick={() => setReply(2)}>
+          1 {t('Basic.Time')}
+        </button>
+
+        <button className="replyBox" onClick={() => setReply(3)}>
+          {t('Basic.More1Times')}
+        </button>
       </section>
-     
     </>
   );
 }

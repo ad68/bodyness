@@ -260,7 +260,7 @@ body {
 }
 @media screen and (max-width: 1366px) {
   .bodyRtl .homeWrapper .section1 .body .coachTeamBox .bodyImg {
-    width: 310px;
+    width: 224px;
   }
 }
 .bodyRtl .homeWrapper .section1 .body .coachTeamBox .action {
@@ -646,7 +646,7 @@ body {
 .bodyRtl .homeWrapper .section3 .genderBox .genderBody {
   height: 500px;
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1366px) {
   .bodyRtl .homeWrapper .section3 .genderBox .genderBody {
     height: 300px;
   }
@@ -926,6 +926,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+.bodyRtl .homeWrapper .section4.mobile {
   flex-direction: column;
 }
 .bodyRtl .homeWrapper .section4 .title {
@@ -935,27 +937,93 @@ body {
 }
 .bodyRtl .homeWrapper .section4 .toolsWrapper {
   display: flex;
+  width: 35%;
+}
+.bodyRtl .homeWrapper .section4 .toolsWrapper .toolsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper {
+  display: flex;
+  width: 49%;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo img {
+  width: 140px;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo h2 {
+  font-family: IRANSansBold;
+  font-size: 80px;
+}
+@media screen and (max-width: 1366px) {
+  .bodyRtl .homeWrapper .section4 .textWrapper .stepInfo h2 {
+    font-size: 50px;
+  }
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo h3 {
+  font-family: IRANSansBold;
+  font-size: 40px;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo p {
+  font-size: 24px;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo .letStartBtn {
+  border-radius: 16px;
+  background-color: black;
+  min-height: 64px;
+  width: 90%;
+  color: white;
+  overflow: hidden;
+  width: 362px;
+  position: relative;
+  padding: 19px;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo .letStartBtn span {
+  font-size: 24px;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo .letStartBtn .circle {
+  width: 122px;
+  height: 122px;
+  background-color: rgba(61, 61, 61, 0.9607843137);
+  position: absolute;
+  right: 0;
+  border-radius: 64px;
+  transition: all 0.2s linear;
+  top: 2px;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo .letStartBtn .circle img {
+  margin: auto;
+  display: block;
+  width: 80px;
+  margin-top: 20px;
+}
+.bodyRtl .homeWrapper .section4 .textWrapper .stepInfo .letStartBtn:hover .circle {
+  background-color: rgba(50, 50, 50, 0.9607843137);
+}
+.bodyRtl .homeWrapper .section4 .toolsWrapperMobile {
+  display: flex;
   width: 70%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.bodyRtl .homeWrapper .section4 .toolsWrapper .tools1 {
+.bodyRtl .homeWrapper .section4 .toolsWrapperMobile .tools1 {
   width: 62%;
   margin-left: -42%;
 }
-.bodyRtl .homeWrapper .section4 .toolsWrapper .tools2 {
+.bodyRtl .homeWrapper .section4 .toolsWrapperMobile .tools2 {
   width: 62%;
   margin-top: -38px;
   margin-right: -42%;
 }
-.bodyRtl .homeWrapper .section4 .toolsWrapper .tools3 {
+.bodyRtl .homeWrapper .section4 .toolsWrapperMobile .tools3 {
   width: 62%;
   margin-top: -85px;
   margin-left: -42%;
   z-index: 10;
 }
-.bodyRtl .homeWrapper .section4 .toolsWrapper .tools4 {
+.bodyRtl .homeWrapper .section4 .toolsWrapperMobile .tools4 {
   width: 62%;
   margin-top: -54px;
   margin-right: -42%;
@@ -1332,6 +1400,7 @@ body {
   font-size: 16px;
   font-family: IRANSansBold;
   margin-top: 20px;
+  width: 100%;
 }
 .bodyRtl .basicInfoWrapperMobile .yesNoBox {
   display: flex;
@@ -1366,6 +1435,14 @@ body {
   position: relative;
   direction: ltr;
   overflow: hidden;
+}
+.bodyRtl .basicInfoWrapperMobile .rangeWrapper .wightInfo {
+  display: block;
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+  font-family: IRANSansBold;
+  direction: rtl;
 }
 .bodyRtl .basicInfoWrapperMobile .rangeWrapper .ruler {
   height: 304px;

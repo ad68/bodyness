@@ -243,7 +243,7 @@ body {
             right: 3px;
             width: 308px;
             @media screen and (max-width: 1366px) {
-              width: 310px;
+              width: 224px;
             }
           }
           .action {
@@ -617,7 +617,7 @@ body {
         }
         .genderBody {
           height: 500px;
-          @media screen and (max-width: 1350px) {
+          @media screen and (max-width: 1366px) {
             height: 300px;
           }
         }
@@ -899,16 +899,87 @@ body {
         rgba(228, 233, 254, 1) 0%,
         rgba(223, 196, 251, 1) 100%
       );
+      &.mobile{
+        flex-direction: column;
+      }
       height: 100vh;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+     
       .title {
         font-size: 22px;
         font-family: $veryBoldFont;
         margin-bottom: 20px;
       }
-      .toolsWrapper {
+      .toolsWrapper{
+        display: flex;
+        width: 35%;
+        .toolsBox{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .textWrapper{
+        display: flex;
+        width: 49%;
+        .stepInfo {
+          img {
+            width: 140px;
+          }
+          h2 {
+            font-family: $boldFont;
+            font-size: 80px;
+            @media screen and (max-width: 1366px) {
+              font-size: 50px;
+            }
+          }
+          h3 {
+            font-family: $boldFont;
+            font-size: 40px;
+          }
+          p {
+            font-size: 24px;
+          }
+          .letStartBtn {
+            border-radius: 16px;
+            background-color: black;
+            min-height: 64px;
+            width: 90%;
+            color: white;
+            overflow: hidden;
+            width: 362px;
+            position: relative;
+            padding: 19px;
+            span {
+              font-size: 24px;
+            }
+            .circle {
+              width: 122px;
+              height: 122px;
+              background-color: #3d3d3df5;
+              position: absolute;
+              right: 0;
+              border-radius: 64px;
+              transition: all 0.2s linear;
+              top: 2px;
+              img {
+                margin: auto;
+                display: block;
+                width: 80px;
+                margin-top: 20px;
+              }
+            }
+            &:hover {
+              .circle {
+                background-color: #323232f5;
+              }
+            }
+          }
+        }
+      }
+      .toolsWrapperMobile {
         display: flex;
         width: 70%;
         flex-direction: column;
@@ -1317,6 +1388,7 @@ body {
       font-size: 16px;
       font-family: $boldFont;
       margin-top: 20px;
+      width: 100%;
     }
     .yesNoBox {
       display: flex;
@@ -1351,7 +1423,14 @@ body {
       position: relative;
       direction: ltr;
       overflow: hidden;
-
+      .wightInfo {
+        display: block;
+        margin: auto;
+        font-size: 40px;
+        text-align: center;
+        font-family: $boldFont;
+        direction: rtl;
+      }
       .ruler {
         height: 304px;
         width: 38px;
