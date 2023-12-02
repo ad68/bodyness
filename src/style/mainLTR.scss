@@ -944,8 +944,19 @@ body {
       }
     }
     .section5 {
+      background-color: #FFF5DC;
+      position: relative;
       @media screen and (max-width: 767px) {
         background-color: rgba(255, 154, 124, 0.23);
+      }
+      .mainTitle{
+        font-size: 40px;
+        font-family: $spartanBold;
+      }
+      .mainDtl{
+        font-size: 20px;
+        font-family: $spartanMedium;
+        text-align: center;
       }
       height: 100vh;
       justify-content: center;
@@ -956,9 +967,32 @@ body {
         font-family: $spartanVeryBold;
         margin-bottom: 20px;
       }
+      .tomato{
+        width: 201px;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+      }
+      .freshGreen{
+        width: 201px;
+        position: absolute;
+        right: 10px;
+        bottom:  20px;
+      }
       .foodWrapper {
         width: 100%;
         display: flex;
+        z-index: 2;
+         @media screen and (min-width:991px) {
+          width: 1200px;
+          display: flex;
+          justify-content: space-around;
+          max-width: 100%;
+          .foodBox {
+            width: 240px !important;
+            margin-left: 0 !important;
+          }
+        }
         .foodBox {
           background-color: white;
           border-radius: 16px;

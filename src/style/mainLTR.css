@@ -960,6 +960,8 @@ body {
   color: white;
 }
 .bodyLtr .homeWrapper .section5 {
+  background-color: #FFF5DC;
+  position: relative;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -970,14 +972,48 @@ body {
     background-color: rgba(255, 154, 124, 0.23);
   }
 }
+.bodyLtr .homeWrapper .section5 .mainTitle {
+  font-size: 40px;
+  font-family: spartanBold;
+}
+.bodyLtr .homeWrapper .section5 .mainDtl {
+  font-size: 20px;
+  font-family: spartanMedium;
+  text-align: center;
+}
 .bodyLtr .homeWrapper .section5 .title {
   font-size: 22px;
   font-family: spartanVeryBold;
   margin-bottom: 20px;
 }
+.bodyLtr .homeWrapper .section5 .tomato {
+  width: 201px;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.bodyLtr .homeWrapper .section5 .freshGreen {
+  width: 201px;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
 .bodyLtr .homeWrapper .section5 .foodWrapper {
   width: 100%;
   display: flex;
+  z-index: 2;
+}
+@media screen and (min-width: 991px) {
+  .bodyLtr .homeWrapper .section5 .foodWrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+  .bodyLtr .homeWrapper .section5 .foodWrapper .foodBox {
+    width: 240px !important;
+    margin-left: 0 !important;
+  }
 }
 .bodyLtr .homeWrapper .section5 .foodWrapper .foodBox {
   background-color: white;
