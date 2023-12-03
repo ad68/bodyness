@@ -36,8 +36,7 @@ export default function Index({setStep}) {
       <section className="help flex justify-center items-center p-3 mt-7">
         <img src={Light} alt="" />
         <p>
-          This will help us calculate your basal metabolic rate and adaopt to
-          your personal plan
+        {t("Basic.BaseHelp")}
         </p>
       </section>
       <section className="flex justify-between genderBox">

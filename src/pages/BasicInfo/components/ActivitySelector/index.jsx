@@ -1,26 +1,24 @@
-import React, { useState, useContext, useEffect } from "react";
-
-import { useTranslation } from "react-i18next";
-import Light from "../../../assets/images/basicInfo/light.png";
-import Male from "../../../assets/images/basicInfo/male.png";
-import Female from "../../../assets/images/basicInfo/female.png";
-import Progress from "../components/Progress";
-import Step from "../../../assets/images/basicInfo/step1L.png";
+import React, { useState, useContext, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import Core from './components/Core';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setStep, activeStep }) {
+export default function Index({ setActiveSlide, activeSlide }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const { t } = useTranslation();
+
   // ─── States ─────────────────────────────────────────────────────────────────────
 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+  useEffect(() => {
+    console.log(`level two:${activeSlide}`);
+  }, []);
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
+  const { t } = useTranslation();
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
@@ -28,30 +26,38 @@ export default function Index({ setStep, activeStep }) {
   //
   return (
     <>
-     <Progress stepPic={Step} activeStep={activeStep} setStep={setStep}/>
-      <span className="block text-center title mt-7">
-        {t("Basic.WhatsGender")}
-      </span>
-      <section className="help flex justify-center items-center p-3 mt-7">
-        <img src={Light} alt="" />
-        <p>
-          {t("Basic.BaseHelp")}
-        </p>
-      </section>
-      <section className="flex justify-between genderBox">
-        <section className="item" onClick={() => setStep(2)}>
-          <img src={Male} className="genderImage" alt="" />
-          <span className="title block text-center"> {t("Basic.Male")}</span>
-        </section>
-        <section className="item">
-          <img
-            src={Female}
-            alt=""
-            className="genderImage"
-            onClick={() => setStep(2)}
-          />
-          <span className="title block text-center"> {t("Basic.Female")}</span>
-        </section>
+      <section className="bodyFatSelectorBox" style={{ direction: 'ltr' }}>
+        <span className={`activeLine${activeSlide}`}></span>
+        <Core
+          setActive={setActiveSlide}
+          active={activeSlide}
+          index={1}
+          activeColor="#00D5B7"
+        />
+        <Core
+          setActive={setActiveSlide}
+          active={activeSlide}
+          index={2}
+          activeColor="#FF9A7C"
+        />
+        <Core
+          setActive={setActiveSlide}
+          active={activeSlide}
+          index={3}
+          activeColor="#FEB137"
+        />
+        <Core
+          setActive={setActiveSlide}
+          active={activeSlide}
+          index={4}
+          activeColor="#6C95FF"
+        />
+        <Core
+          setActive={setActiveSlide}
+          active={activeSlide}
+          index={5}
+          activeColor="#926CFF"
+        />
       </section>
     </>
   );

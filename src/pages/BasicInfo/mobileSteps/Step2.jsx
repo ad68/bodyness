@@ -37,7 +37,7 @@ export default function Index({setStep}) {
       <section className="help flex justify-center items-center p-3 mt-7" onTouchStart={()=>alert("ok")}>
         <img src={Light} alt="" />
         <p>
-        This will help us make adjusment adjustment to your personal
+        {t("Basic.AgeHelp")}
         </p>
       </section>
       <button className="letStartBtnMobile" onClick={()=>setStep(3)}>{t("Basic.Next")}</button>

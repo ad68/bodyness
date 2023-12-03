@@ -26,7 +26,7 @@ export default function Index({ activeStep, stepPic, setStep }) {
     <section className="progressBox">
       <img src={stepPic} alt="" />
       <span className="ltr:ml-3 rtl:mr-3">{activeStep}/10</span>
-      <Link to="/">
+      <Link to="/home">
         <img className="close" src={Close} alt="" />
       </Link>
       {activeStep > 1 && (

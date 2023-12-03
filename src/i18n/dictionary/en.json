@@ -112,7 +112,9 @@
     "Lb":"lb",
     "Beginner":"Beginner",
     "Intermediate":"Intermediate",
-    "Advanced":"Advanced"
+    "Advanced":"Advanced",
+    "BaseHelp":"This will help us calculate your basal metabolic rate and adaopt to your personal plan",
+    "AgeHelp":"This will help us make adjusment adjustment to your personal"
  
 
   },

@@ -4,7 +4,8 @@ import Progress from "../components/Progress";
 import { useTranslation } from "react-i18next";
 import ActivitySwiper from "../components/ActivitySwiper";
 import SwiperInfo from "../components/SwiperInfo";
-import SwiperStatus from "../components/SwiperStatus";
+import ActivitySelector from "../components/ActivitySelector";
+/* import SwiperStatus from "../components/SwiperStatus"; */
 import "swiper/css";
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -19,7 +20,7 @@ export default function Index({ setStep, activeStep }) {
   const [activeSlide, setActiveSlide] = useState(1);
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
   useEffect(() => {
-    console.log(activeSlide);
+    console.log(`root:${activeSlide}`)
   }, [activeSlide]);
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
@@ -35,11 +36,12 @@ export default function Index({ setStep, activeStep }) {
         {t("Basic.YourRegular")}
       </span>
       <section className="swiperWrapper">
-      <ActivitySwiper setActiveSlide={setActiveSlide} setStep={setStep} />
+      <ActivitySwiper setActiveSlide={setActiveSlide} setStep={setStep} activeSlide={activeSlide} />
       <SwiperInfo activeSlide={activeSlide} />
-      <SwiperStatus activeSlide={activeSlide} />
+      <ActivitySelector setActiveSlide={setActiveSlide} activeSlide={activeSlide} />
+      {/* <SwiperStatus activeSlide={activeSlide} /> */}
       </section>
-      
+      <button onClick={()=>setStep(8)} className="letStartBtn">{t("Basic.Next")}</button>
     </>
   );
 }

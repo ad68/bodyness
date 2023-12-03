@@ -840,6 +840,9 @@ body {
       .toolsWrapper{
         display: flex;
         width: 35%;
+        @media screen and (max-height:719px) {
+          transform: scale(0.8);
+        }
         .toolsBox{
           display: flex;
           flex-direction: column;
@@ -1563,6 +1566,56 @@ body {
       max-width: 100%;
       margin: auto;
       position: relative;
+      .activeLine1 {
+        position: absolute;
+        height: 17px;
+        width:6%;
+        background-color: rgb(0, 213, 183);
+        position: absolute;
+        left: 2px;
+        border-radius: 6px;
+        transition: all .2s linear;
+      }
+      .activeLine2 {
+        position: absolute;
+        height: 17px;
+        width: 29%;
+        background-color: #ff9a7c;
+        position: absolute;
+        left: 2px;
+        border-radius: 6px;
+        transition: all .2s linear;
+      }
+      .activeLine3 {
+        position: absolute;
+        height: 17px;
+        width: 50%;
+        background-color: #FEB137;
+        position: absolute;
+        left: 2px;
+        border-radius: 6px;
+        transition: all .2s linear;
+      }
+      .activeLine4 {
+        position: absolute;
+        height: 17px;
+        width: 73%;
+        background-color: #6C95FF;
+        position: absolute;
+        left: 2px;
+        border-radius: 6px;
+        transition: all .2s linear;
+      }
+      .activeLine5 {
+        position: absolute;
+        height: 17px;
+        width: 100%;
+        background-color: #926CFF;
+        position: absolute;
+        left: 2px;
+        border-radius: 6px;
+        transition: all .2s linear;
+      }
       .labelMin {
         position: absolute;
         left: 0;

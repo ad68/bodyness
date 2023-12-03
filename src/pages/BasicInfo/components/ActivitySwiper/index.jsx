@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 /* import NotActive from "../../../../assets/images/basicInfo/notActive.png";
 import LightlyActive from "../../../../assets/images/basicInfo/LightlyActive.png";
@@ -15,16 +15,22 @@ import VeryActive2 from "../../../../assets/images/basicInfo/veryActive11.png";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setActiveSlide ,setStep}) {
+export default function Index({ setActiveSlide ,setStep,activeSlide}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+  const nextBtn=useRef()
   // ─── States ─────────────────────────────────────────────────────────────────────
-
-  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
+  const [swipers, setSwipers] = useState(null)
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
-
+  const slideTo = (index) => swipers.slideTo(index);
   //
+    // ─── Life Cycle ─────────────────────────────────────────────────────────────────
+    useEffect(()=>{
+      if(swipers){
+        slideTo(activeSlide-1)
+      }
+     
+     },[activeSlide])
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
@@ -61,26 +67,31 @@ export default function Index({ setActiveSlide ,setStep}) {
         </section>
       </SwiperSlide>
     </Swiper> */
-    <Swiper
+    <>
+        <Swiper
       spaceBetween={0}
       slidesPerView={1}
+      onSwiper={setSwipers}
       onSlideChange={(e) => setActiveSlide(e.activeIndex + 1)}
     >
       <SwiperSlide>
-      <img src={NotActive} alt="" onClick={()=>setStep(8)} />
+      <img src={NotActive} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-      <img src={LightlyActive} alt="" onClick={()=>setStep(8)}/>
+      <img src={LightlyActive} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-      <img src={ModeActive} alt="" onClick={()=>setStep(8)}/>
+      <img src={ModeActive} alt=""/>
       </SwiperSlide>
       <SwiperSlide>
-      <img src={VeryActive} alt="" onClick={()=>setStep(8)}/>
+      <img src={VeryActive} alt=""/>
       </SwiperSlide>
       <SwiperSlide>
-      <img src={VeryActive2} alt="" onClick={()=>setStep(8)}/>
+      <img src={VeryActive2} alt="" />
       </SwiperSlide>
     </Swiper>
+    
+    </>
+
   );
 }

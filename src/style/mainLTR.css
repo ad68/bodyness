@@ -860,6 +860,11 @@ body {
   display: flex;
   width: 35%;
 }
+@media screen and (max-height: 719px) {
+  .bodyLtr .homeWrapper .section4 .toolsWrapper {
+    transform: scale(0.8);
+  }
+}
 .bodyLtr .homeWrapper .section4 .toolsWrapper .toolsBox {
   display: flex;
   flex-direction: column;
@@ -1574,6 +1579,56 @@ body {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+}
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .activeLine1 {
+  position: absolute;
+  height: 17px;
+  width: 6%;
+  background-color: rgb(0, 213, 183);
+  position: absolute;
+  left: 2px;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+}
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .activeLine2 {
+  position: absolute;
+  height: 17px;
+  width: 29%;
+  background-color: #ff9a7c;
+  position: absolute;
+  left: 2px;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+}
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .activeLine3 {
+  position: absolute;
+  height: 17px;
+  width: 50%;
+  background-color: #FEB137;
+  position: absolute;
+  left: 2px;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+}
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .activeLine4 {
+  position: absolute;
+  height: 17px;
+  width: 73%;
+  background-color: #6C95FF;
+  position: absolute;
+  left: 2px;
+  border-radius: 6px;
+  transition: all 0.2s linear;
+}
+.bodyLtr .basicInfoWrapper .bodyFatSelectorBox .activeLine5 {
+  position: absolute;
+  height: 17px;
+  width: 100%;
+  background-color: #926CFF;
+  position: absolute;
+  left: 2px;
+  border-radius: 6px;
+  transition: all 0.2s linear;
 }
 .bodyLtr .basicInfoWrapper .bodyFatSelectorBox .labelMin {
   position: absolute;
