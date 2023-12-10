@@ -29,11 +29,14 @@ export default function Index({ setStep, activeStep }) {
   return (
     <>
       <Progress stepPic={Step} activeStep={activeStep} setStep={setStep} />
-      <span className="block text-center title mt-7">
+      <span className="block text-center title mt-4">
         {t("Basic.WhatsHeight")}
       </span>
+      <section>
       <HeightPicker value={100}/>
-      <button className="letStartBtn" onClick={() => setStep(4)}>
+      </section>
+     
+      <button className="letStartBtn" style={{marginTop:10}} onClick={() => setStep(4)}>
         {t("Basic.Next")}
       </button>
     </>

@@ -1494,6 +1494,11 @@ body {
   font-size: 48px;
   font-family: spartanBold;
 }
+@media screen and (max-width: 1366px) {
+  .bodyLtr .basicInfoWrapper .title {
+    font-size: 33px;
+  }
+}
 .bodyLtr .basicInfoWrapper .help {
   border: 1px solid #efefef;
   border-radius: 16px;
@@ -1525,6 +1530,11 @@ body {
   margin: auto;
   position: relative;
 }
+@media screen and (max-width: 1366px) {
+  .bodyLtr .basicInfoWrapper .progressBox {
+    transform: scale(0.8);
+  }
+}
 .bodyLtr .basicInfoWrapper .progressBox .arrow {
   width: 40px;
   height: 40px;
@@ -1544,6 +1554,12 @@ body {
   max-width: 100%;
   margin: auto;
   margin-top: 197px;
+}
+@media screen and (max-width: 1366px) {
+  .bodyLtr .basicInfoWrapper .genderBox {
+    margin-top: 90px;
+    transform: scale(0.8);
+  }
 }
 .bodyLtr .basicInfoWrapper .genderBox .item {
   width: 46%;
@@ -1565,6 +1581,11 @@ body {
   margin: auto;
   height: 400px;
 }
+@media screen and (max-width: 1366px) {
+  .bodyLtr .basicInfoWrapper .bodyImage {
+    height: 250px;
+  }
+}
 .bodyLtr .basicInfoWrapper .bodyFatSelectorBox {
   border-radius: 6px;
   background-color: rgb(244, 244, 244);
@@ -1579,6 +1600,11 @@ body {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media screen and (max-width: 1366px) {
+  .bodyLtr .basicInfoWrapper .bodyFatSelectorBox {
+    margin-top: 20px;
+  }
 }
 .bodyLtr .basicInfoWrapper .bodyFatSelectorBox .activeLine1 {
   position: absolute;
@@ -1865,6 +1891,12 @@ body {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 1366px) {
+  .bodyLtr .basicInfoWrapper .rangeWrapper {
+    transform: scale(0.8);
+    margin-top: -21px;
+  }
+}
 .bodyLtr .basicInfoWrapper .rangeWrapper .wightInfo {
   display: block;
   margin: auto;
@@ -1935,6 +1967,11 @@ body {
   border-radius: 12px;
   margin: auto;
   margin-top: 30px;
+}
+@media screen and (max-width: 1366px) {
+  .bodyLtr .basicInfoWrapper .valueChangerBox {
+    margin-top: 5px;
+  }
 }
 .bodyLtr .basicInfoWrapper .valueChangerBox .operator {
   cursor: pointer;

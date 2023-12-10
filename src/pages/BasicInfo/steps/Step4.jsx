@@ -31,7 +31,7 @@ export default function Index({ setStep, activeStep }) {
         {t("Basic.WhatsWeight")}
       </span>
       <WeightPicker value={60}/>
-      <button className="letStartBtn" onClick={() => setStep(5)}>
+      <button className="letStartBtn" style={{marginTop:15}} onClick={() => setStep(5)}>
         {t("Basic.Next")}
       </button>
     </>

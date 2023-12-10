@@ -1428,6 +1428,7 @@ body {
       border-radius: 12px;
       margin: auto;
       margin-top: 15px;
+     
       .operator {
         cursor: pointer;
         background: none;
@@ -1487,6 +1488,9 @@ body {
       font-weight: 700;
       font-size: 48px;
       font-family: $spartanBold;
+      @media screen and (max-width:1366px) {
+        font-size: 33px;
+      }
     }
     .help {
       border: 1px solid #efefef;
@@ -1518,6 +1522,9 @@ body {
       margin-top: 20px;
       margin: auto;
       position: relative;
+      @media screen and (max-width:1366px) {
+        transform: scale(0.8);
+      }
       .arrow {
         width: 40px;
         height: 40px;
@@ -1538,6 +1545,10 @@ body {
       max-width: 100%;
       margin: auto;
       margin-top: 197px;
+      @media screen and (max-width:1366px) {
+        margin-top: 90px;
+        transform: scale(0.8);
+      }
       .item {
         width: 46%;
         height: 269px;
@@ -1558,6 +1569,9 @@ body {
       display: block;
       margin: auto;
       height: 400px;
+      @media screen and (max-width: 1366px) {
+        height: 250px;
+      }
     }
     .bodyFatSelectorBox {
       border-radius: 6px;
@@ -1566,6 +1580,16 @@ body {
       max-width: 100%;
       margin: auto;
       position: relative;
+      height: 17px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      @media screen and (max-width: 1366px) {
+        margin-top: 20px;
+      }
       .activeLine1 {
         position: absolute;
         height: 17px;
@@ -1630,13 +1654,7 @@ body {
         font-family: $spartanLight;
         top: 27px;
       }
-      height: 17px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 10px;
-      padding-right: 10px;
+    
       * {
         transition: all 0.1s linear;
       }
@@ -1870,6 +1888,10 @@ body {
       margin-top: 30px;
       position: relative;
       overflow: hidden;
+      @media screen and (max-width: 1366px) {
+        transform: scale(.8);
+        margin-top: -21px;
+      }
       .wightInfo{
         display: block;
         margin: auto;
@@ -1946,6 +1968,9 @@ body {
       border-radius: 12px;
       margin: auto;
       margin-top: 30px;
+      @media screen and (max-width:1366px) {
+        margin-top: 5px;
+      }
       .operator{
         cursor: pointer;
         background: none;

@@ -29,7 +29,7 @@ export default function Index({ setStep, activeStep }) {
   return (
     <>
      <Progress stepPic={Step} activeStep={activeStep} setStep={setStep}/>
-      <span className="block text-center title mt-7">
+      <span className="block text-center title mt-4">
         {t("Basic.WhatsGender")}
       </span>
       <section className="help flex justify-center items-center p-3 mt-7">
