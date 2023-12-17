@@ -2178,6 +2178,159 @@ body {
 .bodyRtl .roadMapWrapper .section1 .header .levelNumber {
   color: #a9a4e3;
 }
+.bodyRtl .roadMapWrapper .section1 .roadBox {
+  max-width: 80%;
+  position: relative;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox header {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 0;
+  direction: rtl;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox header .title {
+  font-size: 36px;
+  font-family: IRANSansBold;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox header p {
+  font-family: IRANSansLight;
+  font-size: 18px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .infoBox {
+  width: 100%;
+  height: 179px;
+  position: absolute;
+  bottom: 0;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .infoBox .title {
+  direction: rtl;
+  padding: 15px;
+  padding-top: 0;
+  color: white;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .infoBox .title .number {
+  font-size: 40px;
+  font-family: IRANSansBold;
+  color: rgba(255, 255, 255, 0.28);
+  margin-left: 8px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .infoBox .title .text {
+  font-size: 22px;
+  font-family: IRANSans;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .infoBox p {
+  font-size: 14px;
+  font-family: IRANSansLight;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec1 {
+  width: 217px;
+  height: 333px;
+  margin-right: -1px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec1 .fat {
+  position: absolute;
+  top: -125px;
+  z-index: -1;
+  width: 124px;
+  left: 19px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec1 .icon {
+  position: absolute;
+  top: 0;
+  width: 82px;
+  height: 82px;
+  top: 63px;
+  right: 13px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec2 {
+  width: 223px;
+  height: 413px;
+  margin-right: -1px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec2 .infoBox {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec2 .icon {
+  position: absolute;
+  top: 0;
+  width: 82px;
+  height: 82px;
+  top: 63px;
+  right: 55px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec3 {
+  width: 213px;
+  height: 475px;
+  margin-right: -1px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec3 .icon {
+  position: absolute;
+  top: 0;
+  width: 82px;
+  height: 82px;
+  top: 63px;
+  right: 35px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec3 .infoBox {
+  width: 100%;
+  height: 315px;
+  position: absolute;
+  bottom: 0;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec4 {
+  position: relative;
+  width: 234px;
+  height: 553px;
+  margin-right: -1px;
+  display: flex;
+  justify-content: flex-end;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec4 .icon {
+  position: absolute;
+  top: 0;
+  width: 82px;
+  height: 82px;
+  top: 63px;
+  right: 35px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec4 .infoBox {
+  width: 100%;
+  height: 392px;
+  position: absolute;
+  bottom: 0;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec5 {
+  width: 243px;
+  height: 673px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec5 .muscle {
+  position: absolute;
+  height: 441px;
+  bottom: 10px;
+  left: 30px;
+}
+.bodyRtl .roadMapWrapper .section1 .roadBox .vec5 .infoBox {
+  width: 100%;
+  height: 98px;
+  position: absolute;
+  top: 125px;
+}
 .bodyRtl .roadMapWrapper .section2 .header {
   background-color: #fef8e2;
   margin-top: 20px;
@@ -2660,83 +2813,6 @@ body {
 }
 .bodyRtl .roadMapWrapper .section4 .levelBox .item .genderImage {
   margin-top: -120px;
-}
-.bodyRtl .roadMapWrapper .roadBox {
-  max-width: 80%;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec1 {
-  width: 217px;
-  height: 333px;
-  margin-right: -1px;
-  position: relative;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec1 .fat {
-  position: absolute;
-  top: -125px;
-  z-index: -1;
-  width: 124px;
-  left: 19px;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec1 .icon {
-  position: absolute;
-  top: 0;
-  width: 82px;
-  height: 82px;
-  top: 63px;
-  right: 13px;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec2 {
-  width: 223px;
-  height: 413px;
-  margin-right: -1px;
-  position: relative;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec2 .icon {
-  position: absolute;
-  top: 0;
-  width: 82px;
-  height: 82px;
-  top: 63px;
-  right: 55px;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec3 {
-  width: 213px;
-  height: 475px;
-  margin-right: -1px;
-  position: relative;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec3 .icon {
-  position: absolute;
-  top: 0;
-  width: 82px;
-  height: 82px;
-  top: 63px;
-  right: 35px;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec4 {
-  position: relative;
-  width: 234px;
-  height: 553px;
-  margin-right: -1px;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec4 .icon {
-  position: absolute;
-  top: 0;
-  width: 82px;
-  height: 82px;
-  top: 63px;
-  right: 35px;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec5 {
-  width: 243px;
-  height: 673px;
-  position: relative;
-}
-.bodyRtl .roadMapWrapper .roadBox .vec5 .muscle {
-  position: absolute;
-  height: 441px;
-  bottom: 10px;
-  left: 30px;
 }
 
 .comingSoon {

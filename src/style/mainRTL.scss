@@ -2136,6 +2136,7 @@ body {
     max-width: 95%;
     width: 1360px;
     margin: auto;
+ 
     .header {
       min-height: 280px;
       background-color: rgba(152, 182, 241, 0.18);
@@ -2169,6 +2170,166 @@ body {
         }
         .levelNumber {
           color: #a9a4e3;
+        }
+      }
+      .roadBox {
+        max-width: 80%;
+        position: relative;
+        header{
+          position: absolute;
+          top: 0;
+          width: 50%;
+          left: 0;
+          direction: rtl;
+          .title{
+            font-size: 36px;
+            font-family: $boldFont;
+          }
+          p{
+            font-family: $lightFont;
+            font-size: 18px;
+          }
+        }
+        .infoBox{
+          width: 100%;
+          height: 179px;
+        
+          position: absolute;
+          bottom: 0;
+          .title{
+            direction: rtl;
+            padding: 15px;
+            padding-top: 0;
+            color: white;
+            .number{
+              font-size: 40px;
+              font-family: $boldFont;
+              color: rgba(255, 255, 255, 0.28);
+              margin-left: 8px;
+            }
+            .text{
+              font-size: 22px;
+              font-family: $normalFont;
+            }
+          }
+          p{
+            font-size: 14px;
+            font-family: $lightFont;
+
+          }
+        }
+        .vec1 {
+          width: 217px;
+          height: 333px;
+          margin-right: -1px;
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          .fat {
+            position: absolute;
+            top: -125px;
+            z-index: -1;
+            width: 124px;
+            left: 19px;
+          }
+          .icon {
+            position: absolute;
+            top: 0;
+            width: 82px;
+            height: 82px;
+            top: 63px;
+            right: 13px;
+          }
+        
+        }
+        .vec2 {
+          width: 223px;
+          height: 413px;
+          margin-right: -1px;
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          .infoBox{
+            width: 100%;
+            height:250px;
+         
+            position: absolute;
+            bottom: 0;
+          }
+          .icon {
+            position: absolute;
+            top: 0;
+            width: 82px;
+            height: 82px;
+            top: 63px;
+            right: 55px;
+          }
+        }
+        .vec3 {
+          width: 213px;
+          height: 475px;
+          margin-right: -1px;
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          .icon {
+            position: absolute;
+            top: 0;
+            width: 82px;
+            height: 82px;
+            top: 63px;
+            right: 35px;
+          }
+          .infoBox{
+            width: 100%;
+            height:315px;
+     
+            position: absolute;
+            bottom: 0;
+          }
+        }
+        .vec4 {
+          position: relative;
+          width: 234px;
+          height: 553px;
+          margin-right: -1px;
+          display: flex;
+          justify-content: flex-end;
+          .icon {
+            position: absolute;
+            top: 0;
+            width: 82px;
+            height: 82px;
+            top: 63px;
+            right: 35px;
+          }
+          .infoBox{
+            width: 100%;
+            height:392px;
+        
+            position: absolute;
+            bottom: 0;
+          }
+        }
+        .vec5 {
+          width: 243px;
+          height: 673px;
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          .muscle {
+            position: absolute;
+            height: 441px;
+            bottom: 10px;
+            left: 30px;
+          }
+          .infoBox{
+            width: 100%;
+            height: 98px;
+          
+            position: absolute;
+            top: 125px;
+          }
         }
       }
     }
@@ -2671,83 +2832,7 @@ body {
       }
     }
 
-    .roadBox {
-      max-width: 80%;
-      .vec1 {
-        width: 217px;
-        height: 333px;
-        margin-right: -1px;
-        position: relative;
-        .fat {
-          position: absolute;
-          top: -125px;
-          z-index: -1;
-          width: 124px;
-          left: 19px;
-        }
-        .icon {
-          position: absolute;
-          top: 0;
-          width: 82px;
-          height: 82px;
-          top: 63px;
-          right: 13px;
-        }
-      }
-      .vec2 {
-        width: 223px;
-        height: 413px;
-        margin-right: -1px;
-        position: relative;
-        .icon {
-          position: absolute;
-          top: 0;
-          width: 82px;
-          height: 82px;
-          top: 63px;
-          right: 55px;
-        }
-      }
-      .vec3 {
-        width: 213px;
-        height: 475px;
-        margin-right: -1px;
-        position: relative;
-        .icon {
-          position: absolute;
-          top: 0;
-          width: 82px;
-          height: 82px;
-          top: 63px;
-          right: 35px;
-        }
-      }
-      .vec4 {
-        position: relative;
-        width: 234px;
-        height: 553px;
-        margin-right: -1px;
-        .icon {
-          position: absolute;
-          top: 0;
-          width: 82px;
-          height: 82px;
-          top: 63px;
-          right: 35px;
-        }
-      }
-      .vec5 {
-        width: 243px;
-        height: 673px;
-        position: relative;
-        .muscle {
-          position: absolute;
-          height: 441px;
-          bottom: 10px;
-          left: 30px;
-        }
-      }
-    }
+  
   }
 }
 .comingSoon {
