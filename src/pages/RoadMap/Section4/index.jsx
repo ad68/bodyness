@@ -1,18 +1,18 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import Female from '../../../assets/images/home/female.svg';
-import FemaleBody from '../../../assets/images/home/femaleBody.svg';
-import Male from '../../../assets/images/home/male.svg';
-import MaleBody from '../../../assets/images/home/maleBody.svg';
+import Steps from './components/Steps';
+import Tab1 from './components/Tabs/Tab1';
+import Tab2 from './components/Tabs/Tab2';
+import Tab3 from './components/Tabs/Tab3';
+import Tab4 from './components/Tabs/Tab4';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setTab }) {
+export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const { t } = useTranslation();
+  const [tab, setTab] = useState(1);
   // ─── States ─────────────────────────────────────────────────────────────────────
 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
@@ -25,24 +25,23 @@ export default function Index({ setTab }) {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <>
-      <span className="tabTitle mt-7 m-auto">{t('Home.ChooseGender')}</span>
-      <section className="flex justify-around m-auto mt-7 genderWrapper">
-        <section className="genderBox pb-4" onClick={() => setTab(2)}>
-          <span className="genderTitle">
-            <img src={Female} alt="" />
-            <span>{t('Home.Female')}</span>
-          </span>
-          <img src={FemaleBody} alt="" className="genderBody m-auto mt-4" />
-        </section>
-        <section className="genderBox pb-4" onClick={() => setTab(2)}>
-          <span className="genderTitle">
-            <img src={Male} alt="" />
-            <span>{t('Home.Male')}</span>
-          </span>
-          <img src={MaleBody} alt="" className="genderBody m-auto mt-4" />
-        </section>
+    <section className='section4'>
+      <section className="header">
+        <span className="levelNumber">4</span>
+        <span className="text mr-10">انتخاب بهترین تمرین برای عضله هدف</span>
+        <span className="circle1"></span>
+        <span className="circle2"></span>
+        <span className="circle3"></span>
+        <span className="circle4"></span>
+        <span className="circle5"></span>
+        <span className="circleGr1"></span>
+        <span className="circleGr2"></span>
       </section>
-    </>
+      <Steps tab={tab} />
+      {tab === 1 && <Tab1 setTab={setTab} />}
+      {tab === 2 && <Tab2 setTab={setTab} />}
+      {tab === 3 && <Tab3 setTab={setTab} />}
+      {tab === 4 && <Tab4 setTab={setTab} />}
+    </section>
   );
 }
