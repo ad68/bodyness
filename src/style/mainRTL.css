@@ -2166,7 +2166,6 @@ body {
 }
 .bodyRtl .roadMapWrapper .section1 .header {
   background-color: #eef1ff;
-  margin-top: 20px;
   overflow: visible;
   height: 539px;
 }
@@ -2336,7 +2335,6 @@ body {
   margin-top: 20px;
   overflow: visible;
   height: 539px;
-  margin-top: 100px;
 }
 .bodyRtl .roadMapWrapper .section2 .header img {
   position: absolute;
@@ -2365,7 +2363,6 @@ body {
   margin-top: 20px;
   overflow: visible;
   height: 539px;
-  margin-top: 100px;
 }
 .bodyRtl .roadMapWrapper .section3 .header img {
   position: absolute;
@@ -2448,7 +2445,6 @@ body {
 }
 .bodyRtl .roadMapWrapper .section4 .header {
   background-color: #eef1ff;
-  margin-top: 100px;
 }
 .bodyRtl .roadMapWrapper .section4 .header .circle1 {
   display: block;
@@ -2827,4 +2823,11 @@ body {
 .comingSoon h3 {
   font-size: 43px;
   color: #393939;
+}
+
+.body-map__muscle {
+  color: silver;
+}
+.body-map__muscle:hover {
+  color: red;
 }/*# sourceMappingURL=mainRTL.css.map */

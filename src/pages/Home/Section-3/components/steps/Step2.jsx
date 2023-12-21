@@ -1,6 +1,6 @@
 import React from "react";
-import Muscle from "../../../../../assets/images/home/selectedMuscle.png";
-
+/* import Muscle from "../../../../../assets/images/home/selectedMuscle.png"; */
+import SVG from '../../../../../components/SVG/Muscle'
 import Beceps from "../../../../../assets/images/home/biceps.png"
 import { useTranslation } from "react-i18next";
 
@@ -35,7 +35,9 @@ export default function Index() {
         </span>
       </section>
       <section className="flex justify-around mt-8 muscleBox">
-      <img src={Muscle} className="genderMuscle" alt=""/>
+      {/* <img src={Muscle} className="genderMuscle" alt=""/> */}
+    
+      <SVG style={{margin:'auto',zIndex:10,height:600}} height='600px'/>
       <section className="watermark">Body Ness</section>
       </section>
     

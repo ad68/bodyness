@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import Pic from '../../../assets/images/roadMap/bmiRange.png';
 import bmiBar from '../../../assets/images/roadMap/bmiBar.png';
 import weightHeight from '../../../assets/images/roadMap/weightHeight.png';
+import Menu from '../../../components/Menu';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -23,7 +24,10 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="section3">
+   <>
+   <Menu/>
+   <section className='roadMapWrapper'>
+   <section className="section3">
       <section className="header">
         <span className="levelNumber">3</span>
         <span className="text mr-10">
@@ -193,5 +197,7 @@ export default function Index() {
         <p>ثبت نقاط ضعف و قدرت هم به شما و هم به مربی شما کمک زیادی خواهد کرد تا برنامه</p>
       </section>
     </section>
+   </section>
+   </>
   );
 }

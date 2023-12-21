@@ -30,16 +30,13 @@ export default function Index() {
       <h2>{t('Home.Improve')}</h2>
       <h3>{t('Home.YourMuscles')}</h3>
       <p>{t('Home.ExperienceBest')}</p>
-      <Link to="/roadmap">
-      <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
-        
+      <Link to="/roadmap/section4">
+        <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
           <span className="font-bold">{t('Home.LetsStart')}</span>
-       
-
-        <section className="circle">
-          <img src={Dambel} alt="" />
-        </section>
-      </button>
+          <section className="circle">
+            <img src={Dambel} alt="" />
+          </section>
+        </button>
       </Link>
     </section>
   );

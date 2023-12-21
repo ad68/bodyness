@@ -1,8 +1,10 @@
 import React from "react";
 
 import { useTranslation } from "react-i18next";
-import Muscle from "../../../../../assets/images/home/selectedMuscle.png";
+import SVG from '../../../../../components/SVG/Muscle'
 
+/* import Muscle from "../../../../../assets/images/home/selectedMuscle.png";
+ */
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -32,7 +34,8 @@ export default function Index() {
         </span>
       </section>
       <section className="mobileMuscleBox">
-        <img src={Muscle} className="muscle mt-8 m-auto" alt="" />
+        {/* <img src={Muscle} className="muscle mt-8 m-auto" alt="" /> */}
+        <SVG style={{height:'312px',margin:'auto'}} />
       </section>
       <span className="block text-center mt-5 title">
         {t("Home.ImproveYourMuscles")}

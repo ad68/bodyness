@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import {Link} from 'react-router-dom'
 import Tools1 from '../../../assets/images/home/tools(1).png';
 import Tools2 from '../../../assets/images/home/tools(2).png';
 import Tools3 from '../../../assets/images/home/tools(3).png';
@@ -9,6 +10,7 @@ import Tools2d from '../../../assets/images/home/sec4Tools(2).png';
 import Tools3d from '../../../assets/images/home/sec4Tools(3).png';
 import Tools4d from '../../../assets/images/home/sec4Tools(4).png';
 import Tools5d from '../../../assets/images/home/sec4Tools(5).png';
+
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -50,14 +52,16 @@ export default function Index() {
             <h2>{t('Home.Improve')}</h2>
             <h3>{t('Home.YourMuscles')}</h3>
             <p>{t('Home.ExperienceBest')}</p>
-           
-              <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
+           <Link to="/roadmap/section3">
+           <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
                 <span className="font-bold">{t('Home.LetsStart')}</span>
 
                 <section className="circle">
                  
                 </section>
               </button>
+           </Link>
+              
             
           </section>
         </section>
@@ -70,9 +74,12 @@ export default function Index() {
           <img alt="" className="tools3" src={Tools3} />
           <img alt="" className="tools4" src={Tools4} />
         </section>
-        <button className="letStartBtnMobile mt-10">
+        <Link to="/roadmap/section3" className='letStartBtnMobile mt-10 text-center'>
+        <button>
           {t('Home.LetsStart')}
         </button>
+        </Link>
+       
       </section>
     </>
   );
