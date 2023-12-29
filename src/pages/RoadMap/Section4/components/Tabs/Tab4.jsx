@@ -36,7 +36,6 @@ export default function Index({ setTab }) {
         />
         {t('Basic.ChooseLevel')}
       </span>
-
       <section className="flex justify-between levelBox">
         <section className="item" onClick={() => inputRef1.current.click()}>
           <img src={Human} className="genderImage" alt="" />
@@ -53,7 +52,6 @@ export default function Index({ setTab }) {
             </label>
           </section>
         </section>
-
         <section className="item" onClick={() => inputRef2.current.click()}>
           <img src={Human} className="genderImage" alt="" />
           <section className="mt-4">

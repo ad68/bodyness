@@ -461,10 +461,9 @@ body {
   }
 }
 .bodyRtl .homeWrapper .section2 .rightBox .title {
-  font-size: 96px;
-  direction: ltr;
+  font-size: 44px;
   height: 91px;
-  color: white;
+  color: black;
   align-items: baseline;
 }
 .bodyRtl .homeWrapper .section2 .rightBox .title2 {
@@ -2138,16 +2137,13 @@ body {
   color: white;
 }
 .bodyRtl .roadMapWrapper {
-  padding-top: 120px;
+  padding-top: 96px;
   padding-bottom: 120px;
-  max-width: 95%;
-  width: 1360px;
   margin: auto;
 }
 .bodyRtl .roadMapWrapper .header {
   min-height: 280px;
   background-color: rgba(152, 182, 241, 0.18);
-  border-radius: 24px;
   margin: auto;
   display: flex;
   overflow: hidden;
@@ -2163,6 +2159,19 @@ body {
   font-size: 29px;
   color: rgb(62, 65, 81);
   font-family: IRANSansBold;
+}
+.bodyRtl .roadMapWrapper .letsGoBtn {
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: #a347f1;
+  padding: 10px;
+  color: white;
+  width: 300px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
 }
 .bodyRtl .roadMapWrapper .section1 .header {
   background-color: #eef1ff;
@@ -2527,7 +2536,6 @@ body {
   width: 1144px;
   margin: auto;
   direction: rtl;
-  margin-top: 30px;
   display: flex;
   justify-content: center;
 }

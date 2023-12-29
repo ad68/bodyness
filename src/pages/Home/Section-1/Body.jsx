@@ -85,7 +85,7 @@ export default function Index() {
               <span className="block font-semibold text">
                 {t('Home.TransformLife')}
               </span>
-              <Link to="/BasicInfo">
+              <Link to="/roadmap/section1">
                 <button className="letStartBtn px-6 text-left">
                   <span className="font-bold">{t('Home.LetsStart')}</span>
                   <section className="circle">
@@ -101,12 +101,11 @@ export default function Index() {
           {/* <img className="plate hidden rtl:block" src={PlateFa} alt="" /> */}
         </section>
         {/* mobile */}
-
         <button className="letsStartBtnMobile  md:hidden">
-          <Link to="/BasicInfo">{t('Home.LetsStart')}</Link>
+          <Link to="/roadmap/section1">{t('Home.LetsStart')}</Link>
         </button>
 
-        {/* ---------------------------- */}
+      
       </section>
     </section>
   );

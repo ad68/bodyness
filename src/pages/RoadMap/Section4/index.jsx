@@ -30,7 +30,7 @@ export default function Index() {
       <Menu />
       <section className='roadMapWrapper'>
         <section className='section4'>
-          <section className="header">
+        {/*   <section className="header">
             <span className="levelNumber">4</span>
             <span className="text mr-10">انتخاب بهترین تمرین برای عضله هدف</span>
             <span className="circle1"></span>
@@ -40,7 +40,7 @@ export default function Index() {
             <span className="circle5"></span>
             <span className="circleGr1"></span>
             <span className="circleGr2"></span>
-          </section>
+          </section> */}
           <Steps tab={tab} />
           {tab === 1 && <Tab1 setTab={setTab} />}
           {tab === 2 && <Tab2 setTab={setTab} />}

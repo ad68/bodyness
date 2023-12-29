@@ -77,18 +77,12 @@ export default function Index() {
 
       <section className="rightBox">
         <section>
-          {/* <section className="title font-bold hidden md:flex">
-            F
-            <img src={Mood1} alt="" />
-            <img src={Mood2} alt="" />D
+          <section className="title font-bold hidden md:flex md:px-10">
+           بهترین شیوه تناسب اندام چیه؟
           </section>
-          <section className="title2 font-bold hidden md:flex">
-            M
-            <img src={Mood1} alt="" />
-            <img src={Mood2} alt="" />D
-          </section> */}
-          <p className="mt-10 md:px-10">{t('Home.HealthWell')}</p>
-          <Link to="/roadmap/section1">
+        
+          <p className="mt-3 md:px-10">{t('Home.HealthWell')}</p>
+          <Link to="/roadmap/section2">
           <button className="letStartBtn ltr:ml-10 rtl:mr-10 px-6 mt-6 text-left  hidden md:block">
             <span className="font-bold">{t('Home.LetsStart')}</span>
             <section className="circle">
@@ -97,7 +91,7 @@ export default function Index() {
           </button>
           </Link>
          
-          <Link to="/roadmap/section1">
+          <Link to="/roadmap/section2">
           <button className="letsStartBtnMobile mt-10 md:hidden">
             {t('Home.LetsStart')}
           </button>

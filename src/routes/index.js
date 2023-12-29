@@ -5,6 +5,7 @@ import BasicInfo from '../pages/BasicInfo';
 import CommingSoon from '../pages/ComingSoon';
 import RoadMap from '../pages/RoadMap';
 import Section1 from '../pages/RoadMap/Section1';
+import Section2 from '../pages/RoadMap/Section2';
 import Section3 from '../pages/RoadMap/Section3';
 import Section4 from '../pages/RoadMap/Section4';
 // ────────────────────────────────────────────────────────── I ──────────
@@ -30,6 +31,7 @@ export default function Index() {
       <Route path="/RoadMap" element={<RoadMap />} />
       <Route path="/RoadMap">
         <Route path="/RoadMap/Section1" element={<Section1 />} />
+        <Route path="/RoadMap/Section2" element={<Section2 />} />
         <Route path="/RoadMap/Section3" element={<Section3 />} />
         <Route path="/RoadMap/Section4" element={<Section4 />} />
       </Route>

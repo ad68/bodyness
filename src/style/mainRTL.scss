@@ -11,6 +11,7 @@ $mediumFont: IRANSansMedium;
 $bodyNessPuprple: #a347f1;
 $bodyNessYellow: #f5e170;
 $bodyNessLemon: rgba(255, 249, 227, 1);
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -18,23 +19,30 @@ body {
   font-size: 16px;
   padding: 0;
 }
+
 .bodyRtl {
   font-family: $normalFont, sans-serif;
+
   .langBox {
     font-family: $normalFont;
     position: absolute;
     right: 240px;
+
     @media screen and (max-width: 768px) {
       position: static;
       display: flex;
       flex-direction: column;
     }
+
     button {
       margin-right: 10px;
+
       @media screen and (max-width: 768px) {
         margin-right: 0;
       }
+
       font-weight: 600;
+
       &.active {
         background-color: #0c0c0c36;
         padding: 5px;
@@ -43,12 +51,14 @@ body {
       }
     }
   }
+
   .otherLangBox {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
   }
+
   .mainMenu {
     width: 100%;
     position: fixed;
@@ -62,7 +72,9 @@ body {
       padding-bottom: 0;
       background-color: rgba(255, 255, 255, 0.9);
     }
+
     right: 0;
+
     /* @media screen and (max-width: 1350px) {
       padding: 10px;
     } */
@@ -70,20 +82,24 @@ body {
       position: fixed !important;
       top: 0 !important;
     }
+
     padding-right: 30px;
     padding-left: 30px;
     transition: all 0.2s linear;
     z-index: 200;
     top: 0;
+
     .logo {
       width: 223px;
       height: 57px;
     }
+
     nav {
       a {
         font-size: 20px;
       }
     }
+
     .action {
       width: 222px;
       background-color: $bodyNessPuprple;
@@ -95,6 +111,7 @@ body {
       justify-content: center;
     }
   }
+
   .mobileMenu {
     position: fixed;
     top: 0;
@@ -102,33 +119,36 @@ body {
 
     justify-content: space-between;
     z-index: 100;
+
     .logo {
       margin-left: -29px;
       width: 165px;
     }
   }
+
   .homeWrapper {
     .section1 {
       padding-bottom: 20px;
+
       @media screen and (min-width: 991px) {
         padding-top: 97px;
       }
+
       background: rgb(228, 233, 254);
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(
-        90deg,
-        rgba(228, 233, 254, 1) 0%,
-        rgba(223, 196, 251, 1) 100%
-      );
+      background: linear-gradient(90deg, rgba(228, 233, 254, 1) 0%, rgba(223, 196, 251, 1) 100%);
+
       .mobilePlate {
         width: 100%;
+
         @media only screen and (min-width: 375px) {
           width: 100%;
         }
       }
+
       .watermark {
         font-size: 284px;
         color: #ffffff33;
@@ -137,12 +157,14 @@ body {
         right: 21px;
         line-height: 295px;
         z-index: 0;
+
         @media screen and (max-width: 1920px) {
           font-size: 237px;
           top: -66px;
 
           line-height: 254px;
         }
+
         @media screen and (max-width: 1366px) {
           font-size: 136px;
           top: -12px;
@@ -150,74 +172,94 @@ body {
           line-height: 147px;
         }
       }
+
       .body {
         position: relative;
         width: 100%;
+
         .plate {
           width: 500px;
+
           @media screen and (min-width: 1920px) {
             width: 800px;
           }
         }
+
         .rightBox {
           width: 50%;
+
           .plate {
             width: 90%;
+
             @media screen and (min-width: 1920px) {
               width: 100%;
             }
           }
         }
+
         .leftBox {
           @media screen and (max-width: 991px) {
             width: 100%;
             padding-right: 0;
           }
+
           .letsGoImg {
             @media only screen and (min-width: 375px) {
               width: 85%;
             }
           }
+
           width: 50%;
           display: flex;
           padding-right: 3%;
           flex-direction: column;
           justify-content: center;
         }
+
         .learn {
           font-size: 25px;
+
           @media only screen and (min-width: 375px) {
             font-size: 20px;
           }
+
           font-weight: 600;
           text-align: center;
+
           strong {
             color: $bodyNessPuprple;
             font-weight: 700;
           }
         }
+
         .welcome {
           font-size: 48px;
           z-index: 1;
           position: relative;
+
           @media screen and (max-width: 767px) {
             font-size: 25px;
             text-align: center;
           }
+
           @media screen and (min-width: 1920px) {
             font-size: 100px;
           }
         }
+
         p {
           font-size: 29px;
+
           @media screen and (max-width: 767px) {
             font-size: 24px;
             text-align: center;
           }
+
           @media only screen and (min-width: 375px) {
             font-size: 17px;
           }
         }
+
         .coachTeamBox {
           border-radius: 32px;
           background-color: #a347f1;
@@ -225,6 +267,7 @@ body {
           margin-top: 15%;
           position: relative;
           width: 760px;
+
           @media screen and (max-width: 1366px) {
             width: 561px;
             margin-top: 10%;
@@ -233,45 +276,57 @@ body {
 
           max-width: 100%;
           color: white;
+
           @media screen and (min-height: 900px) {
             margin-top: 27%;
           }
+
           .bodyImg {
             position: absolute;
             bottom: 0px;
             right: 3px;
             width: 308px;
+
             @media screen and (max-width: 1366px) {
               width: 224px;
             }
           }
+
           .action {
             padding-right: 85px;
+
             @media screen and (max-width: 1366px) {
               padding-right: 45px;
             }
+
             .title {
               font-size: 24px;
             }
+
             .text {
               font-size: 18px;
             }
+
             .letStartBtn {
               border-radius: 16px;
               background-color: white;
               min-height: 75px;
               margin-top: 50px;
+
               @media screen and (max-width: 1366px) {
                 margin-top: 30px;
                 min-height: 67px;
               }
+
               width: 90%;
               color: black;
               overflow: hidden;
               position: relative;
+
               span {
                 font-size: 24px;
               }
+
               .circle {
                 width: 122px;
                 height: 122px;
@@ -281,12 +336,14 @@ body {
                 border-radius: 64px;
                 transition: all 0.2s linear;
                 top: 2px;
+
                 img {
                   margin: auto;
                   display: block;
                   margin-top: -7px;
                 }
               }
+
               &:hover {
                 .circle {
                   background-color: #a347f15c;
@@ -295,6 +352,7 @@ body {
             }
           }
         }
+
         .letsStartBtnMobile {
           border-radius: 16px;
           font-size: 20px;
@@ -306,12 +364,14 @@ body {
         }
       }
     }
+
     .section2 {
       background-color: $bodyNessYellow;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+
       @media screen and (max-width: 767px) {
         background-color: $bodyNessLemon;
       }
@@ -326,20 +386,25 @@ body {
         left: 10%;
         align-items: center;
         justify-content: center;
+
         @media screen and (max-width: 1366px) {
           top: 2%;
         }
+
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
         justify-content: space-around;
+
         .info {
           display: flex;
           justify-content: space-between;
           font-size: 16px;
         }
+
         strong {
           font-size: 16px;
         }
       }
+
       .tooltip2 {
         position: absolute;
         background-color: white;
@@ -350,16 +415,20 @@ body {
         right: 22%;
         align-items: center;
         justify-content: center;
+
         @media screen and (max-width: 1366px) {
           right: 18%;
         }
+
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
         justify-content: space-around;
+
         .info {
           display: flex;
           justify-content: space-between;
           font-size: 16px;
         }
+
         strong {
           font-size: 16px;
         }
@@ -375,15 +444,18 @@ body {
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 
         justify-content: space-around;
+
         .info {
           display: flex;
           justify-content: space-between;
           font-size: 16px;
         }
+
         strong {
           font-size: 16px;
         }
       }
+
       .plateBox {
         /* height: 100%; */
         display: flex;
@@ -395,15 +467,18 @@ body {
         padding-left: 30px;
         background-color: rgba(255, 255, 255, 0.356);
         position: relative;
+
         .plate {
           z-index: 1;
         }
+
         .lemon {
           position: absolute;
           right: 26px;
           top: -60px;
           z-index: 0;
         }
+
         .tomato {
           position: absolute;
           left: -40px;
@@ -411,17 +486,21 @@ body {
           z-index: 0;
         }
       }
+
       .fullPlate {
         width: 80%;
+
         @media screen and (max-width: 991px) {
           width: 100%;
         }
       }
+
       .leftBox {
         position: relative;
         width: 50%;
         display: flex;
         justify-content: flex-end;
+
         @media screen and (max-width: 991px) {
           position: static;
           width: 100%;
@@ -429,18 +508,21 @@ body {
           justify-content: center;
         }
       }
+
       .rightBox {
         width: 50%;
+
         @media screen and (max-width: 991px) {
           width: 100%;
         }
+
         .title {
-          font-size: 96px;
-          direction: ltr;
+          font-size: 44px;
           height: 91px;
-          color: white;
+          color: black;
           align-items: baseline;
         }
+
         .title2 {
           font-size: 96px;
           direction: ltr;
@@ -449,13 +531,16 @@ body {
           align-items: baseline;
           padding-left: 214px;
         }
+
         p {
           font-size: 33px;
+
           @media screen and (max-width: 767px) {
             font-size: 24px;
             text-align: center;
           }
         }
+
         .letStartBtn {
           border-radius: 16px;
           background-color: black;
@@ -466,9 +551,11 @@ body {
           width: 362px;
           position: relative;
           padding: 19px;
+
           span {
             font-size: 24px;
           }
+
           .circle {
             width: 122px;
             height: 122px;
@@ -478,12 +565,14 @@ body {
             border-radius: 64px;
             transition: all 0.2s linear;
             top: 2px;
+
             img {
               margin: auto;
               display: block;
               width: 80px;
             }
           }
+
           &:hover {
             .circle {
               background-color: #323232f5;
@@ -491,6 +580,7 @@ body {
           }
         }
       }
+
       .letsStartBtnMobile {
         border-radius: 16px;
         font-size: 20px;
@@ -502,18 +592,22 @@ body {
         color: white;
       }
     }
+
     .section3 {
       background-color: #eef9ff;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+
       .lineTab {
         display: flex;
         justify-content: center;
+
         @media screen and (max-width: 1366px) {
           margin-top: 42px;
         }
+
         .tab {
           background-color: #c9dbe5;
           height: 6px;
@@ -522,6 +616,7 @@ body {
           margin-left: 10px;
           transition: all 0.2s linear;
           cursor: pointer;
+
           &.active {
             width: 89px;
             /* height: 6px; */
@@ -529,29 +624,36 @@ body {
           }
         }
       }
+
       .tabTitle {
         font-family: $boldFont;
         font-size: 17px;
+
         .arm {
           width: 46px;
+
           @media screen and (max-width: 1366px) {
             display: none;
           }
         }
+
         @media screen and (min-width: 1350px) {
           font-size: 29px;
         }
       }
+
       .title {
         font-size: 23px;
         font-weight: 700;
       }
+
       p {
         font-size: 20px;
 
         font-family: $boldFont;
         color: #000000b3;
       }
+
       .stepNumberBox {
         background-color: $bodyNessPuprple;
         color: white;
@@ -565,6 +667,7 @@ body {
         align-items: center;
         font-family: $boldFont;
       }
+
       .mobileGenderBox {
         background-color: white;
         border-radius: 24px;
@@ -584,21 +687,25 @@ body {
           border-radius: 16px;
         }
       }
+
       .mobileMuscleBox {
         border-radius: 24px;
         width: 100%;
         height: 297px;
         text-align: center;
+
         .muscle {
           height: 270px;
           display: block;
         }
       }
+
       .genderBox {
         background-color: white;
         border-radius: 24px;
         width: 48%;
         text-align: center;
+
         .genderTitle {
           background-color: #e7f6ff;
           padding: 10px;
@@ -610,20 +717,25 @@ body {
           margin: auto;
           margin-top: 10px;
           border-radius: 16px;
+
           img {
             width: 35px;
           }
         }
+
         .genderBody {
           height: 500px;
+
           @media screen and (max-width: 1366px) {
             height: 300px;
           }
         }
       }
+
       .muscleBox {
         height: 598px;
         position: relative;
+
         .watermark {
           font-size: 233px;
           font-weight: 600;
@@ -636,26 +748,32 @@ body {
           left: 0;
           line-height: 222px;
         }
+
         @media screen and (max-width: 1366px) {
           height: auto;
         }
+
         .genderMuscle {
           height: 500px;
           z-index: 10;
+
           @media screen and (max-width: 1350px) {
             height: 400px;
           }
         }
       }
+
       .equipmentBox {
         height: 598px;
         width: 585px;
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
+
         @media screen and (max-width: 1366px) {
           height: auto;
         }
+
         .box {
           background-color: white;
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
@@ -676,6 +794,7 @@ body {
             width:44%
          } */
         }
+
         .label {
           display: block;
           margin-top: 10px;
@@ -684,22 +803,26 @@ body {
           font-family: $normalFont;
         }
       }
+
       .mobileEquipmentBox {
         height: 300px;
         width: 100%;
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
+
         .mainWrraper {
           width: 300px;
           margin: auto;
           max-width: 100%;
           overflow: scroll;
+
           .scrollWrapper {
             width: 800px;
             display: flex;
             justify-content: space-between;
           }
+
           .box {
             background-color: white;
             box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
@@ -711,6 +834,7 @@ body {
             flex-direction: column;
             align-items: center;
           }
+
           .label {
             display: block;
             margin-top: 10px;
@@ -719,15 +843,18 @@ body {
           }
         }
       }
+
       .coachSportBox {
         height: 598px;
         width: 585px;
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
+
         @media screen and (max-width: 1366px) {
           height: auto;
         }
+
         .box {
           background-color: white;
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
@@ -738,11 +865,13 @@ body {
           display: flex;
           justify-content: center;
           align-items: end;
+
           img {
             width: 71%;
           }
         }
       }
+
       .mobileCoachSportBox {
         height: 313px;
         width: 100%;
@@ -765,21 +894,26 @@ body {
 
           align-items: end;
         }
+
         .stepInfo {
           img {
             width: 140px;
           }
+
           h2 {
             font-family: $normalFont;
             font-size: 80px;
           }
+
           h3 {
             font-family: $normalFont;
             font-size: 50px;
           }
+
           p {
             font-size: 24px;
           }
+
           .letStartBtn {
             border-radius: 16px;
             background-color: black;
@@ -790,9 +924,11 @@ body {
             width: 362px;
             position: relative;
             padding: 19px;
+
             span {
               font-size: 24px;
             }
+
             .circle {
               width: 122px;
               height: 122px;
@@ -802,6 +938,7 @@ body {
               border-radius: 64px;
               transition: all 0.2s linear;
               top: 2px;
+
               img {
                 margin: auto;
                 display: block;
@@ -809,6 +946,7 @@ body {
                 margin-top: 20px;
               }
             }
+
             &:hover {
               .circle {
                 background-color: #323232f5;
@@ -816,6 +954,7 @@ body {
             }
           }
         }
+
         .letStartBtnMobile {
           border-radius: 16px;
           font-size: 20px;
@@ -827,24 +966,30 @@ body {
           color: white;
         }
       }
+
       .stepInfo {
         img {
           width: 140px;
         }
+
         h2 {
           font-family: $boldFont;
           font-size: 80px;
+
           @media screen and (max-width: 1366px) {
             font-size: 50px;
           }
         }
+
         h3 {
           font-family: $boldFont;
           font-size: 40px;
         }
+
         p {
           font-size: 24px;
         }
+
         .letStartBtn {
           border-radius: 16px;
           background-color: black;
@@ -855,9 +1000,11 @@ body {
           width: 362px;
           position: relative;
           padding: 19px;
+
           span {
             font-size: 24px;
           }
+
           .circle {
             width: 122px;
             height: 122px;
@@ -867,6 +1014,7 @@ body {
             border-radius: 64px;
             transition: all 0.2s linear;
             top: 2px;
+
             img {
               margin: auto;
               display: block;
@@ -874,6 +1022,7 @@ body {
               margin-top: 20px;
             }
           }
+
           &:hover {
             .circle {
               background-color: #323232f5;
@@ -881,6 +1030,7 @@ body {
           }
         }
       }
+
       .letStartBtnMobile {
         border-radius: 16px;
         font-size: 20px;
@@ -892,15 +1042,14 @@ body {
         color: white;
       }
     }
+
     .section4 {
-      background: linear-gradient(
-        90deg,
-        rgba(228, 233, 254, 1) 0%,
-        rgba(223, 196, 251, 1) 100%
-      );
+      background: linear-gradient(90deg, rgba(228, 233, 254, 1) 0%, rgba(223, 196, 251, 1) 100%);
+
       &.mobile {
         flex-direction: column;
       }
+
       height: 100vh;
       justify-content: center;
       align-items: center;
@@ -910,12 +1059,15 @@ body {
         font-family: $veryBoldFont;
         margin-bottom: 20px;
       }
+
       .toolsWrapper {
         display: flex;
         width: 35%;
+
         @media screen and (max-height: 719px) {
           transform: scale(0.8);
         }
+
         .toolsBox {
           display: flex;
           flex-direction: column;
@@ -923,27 +1075,34 @@ body {
           justify-content: center;
         }
       }
+
       .textWrapper {
         display: flex;
         width: 49%;
+
         .stepInfo {
           img {
             width: 140px;
           }
+
           h2 {
             font-family: $boldFont;
             font-size: 80px;
+
             @media screen and (max-width: 1366px) {
               font-size: 50px;
             }
           }
+
           h3 {
             font-family: $boldFont;
             font-size: 40px;
           }
+
           p {
             font-size: 24px;
           }
+
           .letStartBtn {
             border-radius: 16px;
             background-color: black;
@@ -954,9 +1113,11 @@ body {
             width: 362px;
             position: relative;
             padding: 19px;
+
             span {
               font-size: 24px;
             }
+
             .circle {
               width: 122px;
               height: 122px;
@@ -966,6 +1127,7 @@ body {
               border-radius: 64px;
               transition: all 0.2s linear;
               top: 2px;
+
               img {
                 margin: auto;
                 display: block;
@@ -973,6 +1135,7 @@ body {
                 margin-top: 20px;
               }
             }
+
             &:hover {
               .circle {
                 background-color: #323232f5;
@@ -981,33 +1144,39 @@ body {
           }
         }
       }
+
       .toolsWrapperMobile {
         display: flex;
         width: 70%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .tools1 {
           width: 62%;
           margin-left: -42%;
         }
+
         .tools2 {
           width: 62%;
           margin-top: -38px;
           margin-right: -42%;
         }
+
         .tools3 {
           width: 62%;
           margin-top: -85px;
           margin-left: -42%;
           z-index: 10;
         }
+
         .tools4 {
           width: 62%;
           margin-top: -54px;
           margin-right: -42%;
         }
       }
+
       .letStartBtnMobile {
         border-radius: 16px;
         font-size: 20px;
@@ -1017,72 +1186,87 @@ body {
         padding: 10px;
         width: 80%;
         color: white;
+
         a {
           display: block;
         }
       }
     }
+
     .section5 {
       background-color: #fff5dc;
       position: relative;
+
       @media screen and (max-width: 767px) {
         background-color: rgba(255, 154, 124, 0.23);
       }
+
       .mainTitle {
         font-size: 40px;
         font-family: $boldFont;
       }
+
       .mainDtl {
         font-size: 20px;
         font-family: $normalFont;
         text-align: center;
       }
+
       height: 100vh;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
       .title {
         font-size: 22px;
         font-family: $boldFont;
         margin-bottom: 20px;
       }
+
       .tomato {
         width: 201px;
         position: absolute;
         left: 10px;
         top: 20px;
       }
+
       .freshGreen {
         width: 201px;
         position: absolute;
         right: 10px;
         bottom: 20px;
       }
+
       .foodWrapper {
         width: 100%;
         display: flex;
         z-index: 2;
+
         @media screen and (min-width: 991px) {
           width: 1200px;
           display: flex;
           justify-content: space-around;
           max-width: 100%;
+
           .foodBox {
             width: 240px !important;
             margin-right: 0 !important;
           }
         }
+
         .foodBox {
           background-color: white;
           border-radius: 16px;
           width: 42%;
           margin-right: 5%;
           padding-bottom: 10px;
+
           .saladPlate {
             width: 70%;
             margin: auto;
             margin-top: -59px;
           }
+
           .title {
             font-family: $normalFont;
             font-size: 16px;
@@ -1090,20 +1274,24 @@ body {
             display: block;
             margin-bottom: 5px;
           }
+
           .calTimeBox {
             display: flex;
             justify-content: center;
 
             align-items: center;
+
             img {
               width: 30px;
               height: 30px;
             }
+
             span {
               font-size: 11px;
               font-family: $boldFont;
             }
           }
+
           .fatBox {
             display: flex;
             justify-content: center;
@@ -1114,17 +1302,20 @@ body {
             height: 40px;
             margin: auto;
             margin-top: 10px;
+
             .grayTitle {
               color: rgba(0, 0, 0, 0.4);
               font-size: 12px;
               display: block;
             }
+
             .value {
               font-family: $boldFont;
               font-size: 12px;
               display: block;
               text-align: center;
             }
+
             .pipe {
               width: 1px;
               height: 18px;
@@ -1147,15 +1338,18 @@ body {
       }
     }
   }
+
   .basicInfoWrapperMobile {
     position: relative;
     height: 100vh;
+
     .contentWrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: calc(100vh - 60px);
     }
+
     .progressBox {
       display: flex;
       justify-content: center;
@@ -1171,6 +1365,7 @@ body {
         top: -8px;
       }
     }
+
     .bodyFatSelectorBox {
       border-radius: 6px;
       background-color: rgba(244, 244, 244, 1);
@@ -1187,6 +1382,7 @@ body {
       * {
         transition: all 0.1s linear;
       }
+
       .labelMin {
         position: absolute;
         right: 0;
@@ -1194,6 +1390,7 @@ body {
         font-family: $lightFont;
         top: 27px;
       }
+
       .labelMax {
         position: absolute;
         left: 0;
@@ -1201,6 +1398,7 @@ body {
         font-family: $lightFont;
         top: 27px;
       }
+
       .item {
         width: 6px;
         height: 6px;
@@ -1208,6 +1406,7 @@ body {
         display: block;
         border-radius: 50px;
         position: relative;
+
         .tooltip {
           font-family: $boldFont;
           font-size: 16px;
@@ -1217,6 +1416,7 @@ body {
           width: 70px;
           margin-right: 23px;
         }
+
         &.active {
           background-color: white;
           border: 3px solid rgba(146, 108, 255, 1);
@@ -1229,6 +1429,7 @@ body {
           .tooltip {
             display: block;
           }
+
           .core {
             display: block;
             background-color: rgba(146, 108, 255, 1);
@@ -1239,53 +1440,64 @@ body {
         }
       }
     }
+
     .bodyImage {
       display: block;
       margin: auto;
       width: 37%;
+
       @media screen and (min-height: 741px) {
         width: 45%;
       }
     }
+
     .title {
       font-weight: 700;
       font-size: 24px;
       font-family: $boldFont;
     }
+
     .help {
       border: 1px solid #efefef;
       border-radius: 16px;
       min-height: 100px;
       font-family: $lightFont;
+
       color:rgba(0, 0, 0, 0.4) img {
         width: 30px !important;
         height: 30px !important;
         margin-right: auto;
       }
+
       p {
         width: 85%;
       }
     }
+
     .genderBox {
       position: absolute;
       width: 90%;
       bottom: 30px;
+
       .item {
         width: 46%;
         height: 251px;
         border-radius: 12px;
         height: 152px;
         box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+
         .title {
           font-family: $boldFont;
           font-size: 16px;
           margin-top: 20px;
         }
+
         .genderImage {
           margin-top: -100px;
         }
       }
     }
+
     .letStartBtnMobile {
       border-radius: 16px;
       font-size: 20px;
@@ -1297,10 +1509,12 @@ body {
       margin: auto;
       color: white;
       margin-top: 60px;
+
       @media screen and (min-height: 741px) {
         margin-top: 130px;
       }
     }
+
     .goalBox {
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 16px;
@@ -1308,20 +1522,24 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
+
       img {
         width: 140px;
       }
+
       .text {
         color: rgba(0, 0, 0, 0.7);
         font-family: $boldFont;
         font-size: 18px;
       }
     }
+
     .swiper-slide {
       height: 180px;
       display: flex;
       justify-content: center;
       margin-top: 30px;
+
       .myRing {
         border: 14px solid rgba(163, 71, 241, 0.09);
         width: 170px;
@@ -1332,6 +1550,7 @@ body {
         align-items: center;
       }
     }
+
     .swiperInfo {
       .title {
         font-family: $boldFont;
@@ -1339,6 +1558,7 @@ body {
         text-align: center;
         display: block;
       }
+
       .text {
         font-family: $normalFont;
         font-size: 18px;
@@ -1347,75 +1567,94 @@ body {
         min-height: 54px;
       }
     }
+
     .swiperStatus {
       display: flex;
       justify-content: space-around;
       align-items: baseline;
+
       &.active1 {
         .bar:nth-child(1) {
           background-color: rgba(0, 213, 183, 1);
         }
       }
+
       &.active2 {
         .bar:nth-child(1) {
           background-color: rgba(253, 131, 188, 1);
         }
+
         .bar:nth-child(2) {
           background-color: rgba(253, 131, 188, 1);
         }
       }
+
       &.active3 {
         .bar:nth-child(1) {
           background-color: rgba(255, 154, 124, 1);
         }
+
         .bar:nth-child(2) {
           background-color: rgba(255, 154, 124, 1);
         }
+
         .bar:nth-child(3) {
           background-color: rgba(255, 154, 124, 1);
         }
       }
+
       &.active4 {
         .bar:nth-child(1) {
           background-color: rgba(108, 149, 255, 1);
         }
+
         .bar:nth-child(2) {
           background-color: rgba(108, 149, 255, 1);
         }
+
         .bar:nth-child(3) {
           background-color: rgba(108, 149, 255, 1);
         }
+
         .bar:nth-child(4) {
           background-color: rgba(108, 149, 255, 1);
         }
       }
+
       &.active5 {
         .bar {
           background-color: rgba(146, 108, 255, 1);
         }
       }
+
       .bar {
         display: block;
         width: 38px;
         border-radius: 33px;
         background-color: rgba(244, 244, 244, 1);
       }
+
       .bar1 {
         height: 60px;
       }
+
       .bar2 {
         height: 84px;
       }
+
       .bar3 {
         height: 118px;
       }
+
       .bar4 {
         height: 147px;
       }
+
       .bar5 {
         height: 173px;
       }
     }
+
     .replyBox {
       background-color: rgba(244, 244, 244, 1);
       border-radius: 16px;
@@ -1428,11 +1667,13 @@ body {
       margin-top: 20px;
       width: 100%;
     }
+
     .yesNoBox {
       display: flex;
       justify-content: space-around;
       align-items: center;
       margin-top: 40%;
+
       button {
         display: flex;
         justify-content: center;
@@ -1444,12 +1685,14 @@ body {
         font-family: $boldFont;
         background-color: rgba(244, 244, 244, 1);
         outline: none;
+
         img {
           margin-left: 20px;
           width: 24px;
         }
       }
     }
+
     .rangeWrapper {
       height: 500px;
       text-align: center;
@@ -1470,6 +1713,7 @@ body {
         font-family: $boldFont;
         direction: rtl;
       }
+
       .ruler {
         height: 304px;
         width: 38px;
@@ -1478,6 +1722,7 @@ body {
         top: 7px;
         /* z-index: 1; */
         direction: rtl;
+
         .item {
           display: block;
           width: 22px;
@@ -1485,6 +1730,7 @@ body {
           background-color: silver;
           margin-top: 6px;
         }
+
         .item-big {
           display: block;
           width: 38px;
@@ -1493,6 +1739,7 @@ body {
           margin-top: 6px;
         }
       }
+
       .weightRuler {
         height: 40px;
         width: 100%;
@@ -1503,17 +1750,20 @@ body {
         top: 7px;
         /* z-index: 1; */
         direction: rtl;
+
         .item {
           width: 2px;
           height: 22px;
           background-color: silver;
         }
+
         .item-big {
           width: 3px;
           height: 38px;
           background-color: silver;
         }
       }
+
       .human {
         position: absolute;
         /*   top: 0; */
@@ -1522,6 +1772,7 @@ body {
         z-index: -1;
       }
     }
+
     .valueChangerBox {
       background-color: rgba(244, 244, 244, 1);
       display: flex;
@@ -1533,6 +1784,7 @@ body {
       border-radius: 12px;
       margin: auto;
       margin-top: 15px;
+
       .operator {
         cursor: pointer;
         background: none;
@@ -1541,16 +1793,19 @@ body {
         width: 30px;
         height: 30px;
         text-align: center;
+
         img {
           width: 23px;
           margin: auto;
         }
       }
+
       .text {
         .value {
           font-size: 24px;
           font-family: $boldFont;
         }
+
         .unit {
           font-size: 20px;
           font-family: $lightFont;
@@ -1558,6 +1813,7 @@ body {
         }
       }
     }
+
     .unitBox {
       display: flex;
       flex-direction: row;
@@ -1566,6 +1822,7 @@ body {
       height: 56px;
       width: 300px;
       margin: auto;
+
       .item {
         border-radius: 18px;
         background-color: rgba(244, 244, 244, 1);
@@ -1578,6 +1835,7 @@ body {
         justify-content: space-around;
         font-size: 18px;
         font-family: $boldFont;
+
         &.active {
           background-color: #a347f1;
           color: white;
@@ -1585,17 +1843,21 @@ body {
       }
     }
   }
+
   .basicInfoWrapper {
     position: relative;
     height: 100vh;
+
     .title {
       font-weight: 700;
       font-size: 48px;
       font-family: $boldFont;
+
       @media screen and (max-width: 1366px) {
         font-size: 33px;
       }
     }
+
     .help {
       border: 1px solid #efefef;
       border-radius: 16px;
@@ -1605,15 +1867,18 @@ body {
       width: 565px;
       max-width: 100%;
       margin: auto;
+
       img {
         width: 30px !important;
         height: 30px !important;
         margin-left: auto;
       }
+
       p {
         width: 85%;
       }
     }
+
     .progressBox {
       display: flex;
       width: 1360px;
@@ -1626,9 +1891,11 @@ body {
       margin-top: 20px;
       margin: auto;
       position: relative;
+
       @media screen and (max-width: 1366px) {
         transform: scale(0.8);
       }
+
       .arrow {
         width: 40px;
         height: 40px;
@@ -1636,6 +1903,7 @@ body {
         cursor: pointer;
         left: 30px;
       }
+
       .close {
         /*  margin-left: auto; */
         position: absolute;
@@ -1644,31 +1912,37 @@ body {
         cursor: pointer;
       }
     }
+
     .genderBox {
       width: 574px;
       max-width: 100%;
       margin: auto;
       margin-top: 197px;
+
       @media screen and (max-width: 1366px) {
         margin-top: 90px;
         transform: scale(0.8);
       }
+
       .item {
         width: 46%;
         height: 269px;
         border-radius: 12px;
         box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
         cursor: pointer;
+
         .title {
           font-family: $boldFont;
           font-size: 16px;
           margin-top: 20px;
         }
+
         .genderImage {
           margin-top: -120px;
         }
       }
     }
+
     .letStartBtn {
       border-radius: 16px;
       font-size: 20px;
@@ -1681,18 +1955,22 @@ body {
       margin: auto;
       color: white;
       margin-top: 60px;
+
       @media screen and (min-height: 741px) {
         margin-top: 130px;
       }
     }
+
     .bodyImage {
       display: block;
       margin: auto;
       height: 400px;
+
       @media screen and (max-width: 1366px) {
         height: 250px;
       }
     }
+
     .bodyFatSelectorBox {
       border-radius: 6px;
       background-color: rgba(244, 244, 244, 1);
@@ -1713,9 +1991,11 @@ body {
       align-items: center;
       padding-left: 10px;
       padding-right: 10px;
+
       @media screen and (max-width: 1366px) {
         margin-top: 20px;
       }
+
       .labelMin {
         position: absolute;
         right: 0;
@@ -1723,6 +2003,7 @@ body {
         font-family: $mediumFont;
         top: 27px;
       }
+
       .labelMax {
         position: absolute;
         left: 0;
@@ -1730,6 +2011,7 @@ body {
         font-family: $mediumFont;
         top: 27px;
       }
+
       .activeLine1 {
         position: absolute;
         height: 17px;
@@ -1740,6 +2022,7 @@ body {
         border-radius: 6px;
         transition: all 0.2s linear;
       }
+
       .activeLine2 {
         position: absolute;
         height: 17px;
@@ -1750,6 +2033,7 @@ body {
         border-radius: 6px;
         transition: all 0.2s linear;
       }
+
       .activeLine3 {
         position: absolute;
         height: 17px;
@@ -1760,6 +2044,7 @@ body {
         border-radius: 6px;
         transition: all 0.2s linear;
       }
+
       .activeLine4 {
         position: absolute;
         height: 17px;
@@ -1770,6 +2055,7 @@ body {
         border-radius: 6px;
         transition: all 0.2s linear;
       }
+
       .activeLine5 {
         position: absolute;
         height: 17px;
@@ -1784,6 +2070,7 @@ body {
       * {
         transition: all 0.1s linear;
       }
+
       .item {
         width: 10px;
         height: 10px;
@@ -1792,6 +2079,7 @@ body {
         border-radius: 50px;
         cursor: pointer;
         position: relative;
+
         .tooltip {
           font-family: $boldFont;
           font-size: 16px;
@@ -1801,6 +2089,7 @@ body {
           width: 70px;
           margin-right: 23px;
         }
+
         &.active {
           background-color: white;
           border: 3px solid rgba(146, 108, 255, 1);
@@ -1813,6 +2102,7 @@ body {
           .tooltip {
             display: block;
           }
+
           .core {
             display: block;
             background-color: rgba(146, 108, 255, 1);
@@ -1823,6 +2113,7 @@ body {
         }
       }
     }
+
     .goalBox {
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 16px;
@@ -1833,25 +2124,30 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
+
       img {
         width: 140px;
       }
+
       .text {
         color: rgba(0, 0, 0, 0.7);
         font-family: $boldFont;
         font-size: 18px;
       }
     }
+
     .swiperWrapper {
       width: 550px;
       max-width: 100%;
       margin: auto;
+
       .swiper-slide {
         height: 180px;
         display: flex;
         justify-content: center;
         margin-top: 30px;
         cursor: pointer;
+
         .myRing {
           border: 14px solid rgba(163, 71, 241, 0.09);
           width: 170px;
@@ -1862,6 +2158,7 @@ body {
           align-items: center;
         }
       }
+
       .swiperInfo {
         .title {
           font-family: $boldFont;
@@ -1869,6 +2166,7 @@ body {
           text-align: center;
           display: block;
         }
+
         .text {
           font-family: $mediumFont;
           font-size: 18px;
@@ -1877,30 +2175,37 @@ body {
           min-height: 54px;
         }
       }
+
       .swiperStatus {
         display: flex;
         justify-content: space-around;
         align-items: baseline;
+
         &.active1 {
           .bar:nth-child(1) {
             background-color: rgba(0, 213, 183, 1);
           }
         }
+
         &.active2 {
           .bar:nth-child(1) {
             background-color: rgba(253, 131, 188, 1);
           }
+
           .bar:nth-child(2) {
             background-color: rgba(253, 131, 188, 1);
           }
         }
+
         &.active3 {
           .bar:nth-child(1) {
             background-color: rgba(255, 154, 124, 1);
           }
+
           .bar:nth-child(2) {
             background-color: rgba(255, 154, 124, 1);
           }
+
           .bar:nth-child(3) {
             background-color: rgba(255, 154, 124, 1);
           }
@@ -1910,44 +2215,55 @@ body {
           .bar:nth-child(1) {
             background-color: rgba(108, 149, 255, 1);
           }
+
           .bar:nth-child(2) {
             background-color: rgba(108, 149, 255, 1);
           }
+
           .bar:nth-child(3) {
             background-color: rgba(108, 149, 255, 1);
           }
+
           .bar:nth-child(4) {
             background-color: rgba(108, 149, 255, 1);
           }
         }
+
         &.active5 {
           .bar {
             background-color: rgba(146, 108, 255, 1);
           }
         }
+
         .bar {
           display: block;
           width: 38px;
           border-radius: 33px;
           background-color: rgba(244, 244, 244, 1);
         }
+
         .bar1 {
           height: 60px;
         }
+
         .bar2 {
           height: 84px;
         }
+
         .bar3 {
           height: 118px;
         }
+
         .bar4 {
           height: 147px;
         }
+
         .bar5 {
           height: 173px;
         }
       }
     }
+
     .replyBox {
       background-color: rgba(244, 244, 244, 1);
       border-radius: 16px;
@@ -1962,6 +2278,7 @@ body {
       width: 670px;
       cursor: pointer;
     }
+
     .yesNoBox {
       display: flex;
       justify-content: space-around;
@@ -1971,6 +2288,7 @@ body {
 
       margin: auto;
       margin-top: 10%;
+
       button {
         display: flex;
         justify-content: center;
@@ -1982,6 +2300,7 @@ body {
         font-family: $boldFont;
         background-color: rgba(244, 244, 244, 1);
         outline: none;
+
         img {
           margin-left: 20px;
           width: 40px;
@@ -1989,6 +2308,7 @@ body {
         }
       }
     }
+
     .rangeWrapper {
       height: 500px;
       text-align: center;
@@ -2000,10 +2320,12 @@ body {
       position: relative;
       direction: ltr;
       overflow: hidden;
+
       @media screen and (max-width: 1366px) {
         transform: scale(0.8);
         margin-top: -21px;
       }
+
       .wightInfo {
         display: block;
         margin: auto;
@@ -2012,6 +2334,7 @@ body {
         font-family: $boldFont;
         direction: rtl;
       }
+
       .ruler {
         height: 304px;
         width: 38px;
@@ -2020,6 +2343,7 @@ body {
         top: 7px;
         /* z-index: 1; */
         direction: rtl;
+
         .item {
           display: block;
           width: 22px;
@@ -2027,6 +2351,7 @@ body {
           background-color: silver;
           margin-top: 6px;
         }
+
         .item-big {
           display: block;
           width: 38px;
@@ -2035,6 +2360,7 @@ body {
           margin-top: 6px;
         }
       }
+
       .weightRuler {
         height: 40px;
         width: 100%;
@@ -2045,17 +2371,20 @@ body {
         top: 7px;
         /* z-index: 1; */
         direction: rtl;
+
         .item {
           width: 4px;
           height: 22px;
           background-color: silver;
         }
+
         .item-big {
           width: 4px;
           height: 38px;
           background-color: silver;
         }
       }
+
       .human {
         position: absolute;
         /*   top: 0; */
@@ -2064,6 +2393,7 @@ body {
         z-index: -1;
       }
     }
+
     .valueChangerBox {
       background-color: rgba(244, 244, 244, 1);
       display: flex;
@@ -2075,9 +2405,11 @@ body {
       border-radius: 12px;
       margin: auto;
       margin-top: 30px;
+
       @media screen and (max-width: 1366px) {
         margin-top: 10px;
       }
+
       .operator {
         cursor: pointer;
         background: none;
@@ -2086,16 +2418,19 @@ body {
         width: 30px;
         height: 30px;
         text-align: center;
+
         img {
           width: 23px;
           margin: auto;
         }
       }
+
       .text {
         .value {
           font-size: 24px;
           font-family: $boldFont;
         }
+
         .unit {
           font-size: 20px;
           font-family: $lightFont;
@@ -2103,6 +2438,7 @@ body {
         }
       }
     }
+
     .unitBox {
       display: flex;
       flex-direction: row;
@@ -2111,6 +2447,7 @@ body {
       height: 56px;
       width: 300px;
       margin: auto;
+
       .item {
         border-radius: 18px;
         background-color: rgba(244, 244, 244, 1);
@@ -2123,6 +2460,7 @@ body {
         justify-content: space-around;
         font-size: 18px;
         font-family: $boldFont;
+
         &.active {
           background-color: #a347f1;
           color: white;
@@ -2131,16 +2469,12 @@ body {
     }
   }
   .roadMapWrapper {
-    padding-top: 120px;
+    padding-top: 96px;
     padding-bottom: 120px;
-    max-width: 95%;
-    width: 1360px;
     margin: auto;
-
     .header {
       min-height: 280px;
       background-color: rgba(152, 182, 241, 0.18);
-      border-radius: 24px;
       margin: auto;
       display: flex;
       overflow: hidden;
@@ -2157,10 +2491,22 @@ body {
         font-family: $boldFont;
       }
     }
+    .letsGoBtn {
+      display: block;
+      margin: auto;
+      text-align: center;
+      background-color: $bodyNessPuprple;
+      padding: 10px;
+      color: white;
+      width: 300px;
+      margin-top: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
     .section1 {
       .header {
         background-color: #eef1ff;
-      
         overflow: visible;
         height: 539px;
         img {
@@ -2181,42 +2527,50 @@ body {
           width: 50%;
           left: 0;
           direction: rtl;
+
           .title {
             font-size: 36px;
             font-family: $boldFont;
           }
+
           p {
             font-family: $lightFont;
             font-size: 18px;
           }
         }
+
         .infoBox {
           width: 100%;
           height: 179px;
 
           position: absolute;
           bottom: 0;
+
           .title {
             direction: rtl;
             padding: 15px;
             padding-top: 0;
             color: white;
+
             .number {
               font-size: 40px;
               font-family: $boldFont;
               color: rgba(255, 255, 255, 0.28);
               margin-left: 8px;
             }
+
             .text {
               font-size: 22px;
               font-family: $normalFont;
             }
           }
+
           p {
             font-size: 14px;
             font-family: $lightFont;
           }
         }
+
         .vec1 {
           width: 217px;
           height: 333px;
@@ -2224,6 +2578,7 @@ body {
           position: relative;
           display: flex;
           justify-content: flex-end;
+
           .fat {
             position: absolute;
             top: -125px;
@@ -2231,6 +2586,7 @@ body {
             width: 124px;
             left: 19px;
           }
+
           .icon {
             position: absolute;
             top: 0;
@@ -2240,6 +2596,7 @@ body {
             right: 13px;
           }
         }
+
         .vec2 {
           width: 223px;
           height: 413px;
@@ -2247,6 +2604,7 @@ body {
           position: relative;
           display: flex;
           justify-content: flex-end;
+
           .infoBox {
             width: 100%;
             height: 250px;
@@ -2254,6 +2612,7 @@ body {
             position: absolute;
             bottom: 0;
           }
+
           .icon {
             position: absolute;
             top: 0;
@@ -2263,6 +2622,7 @@ body {
             right: 55px;
           }
         }
+
         .vec3 {
           width: 213px;
           height: 475px;
@@ -2270,6 +2630,7 @@ body {
           position: relative;
           display: flex;
           justify-content: flex-end;
+
           .icon {
             position: absolute;
             top: 0;
@@ -2278,6 +2639,7 @@ body {
             top: 63px;
             right: 35px;
           }
+
           .infoBox {
             width: 100%;
             height: 315px;
@@ -2286,6 +2648,7 @@ body {
             bottom: 0;
           }
         }
+
         .vec4 {
           position: relative;
           width: 234px;
@@ -2293,6 +2656,7 @@ body {
           margin-right: -1px;
           display: flex;
           justify-content: flex-end;
+
           .icon {
             position: absolute;
             top: 0;
@@ -2301,6 +2665,7 @@ body {
             top: 63px;
             right: 35px;
           }
+
           .infoBox {
             width: 100%;
             height: 392px;
@@ -2309,18 +2674,21 @@ body {
             bottom: 0;
           }
         }
+
         .vec5 {
           width: 243px;
           height: 673px;
           position: relative;
           display: flex;
           justify-content: flex-end;
+
           .muscle {
             position: absolute;
             height: 441px;
             bottom: 10px;
             left: 30px;
           }
+
           .infoBox {
             width: 100%;
             height: 98px;
@@ -2330,70 +2698,84 @@ body {
           }
         }
       }
+      
     }
+
     .section2 {
       .header {
         background-color: #fef8e2;
         margin-top: 20px;
         overflow: visible;
         height: 539px;
-        
+
         img {
           position: absolute;
           left: 0;
           top: -46px;
           width: 621px;
         }
+
         .levelNumber {
           color: #ff9170;
         }
       }
+
       h2 {
         font-family: $boldFont;
         font-size: 24px;
       }
+
       p {
         font-size: 16px;
         font-family: $normalFont;
         line-height: 24.8px;
       }
+
       .bigPicture {
         width: 479px;
         max-width: 100%;
       }
     }
+
     .section3 {
       .header {
         background-color: rgba(242, 75, 108, 0.06);
         margin-top: 20px;
         overflow: visible;
         height: 539px;
+
         img {
           position: absolute;
           left: 0;
           top: -46px;
           width: 621px;
         }
+
         .levelNumber {
           color: rgba(242, 75, 108, 1);
         }
       }
+
       .bullet {
         display: block;
         width: 17px;
         height: 17px;
         border-radius: 50px;
         margin-left: 5px;
+
         &.blue {
           background-color: #358cfe;
         }
+
         &.green {
           background-color: #44dfd3;
         }
+
         &.yellow {
           background-color: #fedf6b;
         }
       }
+
       .silverBox {
         width: 1170px;
         max-width: 95%;
@@ -2403,11 +2785,13 @@ body {
         margin-top: 150px;
         border-radius: 24px;
         padding: 1px;
+
         .weightHeight {
           width: 90%;
           margin: auto;
           margin-top: -65px;
         }
+
         .rangeInfo {
           .label {
             font-family: $lightFont;
@@ -2415,18 +2799,21 @@ body {
           }
         }
       }
+
       .duesBox {
         width: 1170px;
         max-width: 95%;
 
         margin: auto;
         margin-top: 50px;
+
         .title {
           font-size: 18px;
           font-family: $boldFont;
           display: flex;
           align-items: center;
         }
+
         ul {
           li {
             font-size: 16px;
@@ -2434,30 +2821,35 @@ body {
           }
         }
       }
+
       .dtlBox {
         width: 1170px;
         max-width: 95%;
         margin: auto;
         margin-top: 50px;
+
         .title {
           font-size: 18px;
           font-family: $boldFont;
           display: flex;
           align-items: center;
         }
+
         ul {
           list-style: decimal;
           padding-right: 15px;
+
           li {
             font-size: 16px;
           }
         }
       }
     }
+
     .section4 {
       .header {
         background-color: #eef1ff;
-       
+
         .circle1 {
           display: block;
           width: 120px;
@@ -2468,6 +2860,7 @@ body {
           border-radius: 100%;
           position: absolute;
         }
+
         .circle2 {
           display: block;
           width: 133px;
@@ -2478,6 +2871,7 @@ body {
           border-radius: 100%;
           position: absolute;
         }
+
         .circle3 {
           display: block;
           width: 183px;
@@ -2488,6 +2882,7 @@ body {
           border-radius: 100%;
           position: absolute;
         }
+
         .circle4 {
           display: block;
           width: 216px;
@@ -2498,6 +2893,7 @@ body {
           border-radius: 100%;
           position: absolute;
         }
+
         .circle5 {
           display: block;
           width: 84px;
@@ -2508,6 +2904,7 @@ body {
           border-radius: 100%;
           position: absolute;
         }
+
         .circleGr1 {
           display: block;
           width: 174px;
@@ -2525,6 +2922,7 @@ body {
             )
             /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
         }
+
         .circleGr2 {
           display: block;
           width: 279px;
@@ -2542,17 +2940,20 @@ body {
             )
             /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
         }
+
         .levelNumber {
           color: rgba(26, 115, 197, 1);
         }
       }
+
       .stepWrapper {
         width: 1144px;
         margin: auto;
         direction: rtl;
-        margin-top: 30px;
+
         display: flex;
         justify-content: center;
+
         .firstStep {
           width: 200px;
           height: 40px;
@@ -2564,18 +2965,22 @@ body {
           text-align: center;
           font-family: $boldFont;
           cursor: pointer;
+
           &.active {
             background-color: rgba(26, 115, 197, 1);
             color: white;
+
             &::before {
               background-color: rgba(26, 115, 197, 1);
             }
+
             &::after {
               border-right: 20px solid rgba(26, 115, 197, 1);
             }
           }
+
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             right: -15px;
             bottom: 0;
@@ -2586,8 +2991,9 @@ body {
             border-radius: 100%;
             background-color: rgba(239, 247, 255, 1);
           }
+
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             left: -19px;
             bottom: 0;
@@ -2598,6 +3004,7 @@ body {
             border-bottom: 20px solid transparent;
           }
         }
+
         .middleStep {
           width: 200px;
           height: 40px;
@@ -2609,18 +3016,22 @@ body {
           align-items: center;
           font-family: $boldFont;
           cursor: pointer;
+
           &.active {
             background-color: rgba(26, 115, 197, 1);
             color: white;
+
             &::before {
               background-color: rgba(26, 115, 197, 1);
             }
+
             &::after {
               border-right: 20px solid rgba(26, 115, 197, 1);
             }
           }
+
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             right: 0;
             bottom: 0;
@@ -2630,8 +3041,9 @@ body {
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
           }
+
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             left: -19px;
             bottom: 0;
@@ -2642,6 +3054,7 @@ body {
             border-bottom: 20px solid transparent;
           }
         }
+
         .lastStep {
           width: 200px;
           height: 40px;
@@ -2654,18 +3067,22 @@ body {
           z-index: -4;
           font-family: $boldFont;
           cursor: pointer;
+
           &.active {
             background-color: rgba(26, 115, 197, 1);
             color: white;
+
             &::before {
               background-color: rgba(26, 115, 197, 1);
             }
+
             &::after {
               background: rgba(26, 115, 197, 1);
             }
           }
+
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             right: 0;
             bottom: 0;
@@ -2675,8 +3092,9 @@ body {
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
           }
+
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             left: -15px;
             bottom: 0;
@@ -2689,6 +3107,7 @@ body {
           }
         }
       }
+
       .tabTitle {
         display: block;
         font-family: $boldFont;
@@ -2700,6 +3119,7 @@ body {
         @media screen and (min-width: 1350px) {
           font-size: 29px;
         }
+
         .backBtn {
           background-color: $bodyNessPuprple;
           padding: 10px;
@@ -2714,11 +3134,13 @@ body {
           transform: rotate(180deg);
           cursor: pointer;
           transition: all 0.2s linear;
+
           &:hover {
             background-color: rgb(140, 140, 140);
           }
         }
       }
+
       .genderWrapper {
         width: 600px;
 
@@ -2729,9 +3151,11 @@ body {
           text-align: center;
           cursor: pointer;
           transition: all 0.2s linear;
+
           &:hover {
             background-color: #3373c4;
           }
+
           .genderTitle {
             background-color: #e7f6ff;
             padding: 10px;
@@ -2743,18 +3167,22 @@ body {
             margin: auto;
             margin-top: 10px;
             border-radius: 16px;
+
             img {
               width: 35px;
             }
           }
+
           .genderBody {
             height: 352px;
+
             @media screen and (max-width: 1350px) {
               height: 300px;
             }
           }
         }
       }
+
       .muscleBox {
         height: 354px;
         position: relative;
@@ -2762,24 +3190,29 @@ body {
         @media screen and (max-width: 1366px) {
           height: auto;
         }
+
         .genderMuscle {
           height: 354px;
           cursor: pointer;
           z-index: 10;
+
           @media screen and (max-width: 1350px) {
             height: 400px;
           }
         }
       }
+
       .equipmentBox {
         height: 598px;
         width: 800px;
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
+
         @media screen and (max-width: 1366px) {
           height: auto;
         }
+
         .box {
           background-color: white;
           box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
@@ -2792,10 +3225,12 @@ body {
           align-items: center;
           cursor: pointer;
           transition: all 0.2s linear;
+
           &:hover {
             background-color: whitesmoke;
           }
         }
+
         .label {
           display: block;
           margin-top: 10px;
@@ -2804,11 +3239,13 @@ body {
           font-family: $normalFont;
         }
       }
+
       .levelBox {
         width: 630px;
         max-width: 100%;
         margin: auto;
         margin-top: 197px;
+
         .item {
           width: 201px;
           height: 145px;
@@ -2816,11 +3253,13 @@ body {
           box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
           cursor: pointer;
           text-align: center;
+
           .title {
             font-family: $boldFont;
             font-size: 16px;
             margin-top: 20px;
           }
+
           .genderImage {
             margin-top: -120px;
           }
@@ -2829,6 +3268,7 @@ body {
     }
   }
 }
+
 .comingSoon {
   width: 100%;
   height: 100vh;
@@ -2837,13 +3277,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h3 {
     font-size: 43px;
     color: #393939;
   }
 }
+
 .body-map__muscle {
   color: silver;
-  &:hover{color: red;}
-}
 
+  &:hover {
+    color: red;
+  }
+}

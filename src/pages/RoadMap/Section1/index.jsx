@@ -12,7 +12,8 @@ import calory from '../../../assets/images/roadMap/calory.png';
 import plate from '../../../assets/images/roadMap/plate.png';
 import damble from '../../../assets/images/roadMap/damble.png';
 import muscle from '../../../assets/images/roadMap/muscle.png';
-import Section2 from '../Section2'
+
+import { Link } from 'react-router-dom';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -132,11 +133,9 @@ export default function Index() {
               </section>
             </section>
           </section>
+          <Link className='letsGoBtn' to="/basicInfo">امروز شروع کن</Link>
         </section>
-        <Section2 />
       </section>
-    
-
     </>
 
 

@@ -1,3 +1,4 @@
+$purple:#a347f1;
 .st0 {
   fill: #d1d4eb;
   stroke: #6a78ba;
@@ -5,27 +6,24 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st1 {
   fill: #f0f0f8;
   stroke: #6a79ba;
   stroke-width: 1.585;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
+  &:hover{
+    fill: $purple;
+  }
 }
-.st1:hover {
-  fill: #a347f1;
-}
-
 .st2 {
   display: none;
-  fill: #a347f1;
+  fill: $purple;
   stroke: #ffffff;
   stroke-width: 3.713;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st3 {
   display: none;
   fill: #855fa8;
@@ -34,7 +32,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st4 {
   fill: #eff0f8;
   stroke: #6a78ba;
@@ -42,7 +39,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st5 {
   fill: #ffffff;
   stroke: #6a78ba;
@@ -50,7 +46,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st6 {
   fill: #d1d4eb;
   stroke: #6a78ba;
@@ -58,7 +53,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st7 {
   display: none;
   fill: #855ea7;
@@ -67,18 +61,16 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st8 {
   fill: #d1d4eb;
   stroke: #6a79ba;
   stroke-width: 1.585;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
+  &:hover{
+    fill: $purple;
+  }
 }
-.st8:hover {
-  fill: #a347f1;
-}
-
 .st9 {
   display: none;
   fill: #845ba6;
@@ -87,7 +79,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st10 {
   display: none;
   fill: #855ca6;
@@ -96,7 +87,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st11 {
   display: none;
   fill: #eff0f8;
@@ -105,11 +95,9 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st12 {
   display: none;
 }
-
 .st13 {
   display: inline;
   fill: #eff0f8;
@@ -118,7 +106,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st14 {
   display: inline;
   fill: #cfcce6;
@@ -126,7 +113,6 @@
   stroke-width: 3.7132;
   stroke-miterlimit: 10;
 }
-
 .st15 {
   display: none;
   fill: #835aa6;
@@ -134,14 +120,12 @@
   stroke-width: 3.7132;
   stroke-miterlimit: 10;
 }
-
 .st16 {
   fill: #f0f0f8;
   stroke: #6a79ba;
   stroke-width: 1.585;
   stroke-miterlimit: 10;
 }
-
 .st17 {
   display: none;
   fill: #855ca6;
@@ -149,7 +133,6 @@
   stroke-width: 3.713;
   stroke-miterlimit: 10;
 }
-
 .st18 {
   fill: #f0f0f8;
   stroke: #6a78ba;
@@ -157,7 +140,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st19 {
   display: none;
   fill: #845ba6;
@@ -165,22 +147,18 @@
   stroke-width: 3.713;
   stroke-miterlimit: 10;
 }
-
 .st20 {
   fill: #545554;
 }
-
 .st21 {
   fill: #f0f0f8;
   stroke: #6a79bb;
   stroke-width: 1.585;
   stroke-miterlimit: 10;
 }
-
 .st22 {
   display: inline;
 }
-
 .st23 {
   display: inline;
   fill: #d1d4eb;
@@ -189,7 +167,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st24 {
   fill: none;
   stroke: #6a78ba;
@@ -197,19 +174,18 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-
 .st25 {
   fill: #f0a798;
   stroke: #6a78ba;
   stroke-width: 3.7132;
   stroke-miterlimit: 10;
 }
-
 #Layer_1 path {
-  transition: all 0.2s linear;
+  transition: all .2s linear;
   cursor: pointer;
 }
-
 #Layer_1 path:hover {
   fill: #a347f1;
-}/*# sourceMappingURL=style.css.map */
+ 
+  
+}
