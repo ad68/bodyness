@@ -34,7 +34,7 @@ export default function Index({ setTab }) {
     
       </section> */}
       <section className='m-auto block text-center'>
-      <SVG style={{height:'600px',margin:'auto'}} setMuscle={setMuscle} onClick={() => setTab(3)} alt=""/>
+      <SVG style={{height:'600px',margin:'auto'}} setMuscle={setMuscle} alt=""/>
       </section>
      
     </>

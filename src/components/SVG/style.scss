@@ -12,9 +12,7 @@ $purple:#a347f1;
   stroke-width: 1.585;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
-  &:hover{
-    fill: $purple;
-  }
+  
 }
 .st2 {
   display: none;
@@ -67,9 +65,7 @@ $purple:#a347f1;
   stroke-width: 1.585;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
-  &:hover{
-    fill: $purple;
-  }
+  
 }
 .st9 {
   display: none;
@@ -184,8 +180,11 @@ $purple:#a347f1;
   transition: all .2s linear;
   cursor: pointer;
 }
-#Layer_1 path:hover {
+/* #Layer_1 path:hover {
   fill: #a347f1;
  
   
+} */
+.activeMuscle{
+  fill: #a347f1;
 }

@@ -13,9 +13,6 @@
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
-.st1:hover {
-  fill: #a347f1;
-}
 
 .st2 {
   display: none;
@@ -74,9 +71,6 @@
   stroke-width: 1.585;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
-}
-.st8:hover {
-  fill: #a347f1;
 }
 
 .st9 {
@@ -210,6 +204,11 @@
   cursor: pointer;
 }
 
-#Layer_1 path:hover {
+/* #Layer_1 path:hover {
+  fill: #a347f1;
+
+
+} */
+.activeMuscle {
   fill: #a347f1;
 }/*# sourceMappingURL=style.css.map */
