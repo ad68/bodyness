@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useTranslation } from "react-i18next";
-import SVG from '../../../../../components/SVG/Muscle'
+import SVG from '../../../../../components/SVG/ManFront'
 
 /* import Muscle from "../../../../../assets/images/home/selectedMuscle.png";
  */

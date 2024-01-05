@@ -243,7 +243,7 @@ const App = ({ setMuscle, style, onClick }) => {
   return (
     <svg
       version="1.1"
-      id="Layer_1"
+      id="manFront"
       x="0px"
       y="0px"
       onClick={onClick}

@@ -1,7 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 /* import Muscle from "../../../../../assets/images/home/selectedMuscle.png"; */
-import SVG from '../../../../../components/SVG/Muscle'
+import ManFront from '../../../../../components/SVG/ManFront'
+import ManBack from '../../../../../components/SVG/ManBack'
 import ArrowLeft from '../../../../..//assets/images/basicInfo/arrowLeftWhite.png';
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -33,8 +34,9 @@ export default function Index({ setTab }) {
    {/*    <section className="flex justify-around mt-8 muscleBox">
     
       </section> */}
-      <section className='m-auto block text-center'>
-      <SVG style={{height:'600px',margin:'auto'}} setMuscle={setMuscle} alt=""/>
+      <section className='m-auto flex justify-center text-center mt-5'>
+      <ManFront style={{height:'500px'}} setMuscle={setMuscle} alt=""/>
+      <ManBack style={{height:'500px'}} setMuscle={setMuscle} alt=""/>
       </section>
      
     </>

@@ -1,6 +1,6 @@
 import React from "react";
 /* import Muscle from "../../../../../assets/images/home/selectedMuscle.png"; */
-import SVG from '../../../../../components/SVG/Muscle'
+import SVG from '../../../../../components/SVG/ManFront'
 import Beceps from "../../../../../assets/images/home/biceps.png"
 import { useTranslation } from "react-i18next";
 
