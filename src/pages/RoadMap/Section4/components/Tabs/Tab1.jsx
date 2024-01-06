@@ -10,7 +10,7 @@ import MaleBody from '../../../../../assets/images/home/maleBody.svg';
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ setTab }) {
+export default function Index({ setTab, setGender }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -18,7 +18,10 @@ export default function Index({ setTab }) {
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
-
+  const goToNextApp = (genderValue) => {
+    setTab(2);
+    setGender(genderValue);
+  };
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
@@ -28,14 +31,17 @@ export default function Index({ setTab }) {
     <>
       <span className="tabTitle mt-7 m-auto">{t('Home.ChooseGender')}</span>
       <section className="flex justify-around m-auto mt-7 genderWrapper">
-        <section className="genderBox pb-4" onClick={() => setTab(2)}>
+        <section
+          className="genderBox pb-4"
+          onClick={() => goToNextApp('female')}
+        >
           <span className="genderTitle">
             <img src={Female} alt="" />
             <span>{t('Home.Female')}</span>
           </span>
           <img src={FemaleBody} alt="" className="genderBody m-auto mt-4" />
         </section>
-        <section className="genderBox pb-4" onClick={() => setTab(2)}>
+        <section className="genderBox pb-4" onClick={() => goToNextApp('male')}>
           <span className="genderTitle">
             <img src={Male} alt="" />
             <span>{t('Home.Male')}</span>
