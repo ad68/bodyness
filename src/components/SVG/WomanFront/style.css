@@ -162,4 +162,11 @@
 }
 #womanFront .st30 {
   opacity: 0.5;
+}
+#womanFront path {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+#womanFront .activeMuscle {
+  fill: #a347f1;
 }/*# sourceMappingURL=style.css.map */

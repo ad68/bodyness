@@ -1,5 +1,5 @@
-import React, { useState, useContext, useEffect } from 'react';
-import './style.css'
+import React, { useState, useContext, useEffect, useRef } from 'react';
+import './style.css';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -7,13 +7,197 @@ import './style.css'
 //
 export default function Index({ setMuscle, style, onClick }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
+  const n1 = useRef();
+  const n3_1 = useRef();
+  const n3_2 = useRef();
+  const n6_1 = useRef();
+  const n6_2 = useRef();
+  const n7_1 = useRef();
+  const n7_2 = useRef();
+  const n9_1 = useRef();
+  const n9_2 = useRef();
+  const n10_1 = useRef();
+  const n10_2 = useRef();
+  const n11_1 = useRef();
+  const n11_2 = useRef();
+  const n12_1 = useRef();
+  const n12_2 = useRef();
+  const n13_1 = useRef();
+  const n13_2 = useRef();
+  const n13_3 = useRef();
+  const n13_4 = useRef();
+  const n14_1 = useRef();
+  const n14_2 = useRef();
+  const n14_3 = useRef();
+  const n14_4 = useRef();
+  const n15_1 = useRef();
+  const n15_2 = useRef();
+  const n16_1 = useRef();
+  const n16_2 = useRef();
+  const n17_1 = useRef();
+  const n17_2 = useRef();
+  const n18_1 = useRef();
+  const n18_2 = useRef();
+  const n19_1 = useRef();
+  const n19_2 = useRef();
+  const n20_1 = useRef();
+  const n20_2 = useRef();
+  const n20_3 = useRef();
+  const n20_4 = useRef();
+  const n21_1 = useRef();
+  const n21_2 = useRef();
 
   // ─── States ─────────────────────────────────────────────────────────────────────
 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
-
+  const n1Enter = () => {
+    n1.current.classList.add('activeMuscle');
+  };
+  const n1Leave = () => {
+    n1.current.classList.remove('activeMuscle');
+  };
+  const n3Enter = () => {
+    n3_1.current.classList.add('activeMuscle');
+    n3_2.current.classList.add('activeMuscle');
+  };
+  const n3Leave = () => {
+    n3_1.current.classList.remove('activeMuscle');
+    n3_2.current.classList.remove('activeMuscle');
+  };
+  const n6Enter = () => {
+    n6_1.current.classList.add('activeMuscle');
+    n6_2.current.classList.add('activeMuscle');
+  };
+  const n6Leave = () => {
+    n6_1.current.classList.remove('activeMuscle');
+    n6_2.current.classList.remove('activeMuscle');
+  };
+  const n7Enter = () => {
+    n7_1.current.classList.add('activeMuscle');
+    n7_2.current.classList.add('activeMuscle');
+  };
+  const n7Leave = () => {
+    n7_1.current.classList.remove('activeMuscle');
+    n7_2.current.classList.remove('activeMuscle');
+  };
+  const n9Enter = () => {
+    n9_1.current.classList.add('activeMuscle');
+    n9_2.current.classList.add('activeMuscle');
+  };
+  const n9Leave = () => {
+    n9_1.current.classList.remove('activeMuscle');
+    n9_2.current.classList.remove('activeMuscle');
+  };
+  const n10Enter = () => {
+    n10_1.current.classList.add('activeMuscle');
+    n10_2.current.classList.add('activeMuscle');
+  };
+  const n10Leave = () => {
+    n10_1.current.classList.remove('activeMuscle');
+    n10_2.current.classList.remove('activeMuscle');
+  };
+  const n11Enter = () => {
+    n11_1.current.classList.add('activeMuscle');
+    n11_2.current.classList.add('activeMuscle');
+  };
+  const n11Leave = () => {
+    n11_1.current.classList.remove('activeMuscle');
+    n11_2.current.classList.remove('activeMuscle');
+  };
+  const n12Enter = () => {
+    n12_1.current.classList.add('activeMuscle');
+    n12_2.current.classList.add('activeMuscle');
+  };
+  const n12Leave = () => {
+    n12_1.current.classList.remove('activeMuscle');
+    n12_2.current.classList.remove('activeMuscle');
+  };
+  const n13Enter = () => {
+    n13_1.current.classList.add('activeMuscle');
+    n13_2.current.classList.add('activeMuscle');
+    n13_3.current.classList.add('activeMuscle');
+    n13_4.current.classList.add('activeMuscle');
+  };
+  const n13Leave = () => {
+    n13_1.current.classList.remove('activeMuscle');
+    n13_2.current.classList.remove('activeMuscle');
+    n13_3.current.classList.remove('activeMuscle');
+    n13_4.current.classList.remove('activeMuscle');
+  };
+  const n14Enter = () => {
+    n14_1.current.classList.add('activeMuscle');
+    n14_2.current.classList.add('activeMuscle');
+    n14_3.current.classList.add('activeMuscle');
+    n14_4.current.classList.add('activeMuscle');
+  };
+  const n14Leave = () => {
+    n14_1.current.classList.remove('activeMuscle');
+    n14_2.current.classList.remove('activeMuscle');
+    n14_3.current.classList.remove('activeMuscle');
+    n14_4.current.classList.remove('activeMuscle');
+  };
+  const n15Enter = () => {
+    n15_1.current.classList.add('activeMuscle');
+    n15_2.current.classList.add('activeMuscle');
+  };
+  const n15Leave = () => {
+    n15_1.current.classList.remove('activeMuscle');
+    n15_2.current.classList.remove('activeMuscle');
+  };
+  const n16Enter = () => {
+    n16_1.current.classList.add('activeMuscle');
+    n16_2.current.classList.add('activeMuscle');
+  };
+  const n16Leave = () => {
+    n16_1.current.classList.remove('activeMuscle');
+    n16_2.current.classList.remove('activeMuscle');
+  };
+  const n17Enter = () => {
+    n17_1.current.classList.add('activeMuscle');
+    n17_2.current.classList.add('activeMuscle');
+  };
+  const n17Leave = () => {
+    n17_1.current.classList.remove('activeMuscle');
+    n17_2.current.classList.remove('activeMuscle');
+  };
+  const n18Enter = () => {
+    n18_1.current.classList.add('activeMuscle');
+    n18_2.current.classList.add('activeMuscle');
+  };
+  const n18Leave = () => {
+    n18_1.current.classList.remove('activeMuscle');
+    n18_2.current.classList.remove('activeMuscle');
+  };
+  const n19Enter = () => {
+    n19_1.current.classList.add('activeMuscle');
+    n19_2.current.classList.add('activeMuscle');
+  };
+  const n19Leave = () => {
+    n19_1.current.classList.remove('activeMuscle');
+    n19_2.current.classList.remove('activeMuscle');
+  };
+  const n21Enter = () => {
+    n21_1.current.classList.add('activeMuscle');
+    n21_2.current.classList.add('activeMuscle');
+  };
+  const n21Leave = () => {
+    n21_1.current.classList.remove('activeMuscle');
+    n21_2.current.classList.remove('activeMuscle');
+  };
+  const n20Enter = () => {
+    n20_1.current.classList.add('activeMuscle');
+    n20_2.current.classList.add('activeMuscle');
+    n20_3.current.classList.add('activeMuscle');
+    n20_4.current.classList.add('activeMuscle');
+  };
+  const n20Leave = () => {
+    n20_1.current.classList.remove('activeMuscle');
+    n20_2.current.classList.remove('activeMuscle');
+    n20_3.current.classList.remove('activeMuscle');
+    n20_4.current.classList.remove('activeMuscle');
+  };
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
@@ -28,7 +212,7 @@ export default function Index({ setMuscle, style, onClick }) {
         y="0px"
         viewBox="0 0 1162.2 1692.28"
         onClick={onClick}
-      style={style}
+        style={style}
       >
         <path
           class="st0"
@@ -36,20 +220,29 @@ export default function Index({ setMuscle, style, onClick }) {
 	C663.27,1520.21,676.96,1533.97,681.99,1544.95z"
         />
         <path
-          class="st1"
+          class="st1 n20"
+          ref={n20_1}
+          onMouseEnter={n20Enter}
+          onMouseLeave={n20Leave}
           d="M728.64,1324c-1.91,17-7.53,27.41-11.05,42.01c-10.53,43.8-26.95,105.58-23.48,173.19
 	c-0.18,0.04-1.45-31.56-1.55-89.9c-0.05-31.4,0.95-64.71,2.7-103.47c1.21-26.84,2.43-68.83,6.77-97.99
 	c2.75-18.47,7.93-32.54,7.93-32.54C720.57,1242.39,733.82,1277.86,728.64,1324z"
         />
         <path
-          class="st1"
+          class="st1 n20"
+          ref={n20_2}
+          onMouseEnter={n20Enter}
+          onMouseLeave={n20Leave}
           d="M654.09,1504.67c2.96-112.89-31.51-171.94-31.51-216.95c0-47.82,17.69-73.53,9.81-93.21
 	c0,0,0.75,1.59,1.88,4.13c0,0,1.59,1.93,3.19,3.6c0.87,0.91,2.38,2.18,2.75,2.72c1.36,1.96,2.12,3.65,4.46,8.03
 	c4.74,8.86,10.36,24.11,11.95,34.81c0.7,4.72,1.3,8.82,1.62,13.24c2.2,30.48,4.23,62.27,4.58,93c0.21,18.65-0.22,37.06-0.95,53.81
 	c-0.79,18.08-1.68,33.98-2.57,47.66C657.3,1486.04,654.09,1504.67,654.09,1504.67z"
         />
         <path
-          class="st2"
+          class="st2 n21"
+          ref={n21_1}
+          onMouseEnter={n21Enter}
+            onMouseLeave={n21Leave}
           d="M709.46,1217.2c-10.19,26.92-11.21,59.1-15.22,152.64c-4.01,93.55-0.15,170.49-0.15,170.49
 	s-6.19-4.12-14.59-5.03c-6.64-0.72-13.9,0.49-19.65,4.93c-4.05,3.13-5.68,7.14-7.29,10.39c-4.55,9.17-2.5,17.1-2.5,17.1
 	c-3.22-35.85,4.29-53.56,7.97-97.75c2.49-29.98,4.12-64.04,4.6-97.3c0.09-6.04,0.09-12.05,0.03-18
@@ -78,14 +271,20 @@ export default function Index({ setMuscle, style, onClick }) {
 	c-6.12,11.9,14.08,25.53,14.08,25.53C705.75,1181.34,703.43,1196.2,701.98,1199.55z"
         />
         <path
-          class="st1"
+          class="st1 n16"
+          ref={n16_2}
+          onMouseEnter={n16Enter}
+            onMouseLeave={n16Leave}
           d="M680.9,749.38c-4.23,3.67-8.76,7.09-27.3,26.26c-35.02,36.2-56.06,70.27-56.06,70.27
 	c-8.93,58.45,7.68,103.64,16.3,161.59c7.93,53.33,2.48,29.28,5.75,74.93c0,0,0.6-11.53,2.79-25.93
 	c5.62-36.93,9.76-52.39,17.41-78.65c0,0,3.79-13.82,10.04-31.7c4.84-13.83,16-44.5,18.74-52.38c1-2.87,2.05-4.45,2.54-7.96
 	c1.97-14.17,4.73-32.94,6.39-50.87C679.85,809.42,681.84,780.54,680.9,749.38z"
         />
         <path
-          class="st1"
+          class="st1 n18"
+          ref={n18_2}
+          onMouseEnter={n18Enter}
+          onMouseLeave={n18Leave}
           d="M726.98,708.66c-1.91,7.86-28.31,26.42-28.31,26.42s1.74,6.05,5.02,17.57c3.87,13.57,9.65,34.95,14.94,64.27
 	c3.01,16.68,6.36,35.88,8.81,57.68c1.78,15.82,2.83,33.04,4.09,51.53c0.63,9.21,0.64,18.38,0.67,27.51
 	c0.09,29.48-1.86,57.95-4.77,80.48c-3.1,24-7.19,41.25-8.18,46.23c-4,19.97-11.86,40.4-16.86,50.83
@@ -94,13 +293,19 @@ export default function Index({ setMuscle, style, onClick }) {
 	C763.68,841.71,753.83,758.77,726.98,708.66z"
         />
         <path
-          class="st2"
+          class="st2 n17"
+          ref={n17_1}
+          onMouseEnter={n17Enter}
+          onMouseLeave={n17Leave}
           d="M621.57,1134.82c2.89,19.06,24.4,34.89,39.5,27.76c4.91-2.32,9.22-6.54,11.82-14.91c0,0-7.07-5.91-9.97-19.61
 	c0,0-7.15-22.81-8.87-61.49c-1.07-24.22,0.17-53.59,3.57-84.7c2.7-24.78,9.09-66.23,13.4-96.08c0.88-6.13,1.63-11.55,2.39-16.57
 	c0,0-1.36,10.85-2.3,16.6C668.74,900.32,606.36,1034.46,621.57,1134.82z"
         />
         <path
-          class="st2"
+          class="st2 n19"
+          ref={n19_1}
+          onMouseEnter={n19Enter}
+          onMouseLeave={n19Leave}
           d="M663.74,1130.98c-20.95-78.97-4.76-160.16,7.37-245.38c5.31-37.31,9.93-75.49,10.17-114.43
 	c0.05-7.24-0.06-14.5-0.33-21.8l17.71-14.29c60.39,203.28,25.37,357.04,1.86,399.65c-6.45,11.69-14.17,16.44-18.57,16.44
 	C673.4,1151.17,666.8,1142.54,663.74,1130.98z"
@@ -118,52 +323,79 @@ export default function Index({ setMuscle, style, onClick }) {
 	c-18.36-22.74-37.28-26.97-37.28-26.97c-20.65-8.3-42.11-21.84-55.86-39.17L532.68,274.35z"
         />
         <path
-          class="st4"
+          class="st4 n10"
+          ref={n10_2}
+          onMouseEnter={n10Enter}
+          onMouseLeave={n10Leave}
           d="M778.84,601.97l6.51-24.81c0,0-29.07-55.99-33.79-127.17c0,0-8.25-4.3-20.25-15.53
 	c-7.14-6.68-10.46-9.75-10.46-9.75c0.42,9.81,1.18,19.42,1.18,19.42C720.81,508.13,741.74,564.55,778.84,601.97z"
         />
         <g>
           <path
-            class="st5"
+            class="st5 n14"
+            ref={n14_1}
+            onMouseEnter={n14Enter}
+            onMouseLeave={n14Leave}
             d="M594.11,673.92c-8.68,2.04-11.65-5.2-11.65-13.19c0-10.22,0-21.27,0-38.28c0.37-16.3,6.87-23.96,14.52-23.38
 		c33.35,0,37.49,10.6,38.97,17.14C637.53,623.21,644.79,661.98,594.11,673.92z"
           />
           <path
-            class="st5"
+            class="st5 n13"
+            ref={n13_4}
+            onMouseEnter={n13Enter}
+            onMouseLeave={n13Leave}
             d="M636.23,553.09c13.18,43.91-0.28,63.12-0.28,63.12s-5.62-17.14-38.97-17.14c-0.55-0.11-1.13-0.13-1.7-0.09
 		c-0.01,0-0.05,0-0.06,0c-12.76-1.33-12.76-17.49-12.76-31.09c0-23.23,7.27-32.29,21.52-32.29
 		C619.96,535.73,633.86,545.18,636.23,553.09z"
           />
           <path
-            class="st5"
+            class="st5 n13"
+            ref={n13_2}
+          onMouseEnter={n13Enter}
+          onMouseLeave={n13Leave}
             d="M636.23,553.09c-5.17-6.44-16.27-17.36-32.25-17.49c-20.07-0.15-21.47,3.06-21.52-19.78c0-1.83,0-8.78,0-10.26
 		c0-12.77,8.79-22.41,27.35-11.67C628.38,504.62,640.17,540.13,636.23,553.09z"
           />
           <path
-            class="st5"
+            class="st5 n14"
+            ref={n14_2}
+            onMouseEnter={n14Enter}
+            onMouseLeave={n14Leave}
             d="M570.82,673.92c8.68,2.04,11.65-5.2,11.65-13.19c0-10.22,0-21.27,0-38.28c-0.37-16.3-6.87-23.96-14.52-23.38
 		c-33.35,0-37.49,10.6-38.97,17.14C527.4,623.21,520.14,661.98,570.82,673.92z"
           />
           <path
-            class="st5"
+            class="st5 n13"
+            ref={n13_3}
+            onMouseEnter={n13Enter}
+            onMouseLeave={n13Leave}
             d="M528.7,553.09c-13.18,43.91,0.28,63.12,0.28,63.12s5.62-17.14,38.97-17.14c0.55-0.11,1.13-0.13,1.7-0.09
 		c0.02,0,0.05,0,0.06,0c12.76-1.33,12.76-17.49,12.76-31.09c0-23.23-7.27-32.29-21.52-32.29
 		C544.97,535.73,531.07,545.18,528.7,553.09z"
           />
           <path
-            class="st5"
+            class="st5 n13"
+            ref={n13_1}
+            onMouseEnter={n13Enter}
+            onMouseLeave={n13Leave}
             d="M528.7,553.09c5.17-6.44,16.27-17.36,32.25-17.49c20.07-0.15,21.47,3.06,21.52-19.78c0-1.83,0-8.78,0-10.26
 		c0-12.77-8.79-22.41-27.35-11.67C536.55,504.62,524.76,540.13,528.7,553.09z"
           />
           <g>
             <path
-              class="st5"
+              class="st5 n14"
+              ref={n14_3}
+              onMouseEnter={n14Enter}
+              onMouseLeave={n14Leave}
               d="M631.85,677.5c0.3,15.85-3.43,39.59-20.83,81.23c-17.4,41.65-28.56,40.74-28.56,26.09
 			c0-23.25,0-70.09,0-85.97c0-15.87,7.17-21.37,14.76-24.87c7.6-3.5,9.04-3.09,20.79-10.02
 			C629.75,657.05,631.56,662.33,631.85,677.5z"
             />
             <path
-              class="st5"
+              class="st5 n14"
+              ref={n14_4}
+              onMouseEnter={n14Enter}
+              onMouseLeave={n14Leave}
               d="M533.08,677.5c-0.3,15.85,3.43,39.59,20.83,81.23c17.4,41.65,28.56,40.74,28.56,26.09
 			c0-23.25,0-70.09,0-85.97c0-15.87-7.17-21.37-14.76-24.87c-7.6-3.5-9.04-3.09-20.79-10.02
 			C535.18,657.05,533.37,662.33,533.08,677.5z"
@@ -171,7 +403,10 @@ export default function Index({ setMuscle, style, onClick }) {
           </g>
         </g>
         <path
-          class="st6"
+          class="st6 n1"
+          ref={n1}
+          onMouseEnter={n1Enter}
+          onMouseLeave={n1Leave}
           d="M632.4,208.71c-0.1,2.38-0.2,80.22,0,81.54c1.59,10.5,4.82,21.76,12.87,30.26c5.47,5.77,13.1,9.86,13.1,9.86
 	c-9.39-2.16-26.96-3.66-37.66-3.38c-8.18,0.22-14.52,0.76-19.68,3.71c-3.11,1.78-6.03,3.77-7.96,8.94c-0.49,1.33-1.5,3.31-2.25,5.4
 	c-0.54,1.5-1.21,3.17-1.75,4.7c-1.47,4.18-2.43,7.82-2.43,7.82c-0.85,3.18-1.73,6.95-2.26,10.51c-1.18,7.89-1.95,15.08-1.95,15.08
@@ -185,7 +420,10 @@ export default function Index({ setMuscle, style, onClick }) {
 	c-0.2-1.6-6.72-53.49-26.95-100.21C853.06,806.6,888.96,836.11,890.28,837.18z"
         />
         <path
-          class="st4"
+          class="st4 n12"
+          ref={n12_2}
+          onMouseEnter={n12Enter}
+          onMouseLeave={n12Leave}
           d="M828.52,753.84c20.23,46.72,26.75,98.6,26.95,100.21c-12.91-40.64-113.7-146.51-70.11-276.88l21.14,43.1
 	c0,0-12.55,30.6,10.3,103.41C820.18,734.44,824.17,744.5,828.52,753.84z"
         />
@@ -197,7 +435,10 @@ export default function Index({ setMuscle, style, onClick }) {
 	c-10.43,0.97-22.72,11-28.75,23.75l-0.02-0.01C855.44,857.48,854.72,860.32,854.75,863.12z"
         />
         <path
-          class="st5"
+          class="st5 n11"
+          ref={n11_2}
+          onMouseEnter={n11Enter}
+          onMouseLeave={n11Leave}
           d="M885.53,830.98c1.55,2.31-32.47-24.34-57.02-77.14c-4.34-9.34-8.34-19.4-11.71-30.16
 	c-22.85-72.81-10.3-103.41-10.3-103.41l7-29.3c0,0,41.02,47.47,41.91,91.89C856.99,760.09,869.77,807.54,885.53,830.98z"
         />
@@ -207,7 +448,10 @@ export default function Index({ setMuscle, style, onClick }) {
         />
         <g>
           <path
-            class="st8"
+            class="st8 n9"
+            ref={n9_1}
+            onMouseEnter={n9Enter}
+            onMouseLeave={n9Leave}
             d="M806.61,620.26c-38.04-70.98-52.8-124.48-55.05-170.27c0,0,20.08-2.98,50.5,38.37
 		C819.14,511.57,816.35,596.99,806.61,620.26z"
           />
@@ -557,13 +801,19 @@ export default function Index({ setMuscle, style, onClick }) {
 	C-285.34,477.24-284.28,477.22-284.54,477.13z"
         />
         <path
-          class="st14"
+          class="st14 n7"
+          ref={n7_1}
+          onMouseEnter={n7Enter}
+          onMouseLeave={n7Leave}
           d="M751.57,449.99c0,0,4.14-11.05-0.13-43.61c-7.68-58.62-29.12-67.44-29.12-67.44
 	c7.42,0.86,27.7,5.56,45.28,23.47c15.3,15.58,21.19,25.42,25.05,39.45c4.51,16.37,6.09,23.05,8.97,46.03
 	c2.83,22.61,0.45,40.48,0.45,40.48C777.93,453.83,760.99,450.03,751.57,449.99z"
         />
         <path
-          class="st14"
+          class="st14 n6"
+          ref={n6_1}
+          onMouseEnter={n6Enter}
+          onMouseLeave={n6Leave}
           d="M751.37,450.23c-0.02,0.19-2.21-0.32-12.68-9.61c-15.03-13.33-24.95-28.46-26.41-30.77
 	c-4.99-7.95-12.55-26.67-14.37-31.06c-4.8-11.57-6.83-25.05-7.78-34.94c-0.22-2.29-2.35-7.97-9.04-10.21c0,0,10.31,0.45,13.25,0.76
 	c4.52,0.48,13.17,1.56,18.04,2.41c5.37,0.94,8.41,0.89,10.26,2.11C744,353,756.68,406.34,751.37,450.23z"
@@ -641,7 +891,10 @@ export default function Index({ setMuscle, style, onClick }) {
 	c-0.74-2.43-1.7-7.04-2.75-11.72C-328.05,506.77-328.13,500.58-329.29,497.71z"
         />
         <path
-          class="st12"
+          class="st12 n15"
+          ref={n15_2}
+          onMouseEnter={n15Enter}
+          onMouseLeave={n15Leave}
           d="M693.87,552.97c0-0.01,3.64-15.7,7.83-31.12c5.82-21.45,6.79-43.89,6.79-43.89
 	c-5.09,14.11-10.98,20.96-24.12,24.49c-12.7,3.41-27.31,9.01-33.96,18.61c-7.47,10.79-14.27,31.92-14.27,31.92
 	c13.2,41.63,8.05,83.57,5.79,119.2c2.27,43.32,17.69,50.14,32.69,56.57c0.16,0.07,24.04,6.34,24.04,6.34
@@ -683,7 +936,10 @@ export default function Index({ setMuscle, style, onClick }) {
           />
         </g>
         <path
-          class="st14"
+          class="st14 n3"
+          ref={n3_1}
+          onMouseEnter={n3Enter}
+          onMouseLeave={n3Leave}
           d="M669.26,350.14c3.75-0.51,6.79-0.39,9.44,0.43c9.56,2.95,12.89,13.06,15.63,18.2
 	c-1.98-8.2-3.09-16.24-3.92-23.07c-0.68-5.59-2.78-8.58-6.56-10.83c-3.49-1.7-8.74-2.59-13.7-3.25c-3.47-0.46-5.65-0.8-11.8-1.24
 	c0,0-19.29-4.16-41.31-3.28c-12.07,0.48-19.14,3.93-22.76,9.84c-15.43,33.5-10.93,51.5-10.48,92.87c0,6.86-0.43,24,6.57,37.43
@@ -692,13 +948,19 @@ export default function Index({ setMuscle, style, onClick }) {
 	C650.04,357.53,658.14,352.41,669.26,350.14z"
         />
         <path
-          class="st14"
+          class="st14 n7"
+          ref={n7_2}
+          onMouseEnter={n7Enter}
+          onMouseLeave={n7Leave}
           d="M413.71,450.99c0,0-4.14-11.05,0.13-43.61c7.68-58.62,29.12-67.44,29.12-67.44
-	c-7.42,0.86-27.7,5.56-45.28,23.47c-15.3,15.58-21.19,25.42-25.05,39.45c-4.51,16.37-6.09,23.05-8.97,46.03
-	c-2.83,22.61-0.45,40.48-0.45,40.48C387.35,454.83,404.29,451.03,413.71,450.99z"
+          c-7.42,0.86-27.7,5.56-45.28,23.47c-15.3,15.58-21.19,25.42-25.05,39.45c-4.51,16.37-6.09,23.05-8.97,46.03
+          c-2.83,22.61-0.45,40.48-0.45,40.48C387.35,454.83,404.29,451.03,413.71,450.99z"
         />
         <path
-          class="st14"
+          class="st14 n6"
+          ref={n6_2}
+          onMouseEnter={n6Enter}
+          onMouseLeave={n6Leave}
           d="M413.91,451.23c0.02,0.19,2.21-0.32,12.68-9.61c15.04-13.33,24.95-28.46,26.41-30.77
 	c4.99-7.95,12.55-26.67,14.37-31.06c4.8-11.57,6.83-25.05,7.78-34.94c0.22-2.29,2.35-7.97,9.04-10.21c0,0-10.31,0.45-13.25,0.76
 	c-4.52,0.48-13.17,1.56-18.04,2.41c-5.37,0.94-8.41,0.89-10.26,2.11C421.28,354,408.61,407.34,413.91,451.23z"
@@ -711,7 +973,10 @@ export default function Index({ setMuscle, style, onClick }) {
           />
         </g>
         <path
-          class="st14"
+          class="st14 n3"
+          ref={n3_2}
+          onMouseEnter={n3Enter}
+          onMouseLeave={n3Leave}
           d="M496.02,351.14c-3.75-0.51-6.79-0.39-9.44,0.43c-9.56,2.95-12.89,13.06-15.63,18.2
 	c1.98-8.2,3.09-16.24,3.92-23.07c0.68-5.59,2.78-8.58,6.56-10.83c3.49-1.7,8.74-2.59,13.7-3.25c3.47-0.46,5.65-0.8,11.8-1.24
 	c0,0,19.29-4.16,41.31-3.28c12.07,0.48,19.14,3.93,22.76,9.84c15.43,33.5,10.93,51.5,10.48,92.87c0,6.86,0.43,24-6.57,37.43
@@ -720,20 +985,29 @@ export default function Index({ setMuscle, style, onClick }) {
 	C515.24,358.53,507.14,353.41,496.02,351.14z"
         />
         <path
-          class="st1"
+          class="st1 n20"
+          ref={n20_3}
+          onMouseEnter={n20Enter}
+          onMouseLeave={n20Leave}
           d="M436.31,1325c1.91,17,7.53,27.41,11.05,42.01c10.53,43.8,26.95,105.58,23.48,173.19
 	c0.18,0.04,1.45-31.56,1.55-89.9c0.05-31.4-0.95-64.71-2.7-103.47c-1.21-26.84-2.43-68.83-6.77-97.99
 	c-2.75-18.47-7.93-32.54-7.93-32.54C444.39,1243.39,431.13,1278.86,436.31,1325z"
         />
         <path
-          class="st1"
+          class="st1 n20"
+          ref={n20_4}
+          onMouseEnter={n20Enter}
+          onMouseLeave={n20Leave}
           d="M510.86,1505.67c-2.96-112.89,31.51-171.94,31.51-216.95c0-47.82-17.69-73.53-9.81-93.21
 	c0,0-0.75,1.59-1.88,4.13c0,0-1.59,1.93-3.19,3.6c-0.87,0.91-2.38,2.18-2.75,2.72c-1.36,1.96-2.12,3.65-4.46,8.03
 	c-4.74,8.86-10.36,24.11-11.95,34.81c-0.7,4.72-1.3,8.82-1.62,13.24c-2.2,30.48-4.23,62.27-4.58,93
 	c-0.21,18.65,0.22,37.06,0.95,53.81c0.79,18.08,1.68,33.98,2.57,47.66C507.65,1487.04,510.86,1505.67,510.86,1505.67z"
         />
         <path
-          class="st2"
+          class="st2 n21"
+          ref={n21_2}
+          onMouseEnter={n21Enter}
+            onMouseLeave={n21Leave}
           d="M455.5,1218.2c10.19,26.92,11.21,59.1,15.22,152.64c4.01,93.55,0.15,170.49,0.15,170.49s6.19-4.12,14.59-5.03
 	c6.64-0.72,13.9,0.49,19.65,4.93c4.05,3.13,5.68,7.14,7.29,10.39c4.55,9.17,2.5,17.1,2.5,17.1c3.22-35.85-4.29-53.56-7.97-97.75
 	c-2.49-29.98-4.12-64.04-4.6-97.3c-0.09-6.04-0.09-12.05-0.03-18c0.22-22.74,1.38-44.65,2.62-64.15
@@ -762,14 +1036,20 @@ export default function Index({ setMuscle, style, onClick }) {
 	c6.12,11.9-14.08,25.53-14.08,25.53C459.2,1182.34,461.53,1197.2,462.98,1200.55z"
         />
         <path
-          class="st1"
+          class="st1 n16"
+          ref={n16_1}
+          onMouseEnter={n16Enter}
+          onMouseLeave={n16Leave}
           d="M484.06,750.38c4.23,3.67,8.76,7.09,27.3,26.26c35.02,36.2,56.06,70.27,56.06,70.27
 	c8.93,58.45-7.68,103.64-16.3,161.59c-7.93,53.33-2.48,29.28-5.75,74.93c0,0-0.6-11.53-2.79-25.93
 	c-5.62-36.93-9.76-52.39-17.41-78.65c0,0-3.79-13.82-10.04-31.7c-4.84-13.83-16-44.5-18.74-52.38c-1-2.87-2.05-4.45-2.54-7.96
 	c-1.97-14.17-4.73-32.94-6.39-50.87C485.1,810.42,483.11,781.54,484.06,750.38z"
         />
         <path
-          class="st1"
+          class="st1 n18"
+          ref={n18_1}
+          onMouseEnter={n18Enter}
+          onMouseLeave={n18Leave}
           d="M437.98,709.66c1.91,7.86,28.31,26.42,28.31,26.42s-1.74,6.05-5.02,17.57c-3.87,13.57-9.65,34.95-14.94,64.27
 	c-3.01,16.68-6.36,35.88-8.81,57.68c-1.78,15.82-2.83,33.04-4.09,51.53c-0.63,9.21-0.64,18.38-0.67,27.51
 	c-0.09,29.48,1.86,57.95,4.77,80.48c3.1,24,7.19,41.25,8.18,46.23c4,19.97,11.86,40.4,16.86,50.83c3.41,7.12,9.06,13.81,9.06,13.81
@@ -777,19 +1057,28 @@ export default function Index({ setMuscle, style, onClick }) {
 	c-1.62-19.33-10.37-42.58-26.76-104.88c-20.45-77.69-21.91-144.87-20.48-193.51C401.28,842.71,411.13,759.77,437.98,709.66z"
         />
         <path
-          class="st2"
+          class="st2 n17"
+          ref={n17_2}
+          onMouseEnter={n17Enter}
+          onMouseLeave={n17Leave}
           d="M543.38,1135.82c-2.89,19.06-24.4,34.89-39.5,27.76c-4.91-2.32-9.22-6.54-11.82-14.91c0,0,7.07-5.91,9.97-19.61
 	c0,0,7.15-22.81,8.87-61.49c1.07-24.22-0.17-53.59-3.57-84.7c-2.7-24.78-9.09-66.23-13.4-96.08c-0.88-6.13-1.63-11.55-2.39-16.57
 	c0,0,1.36,10.85,2.3,16.6C496.21,901.32,558.6,1035.46,543.38,1135.82z"
         />
         <path
-          class="st2"
+          class="st2 n19"
+          ref={n19_2}
+          onMouseEnter={n19Enter}
+          onMouseLeave={n19Leave}
           d="M501.22,1131.98c20.95-78.97,4.76-160.16-7.37-245.38c-5.31-37.31-9.93-75.49-10.17-114.43
 	c-0.05-7.24,0.06-14.5,0.33-21.8l-17.71-14.29c-60.39,203.28-25.37,357.04-1.86,399.65c6.45,11.69,14.17,16.44,18.57,16.44
 	C491.55,1152.17,498.15,1143.54,501.22,1131.98z"
         />
         <path
-          class="st4"
+          class="st4 n10"
+          ref={n10_1}
+          onMouseEnter={n10Enter}
+          onMouseLeave={n10Leave}
           d="M386.11,602.97l-6.51-24.81c0,0,29.07-55.99,33.79-127.17c0,0,8.25-4.3,20.25-15.53
 	c7.14-6.68,10.46-9.75,10.46-9.75c-0.42,9.81-1.18,19.42-1.18,19.42C444.15,509.13,423.22,565.55,386.11,602.97z"
         />
@@ -799,7 +1088,10 @@ export default function Index({ setMuscle, style, onClick }) {
 	c0.2-1.6,6.72-53.49,26.95-100.21C311.9,807.6,275.99,837.11,274.67,838.18z"
         />
         <path
-          class="st4"
+          class="st4 n12"
+          ref={n12_1}
+          onMouseEnter={n12Enter}
+          onMouseLeave={n12Leave}
           d="M336.44,754.84c-20.23,46.72-26.75,98.6-26.95,100.21c12.91-40.64,113.7-146.51,70.11-276.88l-21.14,43.1
 	c0,0,12.55,30.6-10.3,103.41C344.78,735.44,340.78,745.5,336.44,754.84z"
         />
@@ -811,7 +1103,10 @@ export default function Index({ setMuscle, style, onClick }) {
 	c0.03-0.08,0.05-0.11,0.05-0.11c6.62-11.02,9.6-24.57,9.73-34.11C310.24,861.32,309.51,858.48,308.19,855.73z"
         />
         <path
-          class="st5"
+          class="st5 n11"
+          ref={n11_1}
+          onMouseEnter={n11Enter}
+          onMouseLeave={n11Leave}
           d="M279.42,831.98c-1.55,2.31,32.47-24.34,57.02-77.14c4.34-9.34,8.34-19.4,11.71-30.16
 	c22.85-72.81,10.3-103.41,10.3-103.41l-7-29.3c0,0-41.02,47.47-41.91,91.89C307.97,761.09,295.19,808.54,279.42,831.98z"
         />
@@ -821,13 +1116,19 @@ export default function Index({ setMuscle, style, onClick }) {
         />
         <g>
           <path
-            class="st8"
+            class="st8 n9"
+            ref={n9_2}
+            onMouseEnter={n9Enter}
+            onMouseLeave={n9Leave}
             d="M358.34,621.26c38.04-70.98,52.8-124.48,55.05-170.27c0,0-20.08-2.98-50.5,38.37
 		C345.81,512.57,348.6,597.99,358.34,621.26z"
           />
         </g>
         <path
-          class="st12"
+          class="st12 n15"
+          ref={n15_1}
+          onMouseEnter={n15Enter}
+          onMouseLeave={n15Leave}
           d="M471.08,553.97c0-0.01-3.64-15.7-7.83-31.12c-5.82-21.45-6.79-43.89-6.79-43.89
 	c5.09,14.11,10.98,20.96,24.12,24.49c12.7,3.41,27.31,9.01,33.96,18.61c7.47,10.79,14.27,31.92,14.27,31.92
 	c-13.2,41.63-8.05,83.57-5.79,119.2c-2.27,43.32-17.69,50.14-32.69,56.57c-0.16,0.07-24.04,6.34-24.04,6.34

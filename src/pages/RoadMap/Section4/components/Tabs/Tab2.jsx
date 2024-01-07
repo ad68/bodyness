@@ -54,7 +54,7 @@ export default function Index({ setTab, gender }) {
         {gender === 'female' && (
           <>
             <WomanFront
-              style={{ height: '500px' }}
+              style={{ height: '800px' }}
               setMuscle={setMuscle}
               alt=""
             />
