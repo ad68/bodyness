@@ -27,5 +27,11 @@
 	.st24{fill:#232323;}
 	.st25{opacity:0.51;}
 	.st26{fill:#FFFFFF;}
-
+	path {
+		transition: all 0.2s linear;
+		cursor: pointer;
+	}
+	.activeMuscle {
+		fill: #a347f1;
+	}
 }

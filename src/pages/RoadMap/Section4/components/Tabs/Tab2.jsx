@@ -59,7 +59,7 @@ export default function Index({ setTab, gender }) {
               alt=""
             />
             <WomanBack
-              style={{ height: '500px' }}
+              style={{ height: '800px' }}
               setMuscle={setMuscle}
               alt=""
             />

@@ -169,4 +169,11 @@
 }
 #womanBack .st26 {
   fill: #FFFFFF;
+}
+#womanBack path {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+#womanBack .activeMuscle {
+  fill: #a347f1;
 }/*# sourceMappingURL=style.css.map */
