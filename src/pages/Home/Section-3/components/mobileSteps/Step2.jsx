@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useTranslation } from "react-i18next";
-import SVG from '../../../../../components/SVG/ManFront'
+import Body from '../../../../../assets/images/home/man-front.svg'
 
 /* import Muscle from "../../../../../assets/images/home/selectedMuscle.png";
  */
@@ -35,7 +35,8 @@ export default function Index() {
       </section>
       <section className="mobileMuscleBox">
         {/* <img src={Muscle} className="muscle mt-8 m-auto" alt="" /> */}
-        <SVG style={{height:'312px',margin:'auto'}} />
+       {/*  <SVG style={{height:'312px',margin:'auto'}} /> */}
+       <img src={Body} style={{margin:'auto',zIndex:10,height:300}} alt="" height='600px'/>
       </section>
       <span className="block text-center mt-5 title">
         {t("Home.ImproveYourMuscles")}

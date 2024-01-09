@@ -6,7 +6,19 @@ import './style.css';
 // ────────────────────────────────────────────────────────────────────
 //
 
-const App = ({ setMuscle, style, onClick }) => {
+const App = ({
+  setMuscle,
+  style,
+  onClick,
+  front11,
+  front12,
+  front22,
+  front16,
+  setBack22,
+  setBack16,
+  setBack11,
+  setBack12,
+}) => {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const n1 = useRef();
   const n22_r = useRef();
@@ -56,8 +68,6 @@ const App = ({ setMuscle, style, onClick }) => {
   const n21_r = useRef();
   const n21_l = useRef();
   // ─── States ─────────────────────────────────────────────────────────────────────
-
-  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
   const n1Enter = () => {
@@ -123,21 +133,25 @@ const App = ({ setMuscle, style, onClick }) => {
     n10_l.current.classList.remove('activeMuscle');
   };
   const n11Enter = () => {
+    setBack11(true);
     n11_r.current.classList.add('activeMuscle');
     n11_l.current.classList.add('activeMuscle');
   };
   const n11Leave = () => {
+    setBack11(false);
     n11_r.current.classList.remove('activeMuscle');
     n11_l.current.classList.remove('activeMuscle');
-  }
+  };
   const n12Enter = () => {
+    setBack12(true);
     n12_r.current.classList.add('activeMuscle');
     n12_l.current.classList.add('activeMuscle');
   };
   const n12Leave = () => {
+    setBack12(false);
     n12_r.current.classList.remove('activeMuscle');
     n12_l.current.classList.remove('activeMuscle');
-  }
+  };
   const n13Enter = () => {
     n13_1.current.classList.add('activeMuscle');
     n13_2.current.classList.add('activeMuscle');
@@ -171,10 +185,12 @@ const App = ({ setMuscle, style, onClick }) => {
     n15_l.current.classList.remove('activeMuscle');
   };
   const n16Enter = () => {
+    setBack16(true);
     n16_r.current.classList.add('activeMuscle');
     n16_l.current.classList.add('activeMuscle');
   };
   const n16Leave = () => {
+    setBack16(false);
     n16_r.current.classList.remove('activeMuscle');
     n16_l.current.classList.remove('activeMuscle');
   };
@@ -227,13 +243,45 @@ const App = ({ setMuscle, style, onClick }) => {
     n21_l.current.classList.remove('activeMuscle');
   };
   const n22Enter = () => {
+    setBack22(true);
     n22_r.current.classList.add('activeMuscle');
     n22_l.current.classList.add('activeMuscle');
   };
   const n22Leave = () => {
+    setBack22(false);
     n22_r.current.classList.remove('activeMuscle');
     n22_l.current.classList.remove('activeMuscle');
   };
+  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
+
+  useEffect(() => {
+    if (front11) {
+      n11Enter();
+    } else {
+      n11Leave();
+    }
+  }, [front11]);
+  useEffect(() => {
+    if (front12) {
+      n12Enter();
+    } else {
+      n12Leave();
+    }
+  }, [front12]);
+  useEffect(() => {
+    if (front22) {
+      n22Enter();
+    } else {
+      n22Leave();
+    }
+  }, [front22]);
+  useEffect(() => {
+    if (front16) {
+      n16Enter();
+    } else {
+      n16Leave();
+    }
+  }, [front16]);
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
@@ -531,7 +579,6 @@ c-3.72-12.27,0.78-29.94,10.1-49.09c9.33-19.14,38.82-38.56,38.82-130.05C760.59,37
         onMouseEnter={n18Enter}
         onMouseLeave={n18Leave}
         ref={n18_r}
-       
         d="M421.5,926.49c0,0-29.45,82.11-8.5,142.23c20.95,60.13,29.97,92.13,35.89,99.89
         c5.91,7.76,23.37-8.24,18.03-39.76C461.59,1097.34,421.5,926.49,421.5,926.49z"
       />
@@ -1123,7 +1170,6 @@ C595.44,356.34,602.59,354.1,602.59,354.1z"
       />
       <path
         class="st17"
-        
         d="M602.16,354.53c4.05-1.46,10.84,0.11,19.3,5.32c7.46,4.6,15.12,10.77,23.93,18.26
 c12.44,10.56,25,22.79,37.47,33.44c10.09,8.62,24.22,19.18,31.77,24.49c10.23,7.19,22.4,12.3,26.63,13.9
 c10.41,3.93,22.73,8.42,22.73,8.42s-7.65,10.73-10.93,16.03c-2.1,3.4-4.46,8.22-6.77,6.33c-4.84-3.96-6.47-6.48-16.12-9.83
@@ -1542,6 +1588,3 @@ c6.81,30.74,0.27,50.65,0.27,50.65s20.38-1.86,14.01,29.58c-6.27,30.93-22.2,27.11-
   );
 };
 export default App;
-
-
-

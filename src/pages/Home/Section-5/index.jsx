@@ -34,7 +34,7 @@ export default function Index() {
         <img src={Tomato} className="tomato" alt="" />
         <img src={FreshGreen} className="freshGreen" alt="" />
         <h1 className='mainTitle mb-6'>{t("Home.WakeUp")}</h1>
-        <p className='mainDtl mb-12'>{t("LoremIpsum")}</p>
+        <p className='mainDtl mb-12'>انواع صبحانه ، نهار، شام ، وعده های قبل و بعد از تمرین به همراه میزان کالری و درشت مغذی هاش</p>
         <section className="foodWrapper">
           <section className="foodBox mt-12">
             <img alt="" className="saladPlate" src={SaladFish} />

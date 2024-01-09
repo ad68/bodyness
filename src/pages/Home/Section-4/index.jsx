@@ -48,10 +48,11 @@ export default function Index() {
         </section>
         <section className="textWrapper">
           <section className="ltr:ml-12 rtl:mr-12 mt-12 stepInfo">
-           
-            <h2>{t('Home.Improve')}</h2>
+           <h2>سلامت سنج و </h2>
+           <h2>محاسبه گرها</h2>
+          {/*   <h2>{t('Home.Improve')}</h2>
             <h3>{t('Home.YourMuscles')}</h3>
-            <p>{t('Home.ExperienceBest')}</p>
+            <p>{t('Home.ExperienceBest')}</p> */}
            <Link to="/roadmap/section3">
            <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
                 <span className="font-bold">{t('Home.LetsStart')}</span>

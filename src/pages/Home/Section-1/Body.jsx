@@ -1,6 +1,6 @@
 import React from 'react';
 /* import BodyBuilding from "../../../assets/images/home/body-building-img.svg"; */
-import BodyBuilding from '../../../assets/images/basicInfo/male.png';
+import BodyBuilding from '../../../assets/images/home/men.png';
 import LetsGo from '../../../assets/images/home/letsgo.png';
 import ArrowIcon from '../../../assets/images/home/Arrow-Icon.svg';
 /* import Plate from "../../../assets/images/home/section1PlateEn1.png";
@@ -46,7 +46,7 @@ export default function Index() {
             {t("Home.Learn2")} */}
           </h1>
           <h2 className="text-center md:hidden mt-3">
-            {' '}
+           
             {t('Home.TransformLife')}
           </h2>
           <section className="md:hidden  my-5">
@@ -63,12 +63,14 @@ export default function Index() {
           </section>
           {/* ---------------------------- */}
           <h1 className="hidden md:block md:ml-6 welcome font-semibold">
-            {t('Home.BecomeTheBetter')} {t('Home.VersionOfYourself')}
+           {/*  {t('Home.BecomeTheBetter')} {t('Home.VersionOfYourself')} */}
+           برای زندگیت
           </h1>
+          <h1 className="hidden md:block md:ml-6 welcome font-bold">حرکت کن!</h1>
           {/*  <h1 className="hidden md:block md:ml-6 welcome font-semibold">
             {t("Home.VersionOfYourself")}
           </h1> */}
-          {/* <p className="md:ml-6 font-normal">{t("Home.TransformLife")}</p> */}
+          <p className="md:ml-6 font-normal">بادینس، مسیری هوشمند برای سبک زندگی</p>
           {/* mobile */}
           <section className="md:hidden">
             <img src={LetsGo} className="m-auto letsGoImg" alt="" />
@@ -80,7 +82,7 @@ export default function Index() {
             </section>
             <section className="col-span-2 action">
               <span className="block mt-7 title">
-                {/* {t("Home.CoachTeam")} */}
+                {t("Home.CoachTeam")}
               </span>
               <span className="block font-semibold text">
                 {t('Home.TransformLife')}

@@ -27,9 +27,11 @@ export default function Index() {
   return (
     <section className="ltr:ml-12 rtl:mr-12 mt-12 stepInfo">
       <img src={Target} alt="" />
-      <h2>{t('Home.Improve')}</h2>
-      <h3>{t('Home.YourMuscles')}</h3>
-      <p>{t('Home.ExperienceBest')}</p>
+    {/*   <h2>{t('Home.Improve')}</h2> */}
+     {/*  <h3>{t('Home.YourMuscles')}</h3> */}
+     <h2>مرجع تخصصی</h2>
+     <h3>آموزش حرکات فیتنس و بدنسازی</h3>
+     {/*  <p>{t('Home.ExperienceBest')}</p> */}
       <Link to="/roadmap/section4">
         <button className="letStartBtn  px-6 mt-6 text-left  hidden md:block">
           <span className="font-bold">{t('Home.LetsStart')}</span>

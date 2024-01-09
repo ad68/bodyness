@@ -16,6 +16,14 @@ export default function Index({ setTab, gender }) {
   const { t } = useTranslation();
   // ─── States ─────────────────────────────────────────────────────────────────────
   const [muscle, setMuscle] = useState('');
+  const [front22, setFront22] = useState(false);
+  const [back22, setBack22] = useState(false);
+  const [front16, setFront16] = useState(false);
+  const [back16, setBack16] = useState(false);
+  const [front11, setFront11] = useState(false);
+  const [back11, setBack11] = useState(false);
+  const [front12, setFront12] = useState(false);
+  const [back12, setBack12] = useState(false);
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
@@ -28,7 +36,6 @@ export default function Index({ setTab, gender }) {
   return (
     <>
       <span className="tabTitle mt-7 m-auto">
-        {' '}
         <img
           src={ArrowLeft}
           alt=""
@@ -37,9 +44,7 @@ export default function Index({ setTab, gender }) {
         />
         {t('Home.ChooseMuscle')}
       </span>
-      {/*    <section className="flex justify-around mt-8 muscleBox">
-    
-      </section> */}
+
       <section className="m-auto flex justify-center text-center mt-5">
         {gender === 'male' && (
           <>
@@ -47,19 +52,39 @@ export default function Index({ setTab, gender }) {
               style={{ height: '500px' }}
               setMuscle={setMuscle}
               alt=""
+              front11={front11}
+              front12={front12}
+              front16={front16}
+              front22={front22}
+              setBack11={setBack11}
+              setBack12={setBack12}
+              setBack16={setBack16}
+              setBack22={setBack22}
             />
-            <ManBack style={{ height: '500px' }} setMuscle={setMuscle} alt="" />
+            <ManBack
+              back11={back11}
+              back12={back12}
+              back16={back16}
+              back22={back22}
+              setFront11={setFront11}
+              setFront12={setFront12}
+              setFront16={setFront16}
+              setFront22={setFront22}
+              style={{ height: '500px' }}
+              setMuscle={setMuscle}
+              alt=""
+            />
           </>
         )}
         {gender === 'female' && (
           <>
             <WomanFront
-              style={{ height: '800px' }}
+              style={{ height: '500px' }}
               setMuscle={setMuscle}
               alt=""
             />
             <WomanBack
-              style={{ height: '800px' }}
+              style={{ height: '500px' }}
               setMuscle={setMuscle}
               alt=""
             />

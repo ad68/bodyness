@@ -6,7 +6,19 @@ import './style.css';
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({setMuscle, style, onClick }) {
+export default function Index({
+  setMuscle,
+  style,
+  onClick,
+  setFront11,
+  setFront12,
+  setFront22,
+  setFront16,
+  back22,
+  back16,
+  back11,
+  back12
+}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   const n1_1 = useRef();
   const n1_2 = useRef();
@@ -48,8 +60,6 @@ export default function Index({setMuscle, style, onClick }) {
 
   // ─── States ─────────────────────────────────────────────────────────────────────
 
-  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
   // ─── Functions ──────────────────────────────────────────────────────────────────
   const n1Enter = () => {
     n1_1.current.classList.add('activeMuscle');
@@ -76,38 +86,46 @@ export default function Index({setMuscle, style, onClick }) {
     n8_2.current.classList.remove('activeMuscle');
   };
   const n11Enter = () => {
+    setFront11(true)
     n11_1.current.classList.add('activeMuscle');
     n11_2.current.classList.add('activeMuscle');
   };
   const n11Leave = () => {
+    setFront11(false)
     n11_1.current.classList.remove('activeMuscle');
     n11_2.current.classList.remove('activeMuscle');
   };
   const n12Enter = () => {
+    setFront12(true)
     n12_1.current.classList.add('activeMuscle');
     n12_2.current.classList.add('activeMuscle');
   };
   const n12Leave = () => {
+    setFront12(false)
     n12_1.current.classList.remove('activeMuscle');
     n12_2.current.classList.remove('activeMuscle');
   };
   const n16Enter = () => {
+    setFront16(true)
     n16_1.current.classList.add('activeMuscle');
     n16_2.current.classList.add('activeMuscle');
   };
   const n16Leave = () => {
+    setFront16(false)
     n16_1.current.classList.remove('activeMuscle');
     n16_2.current.classList.remove('activeMuscle');
   };
   const n22Enter = () => {
+    setFront22(true);
     n22_1.current.classList.add('activeMuscle');
     n22_2.current.classList.add('activeMuscle');
   };
   const n22Leave = () => {
+    setFront22(false);
     n22_1.current.classList.remove('activeMuscle');
     n22_2.current.classList.remove('activeMuscle');
   };
-  
+
   const n20Enter = () => {
     n20_1.current.classList.add('activeMuscle');
     n20_2.current.classList.add('activeMuscle');
@@ -193,13 +211,42 @@ export default function Index({setMuscle, style, onClick }) {
     n31_2.current.classList.remove('activeMuscle');
   };
 
- 
   const n32Enter = () => {
     n32.current.classList.add('activeMuscle');
   };
   const n32Leave = () => {
     n32.current.classList.remove('activeMuscle');
   };
+
+  // ─── Life Cycle ─────────────────────────────────────────────────────────────────
+  useEffect(() => {
+    if (back11) {
+      n11Enter();
+    } else {
+      n11Leave();
+    }
+  }, [back11]);
+  useEffect(() => {
+    if (back12) {
+      n12Enter();
+    } else {
+      n12Leave();
+    }
+  }, [back12]);
+  useEffect(() => {
+    if (back22) {
+      n22Enter();
+    } else {
+      n22Leave();
+    }
+  }, [back22]);
+  useEffect(() => {
+    if (back16) {
+      n16Enter();
+    } else {
+      n16Leave();
+    }
+  }, [back16]);
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :

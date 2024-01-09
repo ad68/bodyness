@@ -1,8 +1,8 @@
 import React from "react";
 import Female from "../../../../../assets/images/home/female.svg";
-import FemaleBody from "../../../../../assets/images/home/femaleBody.svg";
+import FemaleBody from "../../../../../assets/images/home/woman-front.svg";
 import Male from "../../../../../assets/images/home/male.svg";
-import MaleBody from "../../../../../assets/images/home/maleBody.svg";
+import MaleBody from "../../../../../assets/images/home/man-front.svg";
 import { useTranslation } from "react-i18next";
 
 //

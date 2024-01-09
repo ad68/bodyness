@@ -201,14 +201,20 @@ body {
   font-weight: 700;
 }
 .bodyRtl .homeWrapper .section1 .body .welcome {
-  font-size: 48px;
+  font-size: 70px;
   z-index: 1;
   position: relative;
+  color: #3E4151;
 }
 @media screen and (max-width: 767px) {
   .bodyRtl .homeWrapper .section1 .body .welcome {
     font-size: 25px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .bodyRtl .homeWrapper .section1 .body .welcome {
+    font-size: 50px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -225,7 +231,7 @@ body {
     text-align: center;
   }
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
   .bodyRtl .homeWrapper .section1 .body p {
     font-size: 17px;
   }
@@ -234,7 +240,7 @@ body {
   border-radius: 32px;
   background-color: #a347f1;
   min-height: 250px;
-  margin-top: 15%;
+  margin-top: 10%;
   position: relative;
   width: 760px;
   max-width: 100%;
@@ -255,12 +261,12 @@ body {
 .bodyRtl .homeWrapper .section1 .body .coachTeamBox .bodyImg {
   position: absolute;
   bottom: 0px;
-  right: 3px;
-  width: 308px;
+  right: -20px;
+  width: 390px;
 }
 @media screen and (max-width: 1366px) {
   .bodyRtl .homeWrapper .section1 .body .coachTeamBox .bodyImg {
-    width: 224px;
+    width: 270px;
   }
 }
 .bodyRtl .homeWrapper .section1 .body .coachTeamBox .action {
@@ -921,7 +927,8 @@ body {
   color: white;
 }
 .bodyRtl .homeWrapper .section4 {
-  background: linear-gradient(90deg, rgb(228, 233, 254) 0%, rgb(223, 196, 251) 100%);
+  /*  background: linear-gradient(90deg, rgba(228, 233, 254, 1) 0%, rgba(223, 196, 251, 1) 100%); */
+  background-color: #FFD9DB;
   height: 100vh;
   justify-content: center;
   align-items: center;

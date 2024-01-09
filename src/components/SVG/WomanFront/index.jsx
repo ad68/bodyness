@@ -46,6 +46,8 @@ export default function Index({ setMuscle, style, onClick }) {
   const n20_4 = useRef();
   const n21_1 = useRef();
   const n21_2 = useRef();
+  const n22_1 = useRef();
+  const n22_2 = useRef();
 
   // ─── States ─────────────────────────────────────────────────────────────────────
 
@@ -185,6 +187,14 @@ export default function Index({ setMuscle, style, onClick }) {
   const n21Leave = () => {
     n21_1.current.classList.remove('activeMuscle');
     n21_2.current.classList.remove('activeMuscle');
+  };
+  const n22Enter = () => {
+    n22_1.current.classList.add('activeMuscle');
+    n22_2.current.classList.add('activeMuscle');
+  };
+  const n22Leave = () => {
+    n22_1.current.classList.remove('activeMuscle');
+    n22_2.current.classList.remove('activeMuscle');
   };
   const n20Enter = () => {
     n20_1.current.classList.add('activeMuscle');
@@ -641,14 +651,20 @@ export default function Index({ setMuscle, style, onClick }) {
 	C-429.72,265.27-432.19,261.48-432.7,260.2z"
         />
         <path
-          class="st12"
+          class="st12 n22"
+          ref={n22_1}
+          onMouseEnter={n22Enter}
+          onMouseLeave={n22Leave}
           d="M632.36,273.31c-0.14,5.51,0,12.72,0.04,16.94c0,0,1.9,9.74,3.1,13.41c2.21,6.73,5.29,11.59,8.77,15.76
 	c4.75,5.7,13.87,10.94,14.09,10.95c3.08,0.22,6.82,0.54,11.47,1.19c7.39,1.03,11.26,2.09,11.26,2.09c1.81-0.01,3.72,0.19,5.64,0.27
 	c11.69,0.51,24.68,2.71,24.68,2.71c2.62,0.46,5.83,0.92,9.15,1.47c1.72,0.29,3.36,0.92,4.94,1.35c-3.54-4.09-6.46-7.45-9.69-10.41
 	c-15.16-13.88-26.65-16.33-26.65-16.33C654.29,299.57,632.6,273.93,632.36,273.31z"
         />
         <path
-          class="st12"
+          class="st12 n22"
+          ref={n22_2}
+          onMouseEnter={n22Enter}
+          onMouseLeave={n22Leave}
           d="M532.73,274.31c0.14,5.51,0,12.72-0.04,16.94c0,0-1.9,9.74-3.1,13.41c-2.21,6.73-5.29,11.59-8.77,15.76
 	c-4.75,5.7-13.87,10.94-14.09,10.95c-3.08,0.22-6.82,0.54-11.47,1.19c-7.39,1.03-11.26,2.09-11.26,2.09
 	c-1.81-0.01-3.72,0.19-5.64,0.27c-11.69,0.51-24.68,2.71-24.68,2.71c-2.62,0.46-5.83,0.92-9.15,1.47c-1.72,0.29-3.36,0.92-4.94,1.35

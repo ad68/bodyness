@@ -176,21 +176,16 @@ body {
       .body {
         position: relative;
         width: 100%;
-
         .plate {
           width: 500px;
-
           @media screen and (min-width: 1920px) {
             width: 800px;
           }
         }
-
         .rightBox {
           width: 50%;
-
           .plate {
             width: 90%;
-
             @media screen and (min-width: 1920px) {
               width: 100%;
             }
@@ -233,15 +228,18 @@ body {
         }
 
         .welcome {
-          font-size: 48px;
+          font-size: 70px;
           z-index: 1;
           position: relative;
-
+          color: #3E4151;
           @media screen and (max-width: 767px) {
             font-size: 25px;
             text-align: center;
           }
-
+          @media screen and (max-width: 1366px) {
+            font-size: 50px;
+          
+          }
           @media screen and (min-width: 1920px) {
             font-size: 100px;
           }
@@ -255,7 +253,7 @@ body {
             text-align: center;
           }
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (max-width: 375px) {
             font-size: 17px;
           }
         }
@@ -264,7 +262,7 @@ body {
           border-radius: 32px;
           background-color: #a347f1;
           min-height: 250px;
-          margin-top: 15%;
+          margin-top: 10%;
           position: relative;
           width: 760px;
 
@@ -284,11 +282,11 @@ body {
           .bodyImg {
             position: absolute;
             bottom: 0px;
-            right: 3px;
-            width: 308px;
+            right: -20px;
+            width: 390px;
 
             @media screen and (max-width: 1366px) {
-              width: 224px;
+              width: 270px;
             }
           }
 
@@ -1044,8 +1042,8 @@ body {
     }
 
     .section4 {
-      background: linear-gradient(90deg, rgba(228, 233, 254, 1) 0%, rgba(223, 196, 251, 1) 100%);
-
+     /*  background: linear-gradient(90deg, rgba(228, 233, 254, 1) 0%, rgba(223, 196, 251, 1) 100%); */
+      background-color: #FFD9DB;
       &.mobile {
         flex-direction: column;
       }
