@@ -104,9 +104,6 @@ body {
   padding-bottom: 20px;
   background: rgb(228, 233, 254);
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(90deg, rgb(228, 233, 254) 0%, rgb(223, 196, 251) 100%);
 }
 @media screen and (min-width: 991px) {
@@ -114,129 +111,102 @@ body {
     padding-top: 97px;
   }
 }
-.bodyRtl .homeWrapper .section1 .mobilePlate {
-  width: 100%;
-}
-@media only screen and (min-width: 375px) {
-  .bodyRtl .homeWrapper .section1 .mobilePlate {
-    width: 100%;
-  }
-}
-.bodyRtl .homeWrapper .section1 .watermark {
-  font-size: 284px;
-  color: rgba(255, 255, 255, 0.2);
+.bodyRtl .homeWrapper .section1 .plate {
+  width: 45%;
+  left: 50px;
+  bottom: 0;
   position: absolute;
-  top: 0px;
-  right: 21px;
-  line-height: 295px;
-  z-index: 0;
+  /*  @media screen and (min-width: 1920px) {
+      width: 100%;
+    } */
 }
-@media screen and (max-width: 1920px) {
-  .bodyRtl .homeWrapper .section1 .watermark {
-    font-size: 237px;
-    top: -66px;
-    line-height: 254px;
-  }
-}
-@media screen and (max-width: 1366px) {
-  .bodyRtl .homeWrapper .section1 .watermark {
-    font-size: 136px;
-    top: -12px;
-    line-height: 147px;
-  }
-}
-.bodyRtl .homeWrapper .section1 .body {
-  position: relative;
-  width: 100%;
-}
-.bodyRtl .homeWrapper .section1 .body .plate {
-  width: 500px;
-}
-@media screen and (min-width: 1920px) {
-  .bodyRtl .homeWrapper .section1 .body .plate {
-    width: 800px;
-  }
-}
-.bodyRtl .homeWrapper .section1 .body .rightBox {
+.bodyRtl .homeWrapper .section1 .leftBox {
   width: 50%;
-}
-.bodyRtl .homeWrapper .section1 .body .rightBox .plate {
-  width: 90%;
-}
-@media screen and (min-width: 1920px) {
-  .bodyRtl .homeWrapper .section1 .body .rightBox .plate {
-    width: 100%;
-  }
-}
-.bodyRtl .homeWrapper .section1 .body .leftBox {
-  width: 50%;
-  display: flex;
+  height: 100%;
   padding-right: 3%;
   flex-direction: column;
   justify-content: center;
 }
 @media screen and (max-width: 991px) {
-  .bodyRtl .homeWrapper .section1 .body .leftBox {
+  .bodyRtl .homeWrapper .section1 .leftBox {
     width: 100%;
     padding-right: 0;
   }
 }
 @media only screen and (min-width: 375px) {
-  .bodyRtl .homeWrapper .section1 .body .leftBox .letsGoImg {
+  .bodyRtl .homeWrapper .section1 .leftBox .letsGoImg {
     width: 85%;
   }
 }
-.bodyRtl .homeWrapper .section1 .body .learn {
-  font-size: 25px;
+.bodyRtl .homeWrapper .section1 .mobileWrapper {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.bodyRtl .homeWrapper .section1 .mobileWrapper .mobilePlate {
+  width: 60%;
+}
+@media only screen and (min-width: 375px) {
+  .bodyRtl .homeWrapper .section1 .mobileWrapper .mobilePlate {
+    width: 60%;
+  }
+}
+.bodyRtl .homeWrapper .section1 .mobileWrapper .learn1 {
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
 }
-@media only screen and (min-width: 375px) {
-  .bodyRtl .homeWrapper .section1 .body .learn {
-    font-size: 20px;
-  }
-}
-.bodyRtl .homeWrapper .section1 .body .learn strong {
+.bodyRtl .homeWrapper .section1 .mobileWrapper .learn1 strong {
   color: #a347f1;
   font-weight: 700;
 }
-.bodyRtl .homeWrapper .section1 .body .welcome {
+.bodyRtl .homeWrapper .section1 .mobileWrapper .letsStartBtnMobile {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: IRANSansBold;
+  background-color: #a347f1;
+  padding: 10px;
+  width: 100%;
+  color: white;
+}
+.bodyRtl .homeWrapper .section1 .welcome {
   font-size: 70px;
   z-index: 1;
   position: relative;
-  color: #3E4151;
+  color: #3e4151;
 }
 @media screen and (max-width: 767px) {
-  .bodyRtl .homeWrapper .section1 .body .welcome {
+  .bodyRtl .homeWrapper .section1 .welcome {
     font-size: 25px;
     text-align: center;
   }
 }
 @media screen and (max-width: 1366px) {
-  .bodyRtl .homeWrapper .section1 .body .welcome {
+  .bodyRtl .homeWrapper .section1 .welcome {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .bodyRtl .homeWrapper .section1 .body .welcome {
+  .bodyRtl .homeWrapper .section1 .welcome {
     font-size: 100px;
   }
 }
-.bodyRtl .homeWrapper .section1 .body p {
+.bodyRtl .homeWrapper .section1 p {
   font-size: 29px;
 }
 @media screen and (max-width: 767px) {
-  .bodyRtl .homeWrapper .section1 .body p {
+  .bodyRtl .homeWrapper .section1 p {
     font-size: 24px;
     text-align: center;
   }
 }
 @media only screen and (max-width: 375px) {
-  .bodyRtl .homeWrapper .section1 .body p {
+  .bodyRtl .homeWrapper .section1 p {
     font-size: 17px;
   }
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox {
+.bodyRtl .homeWrapper .section1 .coachTeamBox {
   border-radius: 32px;
   background-color: #a347f1;
   min-height: 250px;
@@ -247,43 +217,43 @@ body {
   color: white;
 }
 @media screen and (max-width: 1366px) {
-  .bodyRtl .homeWrapper .section1 .body .coachTeamBox {
+  .bodyRtl .homeWrapper .section1 .coachTeamBox {
     width: 561px;
     margin-top: 10%;
     min-height: 210px;
   }
 }
 @media screen and (min-height: 900px) {
-  .bodyRtl .homeWrapper .section1 .body .coachTeamBox {
+  .bodyRtl .homeWrapper .section1 .coachTeamBox {
     margin-top: 27%;
   }
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .bodyImg {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .bodyImg {
   position: absolute;
   bottom: 0px;
   right: -20px;
   width: 390px;
 }
 @media screen and (max-width: 1366px) {
-  .bodyRtl .homeWrapper .section1 .body .coachTeamBox .bodyImg {
+  .bodyRtl .homeWrapper .section1 .coachTeamBox .bodyImg {
     width: 270px;
   }
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action {
   padding-right: 85px;
 }
 @media screen and (max-width: 1366px) {
-  .bodyRtl .homeWrapper .section1 .body .coachTeamBox .action {
+  .bodyRtl .homeWrapper .section1 .coachTeamBox .action {
     padding-right: 45px;
   }
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .title {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action .title {
   font-size: 24px;
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .text {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action .text {
   font-size: 18px;
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .letStartBtn {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action .letStartBtn {
   border-radius: 16px;
   background-color: white;
   min-height: 75px;
@@ -294,15 +264,15 @@ body {
   position: relative;
 }
 @media screen and (max-width: 1366px) {
-  .bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .letStartBtn {
+  .bodyRtl .homeWrapper .section1 .coachTeamBox .action .letStartBtn {
     margin-top: 30px;
     min-height: 67px;
   }
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .letStartBtn span {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action .letStartBtn span {
   font-size: 24px;
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .letStartBtn .circle {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action .letStartBtn .circle {
   width: 122px;
   height: 122px;
   background-color: rgba(163, 71, 241, 0.0784313725);
@@ -312,22 +282,13 @@ body {
   transition: all 0.2s linear;
   top: 2px;
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .letStartBtn .circle img {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action .letStartBtn .circle img {
   margin: auto;
   display: block;
   margin-top: -7px;
 }
-.bodyRtl .homeWrapper .section1 .body .coachTeamBox .action .letStartBtn:hover .circle {
+.bodyRtl .homeWrapper .section1 .coachTeamBox .action .letStartBtn:hover .circle {
   background-color: rgba(163, 71, 241, 0.3607843137);
-}
-.bodyRtl .homeWrapper .section1 .body .letsStartBtnMobile {
-  border-radius: 16px;
-  font-size: 20px;
-  font-family: IRANSansBold;
-  background-color: #a347f1;
-  padding: 10px;
-  width: 100%;
-  color: white;
 }
 .bodyRtl .homeWrapper .section2 {
   background-color: #f5e170;
@@ -928,7 +889,7 @@ body {
 }
 .bodyRtl .homeWrapper .section4 {
   /*  background: linear-gradient(90deg, rgba(228, 233, 254, 1) 0%, rgba(223, 196, 251, 1) 100%); */
-  background-color: #FFD9DB;
+  background-color: #ffd9db;
   height: 100vh;
   justify-content: center;
   align-items: center;

@@ -1,10 +1,5 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import Menu from '../../../components/Menu';
-import Welcome from './components/Welcome';
-import MainImage from './components/MainImage';
-import Mobile from './components/Mobile'
-import { Link } from 'react-router-dom';
+import React, { useState, useContext, useEffect } from 'react'
+import Plate from '../../../../assets/images/home/Recipe.png';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -13,11 +8,11 @@ import { Link } from 'react-router-dom';
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  const { t } = useTranslation();
+
   // ─── States ─────────────────────────────────────────────────────────────────────
-
+ 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+ 
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -26,13 +21,8 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <>
-      <Menu />
-      <section className="section1">
-        <Welcome />
-        <MainImage />
-        <Mobile/>
-      </section>
-    </>
-  );
+     <>
+        <img className="plate hidden md:block" src={Plate} alt="" />
+     </>
+  )
 }
