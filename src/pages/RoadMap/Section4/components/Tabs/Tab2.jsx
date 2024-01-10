@@ -60,6 +60,7 @@ export default function Index({ setTab, gender }) {
               setBack12={setBack12}
               setBack16={setBack16}
               setBack22={setBack22}
+              onClick={()=>setTab(3)}
             />
             <ManBack
               back11={back11}
@@ -72,6 +73,7 @@ export default function Index({ setTab, gender }) {
               setFront22={setFront22}
               style={{ height: '500px' }}
               setMuscle={setMuscle}
+              onClick={()=>setTab(3)}
               alt=""
             />
           </>
@@ -81,11 +83,13 @@ export default function Index({ setTab, gender }) {
             <WomanFront
               style={{ height: '500px' }}
               setMuscle={setMuscle}
+              onClick={()=>setTab(3)}
               alt=""
             />
             <WomanBack
               style={{ height: '500px' }}
               setMuscle={setMuscle}
+              onClick={()=>setTab(3)}
               alt=""
             />
           </>

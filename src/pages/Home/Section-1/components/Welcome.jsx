@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import BodyBuilding from '../../../../assets/images/home/men.png';
+import BodyBuilding from '../../../../assets/images/home/man.png';
 
 import ArrowIcon from '../../../../assets/images/home/Arrow-Icon.svg';
 import { useTranslation } from 'react-i18next';

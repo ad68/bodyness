@@ -232,11 +232,11 @@ body {
   position: absolute;
   bottom: 0px;
   right: -20px;
-  width: 390px;
+  width: 328px;
 }
 @media screen and (max-width: 1366px) {
   .bodyRtl .homeWrapper .section1 .coachTeamBox .bodyImg {
-    width: 270px;
+    width: 220px;
   }
 }
 .bodyRtl .homeWrapper .section1 .coachTeamBox .action {

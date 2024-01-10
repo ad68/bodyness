@@ -2,8 +2,8 @@ import React, { useState, useContext, useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
 import Light from "../../../assets/images/basicInfo/light.png";
-import Male from "../../../assets/images/basicInfo/male.png";
-import Female from "../../../assets/images/basicInfo/female.png";
+import Male from "../../../assets/images/home/man.png";
+import Female from "../../../assets/images/home/woman.png";
 import Progress from "../components/Progress";
 import Step from "../../../assets/images/basicInfo/step1L.png";
 //
