@@ -239,6 +239,11 @@ body {
     width: 220px;
   }
 }
+@media screen and (max-width: 1800px) {
+  .bodyRtl .homeWrapper .section1 .coachTeamBox .bodyImg {
+    width: 275px;
+  }
+}
 .bodyRtl .homeWrapper .section1 .coachTeamBox .action {
   padding-right: 85px;
 }
@@ -2768,7 +2773,7 @@ body {
   width: 630px;
   max-width: 100%;
   margin: auto;
-  margin-top: 197px;
+  margin-top: 30px;
 }
 .bodyRtl .roadMapWrapper .section4 .levelBox .item {
   width: 201px;
@@ -2785,6 +2790,11 @@ body {
 }
 .bodyRtl .roadMapWrapper .section4 .levelBox .item .genderImage {
   margin-top: -120px;
+}
+.bodyRtl .roadMapWrapper .section4 .levelBox .playerWrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #1a73c5;
 }
 
 .comingSoon {

@@ -255,6 +255,10 @@ body {
           @media screen and (max-width: 1366px) {
             width: 220px;
           }
+          @media screen and (max-width :1800px) {
+            width: 275px;
+          }
+          
         }
 
         .action {
@@ -3192,7 +3196,7 @@ body {
         width: 630px;
         max-width: 100%;
         margin: auto;
-        margin-top: 197px;
+        margin-top: 30px;
 
         .item {
           width: 201px;
@@ -3211,6 +3215,11 @@ body {
           .genderImage {
             margin-top: -120px;
           }
+        }
+        .playerWrapper{
+          border-radius: 10px;
+          overflow: hidden;
+          border: 3px solid #1a73c5;
         }
       }
     }

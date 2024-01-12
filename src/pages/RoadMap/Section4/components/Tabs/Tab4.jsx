@@ -2,6 +2,8 @@ import React, { useState, useContext, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Human from '../../../../../assets/images/roadMap/FROM_5_TO_9 3.png';
 import ArrowLeft from '../../../../../assets/images/basicInfo/arrowLeftWhite.png';
+import ReactPlayer from 'react-player';
+import vid from '../../../../../assets/video/damble.mp4'
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -34,54 +36,21 @@ export default function Index({ setTab }) {
           className="backBtn"
           onClick={() => setTab(3)}
         />
-        {t('Basic.ChooseLevel')}
+       {/*  {t('Basic.ChooseLevel')} */}
+       سرشانه دمبل چرخشی نشسته
       </span>
       <section className="flex justify-between levelBox">
-        <section className="item" onClick={() => inputRef1.current.click()}>
-          <img src={Human} className="genderImage" alt="" />
-          <section className="mt-4">
-            <input
-              type="radio"
-              id="level1"
-              name="level"
-              ref={inputRef1}
-              value={'1'}
-            />
-            <label for="level1" className="mr-1">
-              {t('Basic.Beginner')}
-            </label>
-          </section>
-        </section>
-        <section className="item" onClick={() => inputRef2.current.click()}>
-          <img src={Human} className="genderImage" alt="" />
-          <section className="mt-4">
-            <input
-              type="radio"
-              id="level2"
-              name="level"
-              ref={inputRef2}
-              value="2"
-            />
-            <label for="level2" className="mr-1">
-              {t('Basic.Intermediate')}
-            </label>
-          </section>
-        </section>
-        <section className="item" onClick={() => inputRef3.current.click()}>
-          <img src={Human} className="genderImage" alt="" />
-          <section className="mt-4">
-            <input
-              type="radio"
-              id="level3"
-              name="level"
-              ref={inputRef3}
-              value="3"
-            />
-            <label for="level3" className="mr-1">
-              {t('Basic.Advanced')}
-            </label>
-          </section>
-        </section>
+        <div className="playerWrapper">
+          <ReactPlayer
+            className="react-player fixed-bottom"
+            url={vid}
+            width="100%"
+            height="100%"
+            controls={false}
+            loop={true}
+            playing={true}
+          />
+        </div>
       </section>
     </>
   );
