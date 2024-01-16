@@ -164,7 +164,6 @@ body {
         }
       }
       .mobileWrapper {
-        
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -255,10 +254,9 @@ body {
           @media screen and (max-width: 1366px) {
             width: 220px;
           }
-          @media screen and (max-width :1800px) {
+          @media screen and (max-width: 1800px) {
             width: 275px;
           }
-          
         }
 
         .action {
@@ -1149,7 +1147,6 @@ body {
     .section5 {
       background-color: #fff5dc;
       position: relative;
-
       @media screen and (max-width: 767px) {
         background-color: rgba(255, 154, 124, 0.23);
       }
@@ -2422,8 +2419,9 @@ body {
     }
   }
   .roadMapWrapper {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    /* padding-top: 96px;
+    padding-bottom: 120px; */
+   
     margin: auto;
     .header {
       min-height: 280px;
@@ -2690,109 +2688,189 @@ body {
     }
 
     .section3 {
-      .header {
-        background-color: rgba(242, 75, 108, 0.06);
-        margin-top: 20px;
-        overflow: visible;
-        height: 539px;
-
-        img {
+     /*  max-width: 1303px;
+      width: 100%;
+      margin: auto;
+      margin-top: 40px; */
+      .tabBtnWrapper {
+       /*  display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        .tabBtn {
+          width: 308px;
+          height: 324px;
+          cursor: pointer;
+          border-top-right-radius: 30px;
+          border-top-left-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+         
+          .btn {
+            /* background-color: $bodyNessPuprple; */
+            width: 220px;
+            height: 48px;
+            margin-top: 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            color: white;
+          }
+        }
+      }
+      .tabWrapper {
+        min-height: 400px;
+       /*  background-color: #926cff14; */
+        padding: 30px;
+       
+        .box{
+          border-radius: 24px 0px 24px 24px;
+        
+          margin-top: -1px;
+        
+        }
+      }
+      .SportTimeSelector {
+        border-radius: 6px;
+        background-color: rgba(244, 244, 244, 1);
+       
+        max-width: 100%;
+      
+        position: relative;
+        border-radius: 6px;
+        background-color: rgba(244, 244, 244, 1);
+        width: 336px;
+        max-width: 100%;
+       
+        position: relative;
+        height: 17px;
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+  
+        @media screen and (max-width: 1366px) {
+          margin-top: 20px;
+        }
+  
+        .labelMin {
+          position: absolute;
+          right: 0;
+          font-size: 14px;
+          font-family: $mediumFont;
+          top: 27px;
+        }
+  
+        .labelMax {
           position: absolute;
           left: 0;
-          top: -46px;
-          width: 621px;
+          font-size: 14px;
+          font-family: $mediumFont;
+          top: 27px;
         }
-
-        .levelNumber {
-          color: rgba(242, 75, 108, 1);
+  
+        .activeLine1 {
+          position: absolute;
+          height: 17px;
+          width: 6%;
+          background-color: rgb(0, 213, 183);
+          position: absolute;
+          left: 2px;
+          border-radius: 6px;
+          transition: all 0.2s linear;
         }
-      }
-
-      .bullet {
-        display: block;
-        width: 17px;
-        height: 17px;
-        border-radius: 50px;
-        margin-left: 5px;
-
-        &.blue {
-          background-color: #358cfe;
+  
+        .activeLine2 {
+          position: absolute;
+          height: 17px;
+          width: 29%;
+          background-color: #ff9a7c;
+          position: absolute;
+          left: 2px;
+          border-radius: 6px;
+          transition: all 0.2s linear;
         }
-
-        &.green {
-          background-color: #44dfd3;
+  
+        .activeLine3 {
+          position: absolute;
+          height: 17px;
+          width: 50%;
+          background-color: #feb137;
+          position: absolute;
+          left: 2px;
+          border-radius: 6px;
+          transition: all 0.2s linear;
         }
-
-        &.yellow {
-          background-color: #fedf6b;
+  
+        .activeLine4 {
+          position: absolute;
+          height: 17px;
+          width: 73%;
+          background-color: #6c95ff;
+          position: absolute;
+          left: 2px;
+          border-radius: 6px;
+          transition: all 0.2s linear;
         }
-      }
-
-      .silverBox {
-        width: 1170px;
-        max-width: 95%;
-        min-height: 410px;
-        margin: auto;
-        background-color: #f8f9fa;
-        margin-top: 150px;
-        border-radius: 24px;
-        padding: 1px;
-
-        .weightHeight {
-          width: 90%;
-          margin: auto;
-          margin-top: -65px;
+  
+        .activeLine5 {
+          position: absolute;
+          height: 17px;
+          width: 100%;
+          background-color: #926cff;
+          position: absolute;
+          left: 2px;
+          border-radius: 6px;
+          transition: all 0.2s linear;
         }
-
-        .rangeInfo {
-          .label {
-            font-family: $lightFont;
-            font-size: 16px;
+  
+        * {
+          transition: all 0.1s linear;
+        }
+  
+        .item {
+          width: 10px;
+          height: 10px;
+          background-color: rgba(181, 181, 181, 1);
+          display: block;
+          border-radius: 50px;
+          cursor: pointer;
+          position: relative;
+  
+          .tooltip {
+            font-family: $normalFont;
+            font-size: 12px;
+            position: absolute;
+            top: 30px;
+            display: block;
+            width: 46px;
+            height: 40px;
+            
           }
-        }
-      }
-
-      .duesBox {
-        width: 1170px;
-        max-width: 95%;
-
-        margin: auto;
-        margin-top: 50px;
-
-        .title {
-          font-size: 18px;
-          font-family: $boldFont;
-          display: flex;
-          align-items: center;
-        }
-
-        ul {
-          li {
-            font-size: 16px;
-            font-family: $boldFont;
-          }
-        }
-      }
-
-      .dtlBox {
-        width: 1170px;
-        max-width: 95%;
-        margin: auto;
-        margin-top: 50px;
-
-        .title {
-          font-size: 18px;
-          font-family: $boldFont;
-          display: flex;
-          align-items: center;
-        }
-
-        ul {
-          list-style: decimal;
-          padding-right: 15px;
-
-          li {
-            font-size: 16px;
+  
+          &.active {
+            background-color: white;
+            border: 3px solid rgba(146, 108, 255, 1);
+            height: 25px;
+            width: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  
+            /* .tooltip {
+              display: block;
+            } */
+  
+            .core {
+              display: block;
+              background-color: rgba(146, 108, 255, 1);
+              width: 11px;
+              height: 11px;
+              border-radius: 30px;
+            }
           }
         }
       }
@@ -2801,7 +2879,6 @@ body {
     .section4 {
       .header {
         background-color: #eef1ff;
-
         .circle1 {
           display: block;
           width: 120px;
@@ -2901,8 +2978,9 @@ body {
       .stepWrapper {
         width: 1144px;
         margin: auto;
+        margin-top: 110px;
         direction: rtl;
-
+        
         display: flex;
         justify-content: center;
 
@@ -3216,7 +3294,7 @@ body {
             margin-top: -120px;
           }
         }
-        .playerWrapper{
+        .playerWrapper {
           border-radius: 10px;
           overflow: hidden;
           border: 3px solid #1a73c5;
