@@ -38,7 +38,7 @@ export default function Index() {
     <>
       <Menu />
       <section className="roadMapWrapper">
-        <section className="section1">
+        <section className="section1 mb-10">
           <section className="header">
             <span className="levelNumber">1</span>
             <span className="text mr-10">

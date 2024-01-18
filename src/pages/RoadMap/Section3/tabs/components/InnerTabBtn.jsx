@@ -6,7 +6,7 @@ import React, { useState, useContext, useEffect } from 'react';
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({fill}) {
+export default function Index({ fill, onClick }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -21,7 +21,7 @@ export default function Index({fill}) {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <>
+    <section onClick={onClick} className='cursor-pointer'>
       <svg
         width="280"
         height="67"
@@ -29,13 +29,11 @@ export default function Index({fill}) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-       
         <path
           d="M280 24V66.108H0L35.7529 18.1161C44.2453 6.71661 57.6246 0 71.8397 0H256C269.255 0 280 10.7452 280 24Z"
           fill={fill}
         />
-       
       </svg>
-    </>
+    </section>
   );
 }
