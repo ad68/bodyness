@@ -54,7 +54,7 @@ export default function Index() {
               onClick={() => setActiveTab(3)}
             >
               <img src={Tab3Img} alt="" />
-              {activeTab === 3 && <button className="btn bg-[#FF9170]">شاخص توده بدنی</button>}
+              {activeTab === 3 && <button className="btn bg-[#FF9170]">توده ی بدون چربی LMB</button>}
             </section>
             <section
               className={`tabBtn ${activeTab === 4 && 'bg-[#926cff14]'}`}

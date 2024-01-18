@@ -76,7 +76,7 @@ export default function Index() {
       </section>
       <section className="w-[280px] relative mt-10">
         <section className="absolute w-[238px] h-[67px] flex justify-center items-center top-0 right-0 text-[18px] font-extrabold text-center z-1 text-white">
-          آب مصرفی روزانه
+        شاخص توده عضلانی LBM
         </section>
         <InnerTab fill="#FF9170" />
       </section>

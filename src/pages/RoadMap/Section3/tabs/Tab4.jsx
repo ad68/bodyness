@@ -45,7 +45,7 @@ export default function Index() {
               بادینس پلنر (Planner)
             </span>
             <button className="bg-[#a347f1] rounded-[12px] w-[291px] h-[48px] text-white text-[18px] font-extrabold">
-              دریافت برنامه
+              دریافت پلنر
             </button>
           </section>
           <p>مزایای برنامه ریز تمرین چیست؟</p>
