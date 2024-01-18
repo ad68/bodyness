@@ -50,7 +50,7 @@ export default function Index() {
               {activeTab === 2 && <button className="btn bg-[#FEB137]">شاخص توده بدنی</button>}
             </section>
             <section
-              className={`tabBtn ${activeTab === 3 && 'bg-[#FF91701F]'}`}
+              className={`tabBtn ${activeTab === 3 && 'bg-[#ffe8e1]'}`}
               onClick={() => setActiveTab(3)}
             >
               <img src={Tab3Img} alt="" />
@@ -71,7 +71,7 @@ export default function Index() {
                 : activeTab === 2
                 ? 'bg-[#FEF8E266]'
                 : activeTab === 3
-                ? 'bg-[#FF91701F]'
+                ? 'bg-[#ffe8e1]'
                 : activeTab === 4
                 ? 'bg-[#926cff14]'
                 : ''

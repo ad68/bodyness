@@ -1,17 +1,28 @@
 import React, { useState, useContext, useEffect } from 'react';
 import MaleIcon from '../../../../assets/images/home/male.svg';
 import FemaleIcon from '../../../../assets/images/home/female.svg';
-import HeightPicker from './components/HeightPicker';
+import WeightPicker from './components/WeightPicker';
 import Cold from '../../../../assets/images/icon/cold.svg';
 import Cloudy from '../../../../assets/images/icon/cloudy.svg';
 import Warm from '../../../../assets/images/icon/warm.svg';
 import SportTimeSelector from './components/SportTimeSelector';
-import InnerTab from './components/InnerTabBtn'
+import InnerTab from './components/InnerTabBtn';
+import Glass from '../../../../assets/images/icon/glass.svg';
+import Water from '../../../../assets/images/icon/water.svg';
+import Bubble from '../../../../assets/images/icon/bubble.png';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
+function BubbleItem({value}) {
+  return (
+      <span  className="flex justify-start items-center mt-1">
+        <img className='w-[16px] h-[25px]' src={Bubble} alt="" />
+        <span className='mr-1'>{value}</span>
+      </span>
+  );
+}
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
@@ -53,7 +64,7 @@ export default function Index() {
             <span className="block color-[#3E4151] font-normal text-[16px] mr-2">
               وزن شما
             </span>
-            <HeightPicker />
+            <WeightPicker />
           </section>
         </section>
         <section className="grid grid-cols-3">
@@ -95,12 +106,59 @@ export default function Index() {
         <section className="absolute w-[238px] h-[67px] flex justify-center items-center top-0 right-0 text-[18px] font-extrabold text-center z-1 text-white">
           آب مصرفی روزانه
         </section>
-        <InnerTab fill="#6C95FF"/>
+        <InnerTab fill="#6C95FF" />
       </section>
       <section className="w-[1218px] mt-[-1px] bg-[#6C95FF] rounded-tl-[24px] rounded-bl-[24px] rounded-br-[24px] tab4 p-10">
         <section className="bg-white p-12 rounded-[24px]">
-          
-        
+          <section className="grid grid-cols-3">
+            <section className="col-span-2">
+              <span className="text-[20px] font-bold">
+                محاسبه گر آب مصرفی در ورزش چیست؟
+              </span>
+              <p className="font-normal mt-2 text-[16px]">
+                اینجا یادت میندازیم در طول روز چقدر آب خوردی!
+                <br />
+                شنیدی میگن آب برای سلامتی ضروریه؟
+              </p>
+            </section>
+
+            <section className="flex justify-between">
+              <section>
+                <img src={Water} alt="" />
+                <span className="block text-center font-normal text-[20px] mt-4">
+                  500ml
+                </span>
+              </section>
+              <section>
+                <img src={Glass} alt="" />
+                <span className="block text-center font-normal text-[20px] mt-2">
+                  6 لیوان آب
+                </span>
+              </section>
+            </section>
+          </section>
+          <section className="grid grid-cols-2 mt-4">
+            <section>
+              <BubbleItem value="به ایجاد بزاق کمک می کنه" />
+              <BubbleItem value="دمای بدن شما را تنظیم می کنه" />
+              <BubbleItem value="از بافت ها، نخاع و مفاصل شما محافظت می کنه" />
+              <BubbleItem value="به دفع مواد زائد از طریق تعریق، ادرار و مدفوع کمک می کنه" />
+              <BubbleItem value="به حداکثر رساندن عملکرد فیزیکی کمک می کنه" />
+              <BubbleItem value="به جلوگیری از یبوست کمک می کنه" />
+              <BubbleItem value="به هضم غذا کمک می کنه" />
+              <BubbleItem value="به جذب مواد مغذی کمک می کنه" />
+            </section>
+            <section>
+              <BubbleItem value="به کاهش وزن کمک می کنه" />
+              <BubbleItem value="گردش اکسیژن خون را بهبود می بخشه" />
+              <BubbleItem value="به مبارزه با بیماری کمک می کنه" />
+              <BubbleItem value="به افزایش انرژی کمک می کنه" />
+              <BubbleItem value="به عملکرد شناختی کمک می کنه" />
+              <BubbleItem value="به بهبود خلق و خو کمک می کنه" />
+              <BubbleItem value="به روشن نگه داشتن پوست کمک می کنه" />
+              <BubbleItem value="به جذب مواد مغذی کمک می کنه" />
+            </section>
+          </section>
         </section>
       </section>
     </>

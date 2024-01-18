@@ -11,14 +11,14 @@ export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [weight, setWeight] = useState(160);
+  const [weight, setWeight] = useState(65);
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
   const increaseWeight = () => {
-    if (weight <= 220) setWeight(weight + 1);
+    if (weight <= 250) setWeight(weight + 1);
   };
-  const decreaseWeight = () => {if (weight > 120) {setWeight(weight - 1)}};
+  const decreaseWeight = () => {if (weight > 35) {setWeight(weight - 1)}};
 
   
   //
@@ -36,7 +36,7 @@ export default function Index() {
       />
       <section className="flex justify-center items-center">
         <span className="text-[30px] font-bold">{weight}</span>
-        <span className="text-[12px] font-normal mr-2">سانتی متر</span>
+        <span className="text-[12px] font-normal mr-2">کیلوگرم</span>
       </section>
       <section  onClick={decreaseWeight} className="w-[19px] h-[19px] cursor-pointer flex justify-center items-center">
         <img
