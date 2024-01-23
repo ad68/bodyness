@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom'
 import { useTranslation } from "react-i18next";
 import Yoga from "../../../../../assets/images/home/yoga-img1.png";
 import Banner from "../../../../../assets/images/home/banner-img.png";
@@ -57,9 +57,12 @@ export default function Index() {
       </span>
       <p className="px-2 mt-2 text-center">{t("Home.ExperienceBest")}</p>
       <section className="px-10">
-        <button className="letStartBtnMobile mt-5">
+      <Link to="/roadmap/section4">
+      <button className="letStartBtnMobile mt-5">
           {t("Home.LetsStart")}
         </button>
+      </Link>
+       
       </section>
     </>
   );

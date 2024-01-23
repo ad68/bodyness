@@ -2589,10 +2589,11 @@ body {
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper {
   width: 1144px;
+  max-width: 100%;
   margin: auto;
   margin-top: 110px;
   direction: rtl;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .firstStep {
@@ -2737,6 +2738,7 @@ body {
   position: relative;
   text-align: center;
   width: 600px;
+  max-width: 100%;
 }
 @media screen and (min-width: 1350px) {
   .bodyRtl .roadMapWrapper .section4 .tabTitle {
@@ -2763,6 +2765,7 @@ body {
 }
 .bodyRtl .roadMapWrapper .section4 .genderWrapper {
   width: 600px;
+  max-width: 100%;
 }
 .bodyRtl .roadMapWrapper .section4 .genderWrapper .genderBox {
   background-color: white;

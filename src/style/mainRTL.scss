@@ -581,7 +581,7 @@ body {
       .tabTitle {
         font-family: $boldFont;
         font-size: 17px;
-
+        
         .arm {
           width: 46px;
 
@@ -2977,11 +2977,12 @@ body {
 
       .stepWrapper {
         width: 1144px;
+        max-width: 100%;
         margin: auto;
         margin-top: 110px;
         direction: rtl;
         
-        display: flex;
+        /* display: flex; */
         justify-content: center;
 
         .firstStep {
@@ -3145,6 +3146,7 @@ body {
         position: relative;
         text-align: center;
         width: 600px;
+        max-width: 100%;
 
         @media screen and (min-width: 1350px) {
           font-size: 29px;
@@ -3173,6 +3175,7 @@ body {
 
       .genderWrapper {
         width: 600px;
+        max-width: 100%;
 
         .genderBox {
           background-color: white;

@@ -46,7 +46,7 @@ export default function Index({ setTab }) {
           onClick={() => setTab(2)}
         />{t("Home.ChooseEquipment")}</span>
       <section className="equipmentBox">
-        <section className="grid grid-cols-6 gap-4 ">
+        <section className="grid grid-cols-3 xl:grid-cols-6 gap-4 ">
           <section className="box" onClick={() => setTab(4)}>
             <img src={Damble} alt="" />
             <span className="label">{t("Home.Damble")}</span>

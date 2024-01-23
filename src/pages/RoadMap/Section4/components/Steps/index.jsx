@@ -23,7 +23,7 @@ export default function Index({tab}) {
   //
   return (
      <>
-      <section className="stepWrapper">
+      <section className="stepWrapper hidden lg:flex">
           <section className="firstStep active">انتخاب جنسیت</section>
           <section className={`middleStep ${tab>1 && "active"}`} style={{ zIndex: -2 }}>
             عضله هدف
