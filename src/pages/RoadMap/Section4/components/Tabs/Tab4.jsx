@@ -1,8 +1,8 @@
-import React, { useState, useContext, useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import ArrowLeft from '../../../../../assets/images/basicInfo/arrowLeftWhite.png';
 import ReactPlayer from 'react-player';
-import vid from '../../../../../assets/video/damble.MP4';
+
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -13,9 +13,15 @@ export default function Index({ setTab }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
-
+  const [playState, setPlayState] = useState(false);
+  const [vid1Ready, setVid1Ready] = useState(false)
+  const [vid2Ready, setVid2Ready] = useState(false)
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+  useEffect(() => {
+    if(vid1Ready && vid2Ready){
+      setPlayState(true)
+    }
+  }, [vid1Ready,vid2Ready]);
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -44,8 +50,9 @@ export default function Index({ setTab }) {
               width="100%"
               height="100%"
               controls={false}
+              onReady={() => setVid1Ready(true)}
               loop={true}
-              playing={true}
+              playing={playState}
             />
           </div>
           <div className="playerWrapper">
@@ -55,8 +62,9 @@ export default function Index({ setTab }) {
               width="100%"
               height="100%"
               controls={false}
+              onReady={() => setVid2Ready(true)}
               loop={true}
-              playing={true}
+              playing={playState}
             />
           </div>
         </section>

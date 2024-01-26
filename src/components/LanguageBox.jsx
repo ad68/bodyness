@@ -46,7 +46,7 @@ export default function Index({ mode }) {
   // ──────────────────────────────────────────────────────────────
   //
   return mode === "other" ? (
-    <section className="otherLangBox">
+    <section className="otherLangBox" style={{display:"none"}}>
       <button
         onClick={() => changeLanguage("EN")}
         className={lng === "EN" ? "active" : ""}
@@ -61,7 +61,7 @@ export default function Index({ mode }) {
       </button>
     </section>
   ) : (
-    <section className="langBox">
+    <section className="langBox" style={{display:"none"}}>
       <button
         onClick={() => changeLanguage("EN")}
         className={lng === "EN" ? "active" : ""}
