@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Menu from '../../../components/Menu';
 import Welcome from './components/Welcome';
 import MainImage from './components/MainImage';
-import Mobile from './components/Mobile'
+import Mobile from './components/Mobile';
 import { Link } from 'react-router-dom';
 //
 // ────────────────────────────────────────────────────────── I ──────────
@@ -29,9 +29,10 @@ export default function Index() {
     <>
       <Menu />
       <section className="section1">
+        {/* <img src={window.location.origin + '/images/logo192.png'} alt="" /> */}
         <Welcome />
         <MainImage />
-        <Mobile/>
+        <Mobile />
       </section>
     </>
   );
