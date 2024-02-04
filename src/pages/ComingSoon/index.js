@@ -1,18 +1,17 @@
-import React, { useState, useContext, useEffect } from 'react'
-import Logo from '../../assets/images/logo/logoMini.png'
+import React from 'react';
+import Logo from '../../assets/images/logo/logoMini.png';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
-
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
- 
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
- 
+
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -21,11 +20,11 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-     <>
-     <section className='comingSoon'>
-      <img src={Logo} alt=""/>
-      <h3>Coming Soon...</h3>
-     </section>
-     </>
-  )
+    <>
+      <section className="comingSoon">
+        <img src={Logo} alt="" />
+        <h3>Coming Soon...</h3>
+      </section>
+    </>
+  );
 }

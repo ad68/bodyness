@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Home from '../pages/Home';
+/* import Home from '../pages/Home'; */
+import Home from '../pages/NewHome';
 import BasicInfo from '../pages/BasicInfo';
 import CommingSoon from '../pages/ComingSoon';
 import RoadMap from '../pages/RoadMap';

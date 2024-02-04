@@ -27,27 +27,13 @@ export default function Index() {
       setMenuClass("");
     }
 
-    /* {
-      setBackColor("#e0c9fc");
-    } else if (window.scrollY > document.getElementById("sec2").offsetTop) {
-      setBackColor("#f5e170");
-    } else if (window.scrollY > document.getElementById("sec3").offsetTop) {
-      setBackColor("#eef9ff");
-    } else {
-      setBackColor("");
-    } */
+  
   };
- /*  const setMenuWidth = () => {
-    console.log(document.getElementById("section1Body").style.width);
-    
-  }; */
+ 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
   }, []);
- /*  useEffect(() => {
-    window.addEventListener("resize", setMenuWidth);
-    console.log(document.getElementById("section1Body").style.width);
-  }, []); */
+ 
 
   //
   // ──────────────────────────────────────────────────── I ──────────
