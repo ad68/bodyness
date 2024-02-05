@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { baseFileUrl } from '../../../../config';
+import {Link} from 'react-router-dom'
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -29,9 +30,10 @@ export default function Index() {
           بادینس ، مسیری هوشمند برای سبک زندگی بهتر
         </span>
         <section className="w-[289px] h-[44px] flex justify-between">
-          <button className="bg-white w-[118px] h-[44px] rounded-full font-semibold  text-purple mt-10">
+        <button className="bg-white w-[118px] h-[44px] rounded-full font-semibold  text-purple mt-10">
             بزن بریم
           </button>
+          
           <button className="bg-purple w-[141px] h-[44px] rounded-full font-semibold  border text-white mt-10">
             انتخاب مربی
           </button>

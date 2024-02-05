@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { baseFileUrl } from '../../../../config';
+import { Link } from 'react-router-dom';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -27,7 +28,7 @@ export default function Index() {
         className="h-[532px] w-[560px]"
         alt=""
       />
-      <section className='self-start'>
+      <section className="self-start">
         <section className="text-[60px] font-semibold">
           بهترین شیوه تناسب اندام چیه؟
         </section>
@@ -37,9 +38,12 @@ export default function Index() {
           <br />
           پس حواست به کالری‌ها، درشت مغذی‌ها و میزانش باشه.
         </p>
-        <button className="bg-purple w-[100px] h-[40px] rounded-full text-white mt-10 font-semibold">
-          بزن بریم
-        </button>
+
+        <Link to="/roadmap/section2">
+          <button className="bg-purple w-[100px] h-[40px] rounded-full text-white mt-10 font-semibold">
+            بزن بریم
+          </button>
+        </Link>
       </section>
     </section>
   );

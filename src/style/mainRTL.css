@@ -53,6 +53,7 @@ body {
   padding: 20px;
   z-index: 100;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  height: 80px;
   right: 0;
   /* @media screen and (max-width: 1350px) {
     padding: 10px;
@@ -73,15 +74,14 @@ body {
   top: 0 !important;
 }
 .bodyRtl .mainMenu .logo {
-  width: 223px;
-  height: 57px;
+  height: 46px;
 }
 .bodyRtl .mainMenu nav a {
-  font-size: 20px;
+  font-size: 16px;
 }
 .bodyRtl .mainMenu .action {
   width: 222px;
-  background-color: #a347f1;
+  background-color: #5408aa;
   border-radius: 10px;
   color: white;
   height: 48px;
@@ -158,14 +158,14 @@ body {
   text-align: center;
 }
 .bodyRtl .homeWrapper .section1 .mobileWrapper .learn1 strong {
-  color: #a347f1;
+  color: #5408aa;
   font-weight: 700;
 }
 .bodyRtl .homeWrapper .section1 .mobileWrapper .letsStartBtnMobile {
   border-radius: 16px;
   font-size: 20px;
   font-family: IRANSansBold;
-  background-color: #a347f1;
+  background-color: #5408aa;
   padding: 10px;
   width: 100%;
   color: white;
@@ -208,7 +208,7 @@ body {
 }
 .bodyRtl .homeWrapper .section1 .coachTeamBox {
   border-radius: 32px;
-  background-color: #a347f1;
+  background-color: #5408aa;
   min-height: 250px;
   margin-top: 10%;
   position: relative;
@@ -524,7 +524,7 @@ body {
 .bodyRtl .homeWrapper .section3 .lineTab .tab.active {
   width: 89px;
   /* height: 6px; */
-  background-color: #a347f1;
+  background-color: #5408aa;
 }
 .bodyRtl .homeWrapper .section3 .tabTitle {
   font-family: IRANSansBold;
@@ -553,7 +553,7 @@ body {
   color: rgba(0, 0, 0, 0.7019607843);
 }
 .bodyRtl .homeWrapper .section3 .stepNumberBox {
-  background-color: #a347f1;
+  background-color: #5408aa;
   color: white;
   padding: 10px;
   width: 30px;
@@ -824,7 +824,7 @@ body {
   border-radius: 16px;
   font-size: 20px;
   font-family: IRANSansBold;
-  background-color: #a347f1;
+  background-color: #5408aa;
   display: block;
   padding: 10px;
   width: 100%;
@@ -886,7 +886,7 @@ body {
   border-radius: 16px;
   font-size: 20px;
   font-family: IRANSansBold;
-  background-color: #a347f1;
+  background-color: #5408aa;
   display: block;
   padding: 10px;
   width: 100%;
@@ -1009,7 +1009,7 @@ body {
   border-radius: 16px;
   font-size: 20px;
   font-family: IRANSansBold;
-  background-color: #a347f1;
+  background-color: #5408aa;
   display: block;
   padding: 10px;
   width: 80%;
@@ -1287,7 +1287,7 @@ body {
   border-radius: 16px;
   font-size: 20px;
   font-family: IRANSansBold;
-  background-color: #a347f1;
+  background-color: #5408aa;
   display: block;
   padding: 10px;
   width: 90%;
@@ -1564,7 +1564,7 @@ body {
   font-family: IRANSansBold;
 }
 .bodyRtl .basicInfoWrapperMobile .unitBox .item.active {
-  background-color: #a347f1;
+  background-color: #5408aa;
   color: white;
 }
 .bodyRtl .basicInfoWrapper {
@@ -1662,7 +1662,7 @@ body {
   border-radius: 16px;
   font-size: 20px;
   font-family: IRANSansBold;
-  background-color: #a347f1;
+  background-color: #5408aa;
   display: block;
   padding: 10px;
   width: 430px;
@@ -2106,7 +2106,7 @@ body {
   font-family: IRANSansBold;
 }
 .bodyRtl .basicInfoWrapper .unitBox .item.active {
-  background-color: #a347f1;
+  background-color: #5408aa;
   color: white;
 }
 .bodyRtl .roadMapWrapper {
@@ -2137,11 +2137,12 @@ body {
   display: block;
   margin: auto;
   text-align: center;
-  background-color: #a347f1;
+  background-color: #5408aa;
   padding: 10px;
   color: white;
   width: 300px;
   margin-top: 15px;
+  margin-bottom: 20px;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 600;
@@ -2609,14 +2610,14 @@ body {
   cursor: pointer;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .firstStep.active {
-  background-color: rgb(26, 115, 197);
+  background-color: #5408aa;
   color: white;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .firstStep.active::before {
-  background-color: rgb(26, 115, 197);
+  background-color: #5408aa;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .firstStep.active::after {
-  border-right: 20px solid rgb(26, 115, 197);
+  border-right: 20px solid #5408aa;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .firstStep::before {
   content: "";
@@ -2654,14 +2655,14 @@ body {
   cursor: pointer;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .middleStep.active {
-  background-color: rgb(26, 115, 197);
+  background-color: #5408aa;
   color: white;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .middleStep.active::before {
-  background-color: rgb(26, 115, 197);
+  background-color: #5408aa;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .middleStep.active::after {
-  border-right: 20px solid rgb(26, 115, 197);
+  border-right: 20px solid #5408aa;
 }
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .middleStep::before {
   content: "";
@@ -2698,16 +2699,6 @@ body {
   font-family: IRANSansBold;
   cursor: pointer;
 }
-.bodyRtl .roadMapWrapper .section4 .stepWrapper .lastStep.active {
-  background-color: rgb(26, 115, 197);
-  color: white;
-}
-.bodyRtl .roadMapWrapper .section4 .stepWrapper .lastStep.active::before {
-  background-color: rgb(26, 115, 197);
-}
-.bodyRtl .roadMapWrapper .section4 .stepWrapper .lastStep.active::after {
-  background: rgb(26, 115, 197);
-}
 .bodyRtl .roadMapWrapper .section4 .stepWrapper .lastStep::before {
   content: "";
   position: absolute;
@@ -2731,6 +2722,17 @@ body {
   border-radius: 100%;
   background: rgb(239, 247, 255);
 }
+.bodyRtl .roadMapWrapper .section4 .stepWrapper .lastStep.active {
+  background-color: #5408aa;
+  color: white;
+}
+.bodyRtl .roadMapWrapper .section4 .stepWrapper .lastStep.active::before {
+  background-color: #5408aa;
+}
+.bodyRtl .roadMapWrapper .section4 .stepWrapper .lastStep.active::after {
+  border-right: 20px solid #5408aa;
+  background: #5408aa;
+}
 .bodyRtl .roadMapWrapper .section4 .tabTitle {
   display: block;
   font-family: IRANSansBold;
@@ -2746,7 +2748,7 @@ body {
   }
 }
 .bodyRtl .roadMapWrapper .section4 .tabTitle .backBtn {
-  background-color: #a347f1;
+  background-color: #5408aa;
   padding: 10px;
   display: block;
   border-radius: 10px;
@@ -2779,7 +2781,7 @@ body {
   background-color: #3373c4;
 }
 .bodyRtl .roadMapWrapper .section4 .genderWrapper .genderBox .genderTitle {
-  background-color: #e7f6ff;
+  background: linear-gradient(-45deg, rgb(240, 36, 131) 0%, rgb(84, 8, 170) 53%, rgb(84, 8, 170) 100%);
   padding: 10px;
   display: flex;
   font-size: 20px;
@@ -2789,6 +2791,7 @@ body {
   margin: auto;
   margin-top: 10px;
   border-radius: 16px;
+  color: white;
 }
 .bodyRtl .roadMapWrapper .section4 .genderWrapper .genderBox .genderTitle img {
   width: 35px;

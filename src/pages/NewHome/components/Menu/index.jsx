@@ -1,7 +1,7 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { baseFileUrl } from '../../../../config'
 import { Link } from 'react-router-dom'
-
+import { useTranslation } from "react-i18next";
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -10,12 +10,16 @@ import { Link } from 'react-router-dom'
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+  const { i18n } = useTranslation();
+  const lng = i18n.language;
   // ─── States ─────────────────────────────────────────────────────────────────────
   const [menuClass, setMenuClass] = useState("");
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
+    i18n.changeLanguage("FA");
+      document.body.dir = "rtl";
+      document.body.className = "bodyRtl";
   }, []);
   // ─── Functions ──────────────────────────────────────────────────────────────────
   const listenScrollEvent = (e) => {
@@ -49,16 +53,16 @@ export default function Index() {
         <section className="col-span-2">
           <nav className='flex justify-center items-center h-[80px]'>
           <Link to="" className="text-white font-normal text-[18px]">
-            خانه
+            صفحه نخست
           </Link>
           <Link to="" className="text-white font-normal text-[18px] mr-7">
             ورزش
           </Link>
           <Link to="" className="text-white font-normal text-[18px] mr-7">
-            رژیم
+            رژیم غذایی
           </Link>
           <Link to="" className="text-white font-normal text-[18px] mr-7">
-            تماس با ما
+            ارتباط با ما
           </Link>
           <Link to="" className="text-white font-normal text-[18px] mr-7">
             درباره ی ما

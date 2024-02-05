@@ -8,7 +8,7 @@ $veryBoldFont: IRANSansBlack;
 $lightFont: IRANSansLight;
 $ultraLightFont: IRANSansUltraLight;
 $mediumFont: IRANSansMedium;
-$bodyNessPuprple: #a347f1;
+$bodyNessPuprple: #5408aa;
 $bodyNessYellow: #f5e170;
 $bodyNessLemon: rgba(255, 249, 227, 1);
 
@@ -66,7 +66,7 @@ body {
     padding: 20px;
     z-index: 100;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
-
+     height: 80px;
     &.tiny {
       padding-top: 0;
       padding-bottom: 0;
@@ -90,19 +90,19 @@ body {
     top: 0;
 
     .logo {
-      width: 223px;
-      height: 57px;
+      
+      height: 46px;
     }
 
     nav {
       a {
-        font-size: 20px;
+        font-size: 16px;
       }
     }
 
     .action {
       width: 222px;
-      background-color: $bodyNessPuprple;
+      background-color: #5408aa;
       border-radius: 10px;
       color: white;
       height: 48px;
@@ -187,7 +187,7 @@ body {
           border-radius: 16px;
           font-size: 20px;
           font-family: $boldFont;
-          background-color: #a347f1;
+          background-color: $bodyNessPuprple;
           padding: 10px;
           width: 100%;
           color: white;
@@ -226,7 +226,7 @@ body {
 
       .coachTeamBox {
         border-radius: 32px;
-        background-color: #a347f1;
+        background-color: $bodyNessPuprple;
         min-height: 250px;
         margin-top: 10%;
         position: relative;
@@ -573,7 +573,7 @@ body {
           &.active {
             width: 89px;
             /* height: 6px; */
-            background-color: #a347f1;
+            background-color: $bodyNessPuprple;
           }
         }
       }
@@ -912,7 +912,7 @@ body {
           border-radius: 16px;
           font-size: 20px;
           font-family: $boldFont;
-          background-color: #a347f1;
+          background-color: $bodyNessPuprple;
           display: block;
           padding: 10px;
           width: 100%;
@@ -988,7 +988,7 @@ body {
         border-radius: 16px;
         font-size: 20px;
         font-family: $boldFont;
-        background-color: #a347f1;
+        background-color: $bodyNessPuprple;
         display: block;
         padding: 10px;
         width: 100%;
@@ -1133,7 +1133,7 @@ body {
         border-radius: 16px;
         font-size: 20px;
         font-family: $boldFont;
-        background-color: #a347f1;
+        background-color: $bodyNessPuprple;
         display: block;
         padding: 10px;
         width: 80%;
@@ -1452,7 +1452,7 @@ body {
       border-radius: 16px;
       font-size: 20px;
       font-family: $boldFont;
-      background-color: #a347f1;
+      background-color: $bodyNessPuprple;
       display: block;
       padding: 10px;
       width: 90%;
@@ -1787,7 +1787,7 @@ body {
         font-family: $boldFont;
 
         &.active {
-          background-color: #a347f1;
+          background-color: $bodyNessPuprple;
           color: white;
         }
       }
@@ -1897,7 +1897,7 @@ body {
       border-radius: 16px;
       font-size: 20px;
       font-family: $boldFont;
-      background-color: #a347f1;
+      background-color: $bodyNessPuprple;
       display: block;
       padding: 10px;
       width: 430px;
@@ -2412,7 +2412,7 @@ body {
         font-family: $boldFont;
 
         &.active {
-          background-color: #a347f1;
+          background-color: $bodyNessPuprple;
           color: white;
         }
       }
@@ -2451,6 +2451,7 @@ body {
       color: white;
       width: 300px;
       margin-top: 15px;
+      margin-bottom: 20px;
       border-radius: 10px;
       font-size: 18px;
       font-weight: 600;
@@ -2998,15 +2999,15 @@ body {
           cursor: pointer;
 
           &.active {
-            background-color: rgba(26, 115, 197, 1);
+            background-color: #5408aa;
             color: white;
 
             &::before {
-              background-color: rgba(26, 115, 197, 1);
+              background-color: #5408aa;
             }
 
             &::after {
-              border-right: 20px solid rgba(26, 115, 197, 1);
+              border-right: 20px solid #5408aa;
             }
           }
 
@@ -3049,18 +3050,17 @@ body {
           cursor: pointer;
 
           &.active {
-            background-color: rgba(26, 115, 197, 1);
+            background-color: #5408aa;
             color: white;
 
             &::before {
-              background-color: rgba(26, 115, 197, 1);
+              background-color: #5408aa;
             }
 
             &::after {
-              border-right: 20px solid rgba(26, 115, 197, 1);
+              border-right: 20px solid #5408aa;
             }
           }
-
           &::before {
             content: "";
             position: absolute;
@@ -3098,20 +3098,6 @@ body {
           z-index: -4;
           font-family: $boldFont;
           cursor: pointer;
-
-          &.active {
-            background-color: rgba(26, 115, 197, 1);
-            color: white;
-
-            &::before {
-              background-color: rgba(26, 115, 197, 1);
-            }
-
-            &::after {
-              background: rgba(26, 115, 197, 1);
-            }
-          }
-
           &::before {
             content: "";
             position: absolute;
@@ -3136,6 +3122,17 @@ body {
             border-radius: 100%;
             background: rgba(239, 247, 255, 1);
           }
+          &.active {
+            background-color: #5408aa;
+            color: white;
+            &::before {
+              background-color: #5408aa;
+            }
+            &::after {
+              border-right: 20px solid #5408aa;
+              background: #5408aa;
+            }
+          }
         }
       }
 
@@ -3153,7 +3150,7 @@ body {
         }
 
         .backBtn {
-          background-color: $bodyNessPuprple;
+          background-color: #5408aa;
           padding: 10px;
           display: block;
           border-radius: 10px;
@@ -3190,7 +3187,13 @@ body {
           }
 
           .genderTitle {
-            background-color: #e7f6ff;
+            
+            background: linear-gradient(
+              -45deg,
+              rgba(240, 36, 131, 1) 0%,
+              rgba(84, 8, 170, 1) 53%,
+              rgba(84, 8, 170, 1) 100%
+            );
             padding: 10px;
             display: flex;
             font-size: 20px;
@@ -3200,6 +3203,7 @@ body {
             margin: auto;
             margin-top: 10px;
             border-radius: 16px;
+            color: white;
 
             img {
               width: 35px;

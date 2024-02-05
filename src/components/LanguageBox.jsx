@@ -31,7 +31,7 @@ export default function Index({ mode }) {
     if (localStorage.lang) {
       changeLanguage(localStorage.lang);
     } else {
-      changeLanguage("EN");
+      changeLanguage("FA");
     }
   };
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────

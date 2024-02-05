@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { baseFileUrl } from '../../../../config';
+import { Link } from 'react-router-dom';
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -27,16 +28,22 @@ export default function Index() {
           مرجع تخصصی آموزش حرکات فیتنس و بدنسازی
         </section>
         <p className="font-normal text-[22px] mt-5">
-        بهترین و متناسبترین آموزش‌های تخصصی مناسب با اندامت رو با چند کلیک ساده دریافت کن!
+          بهترین و متناسبترین آموزش‌های تخصصی مناسب با اندامت رو با چند کلیک
+          ساده دریافت کن!
         </p>
-        <button className="bg-purple w-[100px] h-[40px] rounded-full font-semibold  text-white mt-10">
-          بزن بریم
-        </button>
+        <Link to="/roadmap/section4">
+          <button className="bg-purple w-[100px] h-[40px] rounded-full font-semibold  text-white mt-10">
+            بزن بریم
+          </button>
+        </Link>
       </section>
       <section>
-        <img src={baseFileUrl+"/images/slider.png"} className='mr-10 w-[622px] h-[560px]' alt=''/>
+        <img
+          src={baseFileUrl + '/images/slider.png'}
+          className="mr-10 w-[622px] h-[560px]"
+          alt=""
+        />
       </section>
-     
     </section>
   );
 }
